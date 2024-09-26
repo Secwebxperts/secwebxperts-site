@@ -7,7 +7,7 @@ import ServiceSection from "../components/Services";
 
 const Home = () => {
   return (
-    <div>
+    <div className="justify-center align-center">
       <Herosection />
       <About />
       <OurTeam />

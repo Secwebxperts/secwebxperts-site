@@ -6,11 +6,11 @@ import "./Achievement.css"; // If you have any custom CSS
 
 const Achievements = () => {
   const achievements = [
-    { name: "Mercedes-Benz", logo: "src/assets/achievement/frame 1.png" },
-    { name: "AMD", logo: "src/assets/achievement/frame 2.png" },
-    { name: "Google", logo: "src/assets/achievement/frame 3.png" },
-    { name: "Ionic", logo: "src/assets/achievement/frame 4.png" },
-    { name: "Mercedes-Benz", logo: "src/assets/achievement/frame 5.png" },
+    { logo: "src/assets/achievement/frame 1.png" },
+    {  logo: "src/assets/achievement/frame 2.png" },
+    {  logo: "src/assets/achievement/frame 3.png" },
+    {  logo: "src/assets/achievement/frame 4.png" },
+    {  logo: "src/assets/achievement/frame 5.png" },
   ];
 
   return (
@@ -27,7 +27,7 @@ const Achievements = () => {
         {/* Swiper for sliding cards */}
         <Swiper
           loop={true} // Enables continuous loop mode
-          autoplay={{ delay: 1000, disableOnInteraction: false }} // Autoplay with delay
+          autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with delay
           centeredSlides={true} // Centers the active slide
           spaceBetween={30} // Default space between slides
           breakpoints={{
@@ -57,23 +57,21 @@ const Achievements = () => {
         >
           {achievements.map((achievement, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center">
+              <div className="bg-white  rounded-lg  flex flex-col items-center">
                 <img
                   src={achievement.logo}
                   alt={achievement.name}
                   className="h-16 object-contain mb-4"
                 />
-                <p className="text-lg font-semibold text-gray-700">
-                  {achievement.name}
-                </p>
+                
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-gradient-to-r from-blue-900 to-white py-16 px-8 lg:px-24">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-gradient-to-r from-blue-900 to-white py-1 px-2 lg:px-24">
         {/* Left Image Section */}
-        <div className="lg:w-1/2 w-full flex justify-center lg:justify-start mb-8 lg:mb-0">
+        <div className="lg:w-1/2 w-full flex justify-center lg:justify-start mb-2 lg:mb-0 ml-0">
           <img
             src="src/assets/cve.jpg"
             alt="Cyber Security"

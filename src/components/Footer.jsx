@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#825000] text-white py-10 bg-[url('src/assets/Vector.png')]">
+    <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('src/assets/Vector.jpg')]">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start px-6 md:px-0">
         {/* Logo and Description */}
         <div className="flex flex-col mb-8 md:mb-0">
@@ -19,7 +19,7 @@ const Footer = () => {
               className="h-10 mr-3"
             />
             <h2 className="text-2xl font-bold">
-              Sec <span className="text-white">Webxperts</span>
+              Sec <span className="text-black">Webxperts</span>
             </h2>
           </div>
           <p className="text-sm leading-relaxed max-w-72">
@@ -82,8 +82,8 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-white mt-6 pt-6">
-        <div className="max-w-[1200px] mx-auto flex justify-between items-center">
+      <div className="border-t-2 border-gray-500 mt-6 pt-6">
+      <div className="max-w-[1200px] mx-auto flex justify-between items-center">
           <p className="text-sm">
             Copyright © {new Date().getFullYear()} by Secwebxperts. All Rights
             Reserved
