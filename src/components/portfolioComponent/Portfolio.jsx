@@ -13,7 +13,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       rotate();
-    }, 2000);
+    }, 6000);
 
     return () => {
       clearInterval(interval);

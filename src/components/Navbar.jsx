@@ -55,16 +55,16 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-red-50 w-full max-w-screen-xl mx-auto rounded-full shadow-lg my-5">
+    <header className="bg-red-50 w-full max-w-screen-xl mx-auto rounded-full shadow-lg my-1 fixed top-0 left-0 right-0 z-50 justify-between">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-4"
       >
         <div className="flex lg:flex-1">
           <Link to={"/"} className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
-              alt=""
+              alt="Logo"
               src="src/assets/first logo.png"
               className="h-14 w-auto rounded-full"
             />
@@ -81,15 +81,9 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link className="text-lg font-bold leading-6 text-gray-900">
-            About
-          </Link>
-          <Link className="text-lg font-bold leading-6 text-gray-900">
-            Our Team
-          </Link>
-          <Link className="text-lg font-bold leading-6 text-gray-900">
-            Portfolio
-          </Link>
+          <Link className="text-lg font-bold leading-6 text-gray-900">About</Link>
+          <Link className="text-lg font-bold leading-6 text-gray-900">Our Team</Link>
+          <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link>
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
               Services
@@ -99,10 +93,7 @@ export default function Navbar() {
               />
             </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute -left-8 top-full  mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in z-50"
-            >
+            <PopoverPanel className="absolute -left-8 top-full mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 z-50">
               <div className="p-4">
                 {products.map((item) => (
                   <div
@@ -116,7 +107,7 @@ export default function Navbar() {
                       />
                     </div>
                     <div className="flex-auto">
-                      <Link to={"/"} className="blolg font-bold text-gray-900">
+                      <Link to={"/"} className="font-bold text-gray-900">
                         {item.name}
                         <span className="absolute inset-0" />
                       </Link>
@@ -157,8 +148,8 @@ export default function Navbar() {
         onClose={setMobileMenuOpen}
         className="lg:hidden"
       >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed z-50" />
+        <DialogPanel className="fixed inset-y-1 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">SecWebXperts</span>
@@ -182,24 +173,24 @@ export default function Navbar() {
               <div className="space-y-2 py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-balg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-balg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Our team
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-balg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portfolio
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-balg font-bold leading-7 text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50">
                     Services
                     <ChevronDownIcon
                       aria-hidden="true"
@@ -227,3 +218,4 @@ export default function Navbar() {
     </header>
   );
 }
+

@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
@@ -25,23 +25,23 @@ const teamMembers = [
     title: "COO",
     description:
       "Overseeing daily operations, managing team performance, and driving company objectives.",
-    image: "src/assets/teamMember/CEO.jpeg", // Replace with actual image path
+    image: "src/assets/teamMember/COO.jpeg", // Replace with actual image path
     linkedin: "#",
   },
 ];
 
 const OurTeam = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between py-12 px-4 max-w-[1350px] m-auto">
+    <div className="flex flex-col md:flex-row justify-between py-12 px-2 max-w-[1350px] m-auto">
       {/* Left Section (Text) */}
-      <div className="max-w-full md:max-w-xl w-full md:w-[40%] flex flex-col justify-center items-start mb-8 md:mb-0">
+      <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0">
         <h2 className="text-customYellow text-4xl font-bold mb-4">OUR TEAM</h2>
         <p className="leading-6 py-4 text-gray-600">
           Clarity delivers components for professional SaaS websites, landing
           pages, or admin panels with Cybersecurity expertise.
         </p>
         <Link to="/team">
-          <p className="text-blue-600 hover:underline font-medium">
+          <p className="text-blue-600 font-medium">
             View all members
             <span className="ml-2">→</span>
           </p>
@@ -49,10 +49,10 @@ const OurTeam = () => {
       </div>
 
       {/* Right Section (Team Cards) */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[60%] gap-8">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[50%] gap-1">
         <Swiper
           loop={true}
-          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           // centeredSlides={true}
           spaceBetween={50} // Increase space between the cards
           breakpoints={{
@@ -78,22 +78,22 @@ const OurTeam = () => {
             },
           }}
           modules={[Autoplay]}
-          className="mySwiper"
+          // className="mySwiper"
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-[500px] mx-auto">
+              <div className=" rounded-lg p-4 w-full max-w-[300px] mx-auto">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="mx-auto rounded-full w-24 h-24 mb-4 object-cover"
+                  className="mx-auto rounded-full mb-1 object-cover"
                 />
                 <h3 className="text-lg font-bold text-gray-800">
                   {member.name}
                 </h3>
                 <p className="text-yellow-500 mb-4">{member.title}</p>
-                <p className="text-gray-600">{member.description}</p>
-                <div className="flex justify-center items-center mt-4">
+                <p className="text-gray-600 font-sans">{member.description}</p>
+                <div className="flex justify-center items-center mt-2">
                   <div className="flex justify-evenly w-[100px]">
                     <a
                       href={member.linkedin}
@@ -105,7 +105,7 @@ const OurTeam = () => {
                       href={member.linkedin}
                       className="text-blue-500 hover:text-blue-700 mx-2"
                     >
-                      <FaFacebook size={20} />
+                      <FaTwitter size={20} />
                     </a>
                   </div>
                 </div>

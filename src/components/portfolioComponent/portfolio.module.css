@@ -27,7 +27,7 @@
   font-size: 5em;
   text-align: center;
   color: #fff;
-  opacity: 0.95;
+  opacity: 1;
   border-radius: 10px;
   transition: transform 1s;
 }
