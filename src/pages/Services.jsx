@@ -107,86 +107,82 @@ const Services = () => {
                 </ul>
               </div>
 
-              {/* Right Side: Images */}
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-24">
+              {/* Left Side: Text Content */}
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
+                />
+              </div>
+
               <div>
-                <div className="flex flex-wrap">
-                  <div className="w-1/5 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap">
-                  <div className="w-1/5 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap">
-                  <div className="w-1/5 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                  <div className="w-1/3 p-4">
-                    {/* This is equivalent to col-4 in Bootstrap */}
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Service Image"
-                      className="rounded-lg shadow-md"
-                    />
-                  </div>
-                </div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl pb-7">
+                Importance of a Website for Business Growth
+              </h2>
+              <p>
+                A strong web presence is crucial for several important reasons,
+                some of which make it absolutely essential for your business. To
+                get the best results, you need the Best Web Design Company in
+                Kolkata, India—and you can fully trust Secwebxperts Technologies
+                Pvt. Ltd. to deliver.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
+              {/* Left Side: Text Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
+                />
               </div>
             </div>
           </div>
@@ -222,26 +218,80 @@ const Services = () => {
               </div>
 
               {/* Right Side: Images */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
                 />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-24">
+              {/* Left Side: Text Content */}
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl pb-7">
+                Importance of a Website for Business Growth
+              </h2>
+              <p>
+                A strong web presence is crucial for several important reasons,
+                some of which make it absolutely essential for your business. To
+                get the best results, you need the Best Web Design Company in
+                Kolkata, India—and you can fully trust Secwebxperts Technologies
+                Pvt. Ltd. to deliver.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
+              {/* Left Side: Text Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
-                />
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
             </div>
@@ -277,26 +327,80 @@ const Services = () => {
               </div>
 
               {/* Right Side: Images */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L3JvYl9yYXdwaXhlbF9zdHVkaW9fcGhvdG9fb2ZfYV9vcmFuZ3V0YW5fZnVsbF9ib2R5X2lzb2xhdGVkX29uX182Nzc4MjQxOS1lYTFjLTQ1ODItYmExMy0xMzYzZDY0MDU2MzYtNXgtaHEtc2NhbGUtNV8wMHgtam9iMTg5NC0wMS5qcGc.jpg"
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-24">
+              {/* Left Side: Text Content */}
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl pb-7">
+                Importance of a Website for Business Growth
+              </h2>
+              <p>
+                A strong web presence is crucial for several important reasons,
+                some of which make it absolutely essential for your business. To
+                get the best results, you need the Best Web Design Company in
+                Kolkata, India—and you can fully trust Secwebxperts Technologies
+                Pvt. Ltd. to deliver.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
+              {/* Left Side: Text Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Perfect UX/UI designing</li>
+                  <li>Responsive and Reliable</li>
+                  <li>Scalable and well-formatted</li>
+                  <li>Easily and effectively navigated</li>
+                  <li>Digital Marketing and Branding</li>
+                  <li>Relevant content that sticks visitors</li>
+                  <li>Affordable and Pocket-friendly prices</li>
+                  <li>Fast load times and great performance</li>
+                  <li>Optimized and Secure</li>
+                </ul>
+              </div>
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
                   alt="Service Image"
-                  className="rounded-lg shadow-md"
-                />
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Service Image"
-                  className="rounded-lg shadow-md"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
             </div>
