@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ServiceSection = () => {
   return (
-    <section className="py-12 bg-[#F6F4F4] mx-auto">
+    <section className="py-12 bg-[#F9F9F9] mx-auto">
       <div className="max-w-[1200px] mx-auto text-center">
         <div className="text-center mb-12">
           <h2 className="text-[#FF9D00] text-4xl font-bold">OUR SERVICES</h2>

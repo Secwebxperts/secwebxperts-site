@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import {
   Dialog,
   DialogPanel,
@@ -136,7 +136,7 @@ export default function Navbar() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            to=""
+            to="/contact"
             className="text-lg font-bold leading-6 text-gray-900 border p-3 rounded-full border-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
           >
             Contact Us <span aria-hidden="true">&rarr;</span>
