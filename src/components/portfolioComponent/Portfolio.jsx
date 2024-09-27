@@ -21,11 +21,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="min-h-[700px] my-16">
+    <div className="min-h-[886px] my-16 bg-[#FFFFFF] -mt-12">
       <div className="text-center my-11 mb-18">
-        <p className="text-xl font-semibold text-[#FF9D00]">
-          IDEAS COME TO LIFE
-        </p>
         <h2 className="text-4xl font-bold mt-4">
           <span className="text-[#FF9D00]">OUR</span> AWESOME PORTFOLIO
         </h2>

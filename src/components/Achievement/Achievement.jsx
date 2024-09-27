@@ -15,7 +15,7 @@ const Achievements = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-blue-50 to-white py-16 mt-32 mx-auto">
+      <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-65px]">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
           Some of our Achievements
         </h2>
@@ -26,65 +26,69 @@ const Achievements = () => {
 
         {/* Swiper for sliding cards */}
         <Swiper
-          loop={true} // Enables continuous loop mode
-          autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with delay
-          centeredSlides={true} // Centers the active slide
-          spaceBetween={30} // Default space between slides
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 1, // Show 1 slide
-              spaceBetween: 20,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 2, // Show 2 slides
-              spaceBetween: 20,
-            },
-            // when window width is >= 1024px
-            1024: {
-              slidesPerView: 3, // Show 3 slides
-              spaceBetween: 30,
-            },
-            // when window width is >= 1280px
-            1280: {
-              slidesPerView: 4, // Show 4 slides
-              spaceBetween: 40,
-            },
-          }}
-          modules={[Autoplay]} // Use only the Autoplay module
-          className="mySwiper"
-        >
-          {achievements.map((achievement, index) => (
-            <SwiperSlide key={index}>
-              <div className="bg-white  rounded-lg  flex flex-col items-center">
-                <img
-                  src={achievement.logo}
-                  alt={achievement.name}
-                  className="h-16 object-contain mb-4"
-                />
-                
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+  loop={true} // Enables continuous loop mode
+  autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with delay
+  centeredSlides={true} // Centers the active slide
+  spaceBetween={20} // Default space between slides
+  breakpoints={{
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2, // Show 1 slide
+      spaceBetween: 20,
+      centeredSlides: true, // Keep slides centered
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3, // Show 2 slides
+      spaceBetween: 20,
+      centeredSlides: true, // Keep slides centered
+    },
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 4, // Show 3 slides
+      spaceBetween: 20,
+      centeredSlides: true, // Keep slides centered
+    },
+    // when window width is >= 1280px
+    1280: {
+      slidesPerView: 4, // Show 4 slides
+      spaceBetween: 20,
+      centeredSlides: true, // Keep slides centered
+    },
+  }}
+  modules={[Autoplay]} // Use only the Autoplay module
+  className="mySwiper"
+>
+  {achievements.map((achievement, index) => (
+    <SwiperSlide key={index}>
+      <div className="items-center py-2">
+        <img
+          src={achievement.logo}
+          alt={achievement.name}
+          className="h-4 object-contain mb-2"
+        />
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-gradient-to-r from-blue-900 to-white py-1 px-2 lg:px-24">
+    </SwiperSlide>
+  ))}
+</Swiper>
+
+      </div>
+      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[linear-gradient(to_bottom,#2E6DE54D,#FFFFFF4D)] lg:px-2">
         {/* Left Image Section */}
-        <div className="lg:w-1/2 w-full flex justify-center lg:justify-start mb-2 lg:mb-0 ml-0">
+        <div className="lg:w-1/2 w-full ml-0">
           <img
             src="src/assets/cve.jpg"
             alt="Cyber Security"
-            className="max-w-full lg:max-w-[90%] object-contain"
+            className="max-w-full lg:max-w-[90%] lg:max-h-[50%] object-contain"
           />
         </div>
 
         {/* Right Text Section */}
         <div className="lg:w-1/2 w-full">
-          <h2 className="text-orange-500 text-3xl lg:text-4xl font-bold mb-6">
+          <h2 className="text-orange-500 text-3xl lg:text-4xl font-bold mb-6 py-6 px-2">
             EXPERT IN CYBER SECURITY
           </h2>
-          <p className="text-gray-600 text-lg lg:text-xl">
+          <p className="text-gray-600 text-lg lg:text-xl px-2">
             Secwebxperts team holds CVEs for finding vulnerabilities in open
             source projects that are published on{" "}
             <a
@@ -96,6 +100,11 @@ const Achievements = () => {
             </a>
             .
           </p>
+          <ul className="list-disc list-inside py-8 px-2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
         </div>
       </div>
     </>
