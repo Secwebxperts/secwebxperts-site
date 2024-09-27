@@ -55,25 +55,25 @@ const Footer = () => {
         <div className="mb-8 md:mb-0">
           <div>
             <div className="flex">
-              <FaMailBulk size={30} className="mr-2" />
+              <img src="src/assets/adthe.png" className="mr-2 h-6 w-6 mt-1" />
               <h3 className="font-semibold mb-3">Customer Help Email</h3>
             </div>
-            <p className="flex items-center mb-2">info@secwebxperts.com</p>
+            <p className="flex items-center mb-2 px-8">info@secwebxperts.com</p>
           </div>
           <div>
             <div className="flex">
               {" "}
-              <FaPhone size={30} className="mr-2" />
+              <img src="src/assets/call.png" className="mr-2 h-6 w-6 mt-1"/>
               <h3 className="font-semibold mb-3">Customer Help Number</h3>
             </div>
-            <p className="flex items-center mb-2">+91 7001008582</p>
+            <p className="flex items-center mb-2 px-8">+91 7001008582</p>
           </div>
           <div>
             <div className="flex">
-              <FaStopwatch size={30} className="mr-2" />
-              <h3 className="font-semibold mb-3">Office Hours</h3>
+            <img src="src/assets/action.png" className="mr-2 h-6 w-6 mt-1" />
+            <h3 className="font-semibold mb-3">Office Hours</h3>
             </div>
-            <p className="flex items-center mb-2">
+            <p className="flex items-center mb-2 px-8">
               Mon - Fri (10am - 7pm) & Sat Half <br />
               Sunday - Closed
             </p>

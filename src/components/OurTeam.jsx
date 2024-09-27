@@ -86,7 +86,7 @@ const OurTeam = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="mx-auto rounded-full mb-1 object-cover"
+                  className="mx-auto rounded-full mb-1 h-10 object-cover"
                 />
                 <h3 className="text-lg font-bold text-gray-800">
                   {member.name}
