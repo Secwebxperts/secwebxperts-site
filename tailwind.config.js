@@ -6,7 +6,12 @@ export default {
       colors: {
         customYellow: "#FF9D00",
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
 };
+
+

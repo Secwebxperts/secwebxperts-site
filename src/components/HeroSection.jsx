@@ -98,7 +98,7 @@ const Herosection = () => {
     <section className="py-20 bg-gradient-to-b from-white to-purple-200  flex items-center justify-center h-auto"> {/* Adjust 'mt-[100px]' based on the actual navbar height */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-28 md:space-y-0 mx-auto w-full  px-4 mt-[100px]">
         <div className="mb-8 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px]">
+          <h1 className="text-4xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px] font-poppins">
             Making Service Simple and Excellent
           </h1>
           <p className="text-gray-800 mt-4 max-w-lg font-bold leading-relaxed">
