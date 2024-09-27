@@ -72,7 +72,7 @@ const About = () => {
           </p>
 
           {/* Mission and Vision Cards */}
-          <div className="flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
+          <div className=" bg-[#EAEAEA] flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
             {/* Our Mission Card */}
             <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] ">
               <img
