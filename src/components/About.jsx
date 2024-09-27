@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section>
-      <section className="py-12 max-w-[1350px] mx-auto">
+      <section className="py-12 max-w-[1350px] mx-auto bg-[#FFFFFF]">
         <div className="container mx-auto text-center">
           <div className="flex flex-col md:flex-row justify-between">
             {/* Title */}
@@ -28,7 +28,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Total Projects */}
             <motion.div
-              className="bg-white rounded-lg shadow-lg p-6"
+              className="bg-[#F4F4F4] rounded-lg shadow-lg p-6"
               whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
@@ -38,7 +38,7 @@ const About = () => {
 
             {/* Total Clients */}
             <motion.div
-              className="bg-white rounded-lg shadow-lg p-6"
+              className="bg-[#F4F4F4] rounded-lg shadow-lg p-6"
               whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
@@ -48,7 +48,7 @@ const About = () => {
 
             {/* Customer Satisfaction */}
             <motion.div
-              className="bg-white rounded-lg shadow-lg p-6"
+              className="bg-[#F4F4F4] rounded-lg shadow-lg p-6"
               whileHover={{ scale: 1.05, y: -10 }} // Scale and slide up on hover
               transition={{ type: "spring", damping: 10 }} // Spring with more damping for a smooth effect
             >
@@ -58,7 +58,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="bg-gray-100 py-16 ">
+      <div className="bg-[#FFFFFF] py-16 ">
         <div className="container px-4 text-center max-w-[1350px] mx-auto">
           {/* About Section Title */}
           <h1 className="text-5xl font-bold text-orange-500 mb-6">ABOUT</h1>
@@ -72,9 +72,9 @@ const About = () => {
           </p>
 
           {/* Mission and Vision Cards */}
-          <div className=" bg-[#EAEAEA] flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
+          <div className=" flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
             {/* Our Mission Card */}
-            <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] ">
+            <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] ">
               <img
                 src="src/assets/mission.jpeg"
                 alt="Mission"

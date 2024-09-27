@@ -95,8 +95,8 @@ const Herosection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-purple-100 mt-[100px] flex items-center justify-center"> {/* Adjust 'mt-[100px]' based on the actual navbar height */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-28 md:space-y-0 mx-auto w-full  px-4">
+    <section className="py-20 bg-gradient-to-b from-white to-purple-200  flex items-center justify-center h-auto"> {/* Adjust 'mt-[100px]' based on the actual navbar height */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-28 md:space-y-0 mx-auto w-full  px-4 mt-[100px]">
         <div className="mb-8 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px]">
             Making Service Simple and Excellent
