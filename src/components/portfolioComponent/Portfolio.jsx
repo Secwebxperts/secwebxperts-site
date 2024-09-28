@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import style from "./portfolio.module.css";
 
-// const images = ["src/assets/sliderImages/Home page 1.png"];
-
 const Carousel = () => {
   const [currDeg, setCurrDeg] = useState(0);
 
@@ -74,46 +72,6 @@ const Carousel = () => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcM4jI9Inx-nzR-CeNpCyf1xfHTHG09cWkjQ&s"
             />
           </div>
-          {/* <div className={style.g}>
-            <div
-              className={style.item}
-              style={{ transform: `rotateY(${-currDeg}deg)` }}
-            >
-              JUS
-            </div>
-          </div>
-          <div className={style.h}>
-            <div
-              className={style.item}
-              style={{ transform: `rotateY(${-currDeg}deg)` }}
-            >
-              ERNEST
-            </div>
-          </div>
-          <div className={style.i}>
-            <div
-              className={style.item}
-              style={{ transform: `rotateY(${-currDeg}deg)` }}
-            >
-              HOLA
-            </div>
-          </div>
-          <div className={style.j}>
-            <div
-              className={style.item}
-              style={{ transform: `rotateY(${-currDeg}deg)` }}
-            >
-              QUE
-            </div>
-          </div>
-          <div className={style.k}>
-            <div
-              className={style.item}
-              style={{ transform: `rotateY(${-currDeg}deg)` }}
-            >
-              TAL
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
