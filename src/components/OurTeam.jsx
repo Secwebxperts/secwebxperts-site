@@ -9,7 +9,7 @@ const teamMembers = [
     title: "Director",
     description:
       "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-    image: "src/assets/teamMember/Director.jpeg", // Replace with actual image path
+    image: "src/assets/teamMember/Director.jpeg ", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -17,7 +17,7 @@ const teamMembers = [
     title: "CEO",
     description:
       "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-    image: "src/assets/teamMember/CEO.jpeg", // Replace with actual image path
+    image: "src/assets/teamMember/ceo.png", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -91,7 +91,9 @@ const OurTeam = () => {
                 <h3 className="text-lg font-bold text-gray-800">
                   {member.name}
                 </h3>
-                <p className="text-yellow-500 mb-2 items-center">{member.title}</p>
+                <p className="text-yellow-500 mb-2 items-center">
+                  {member.title}
+                </p>
                 <p className="text-gray-600 font-sans">{member.description}</p>
                 <div className="flex justify-center items-center mt-2">
                   <div className="flex justify-evenly w-[100px]">

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ServiceSection = () => {
   return (
@@ -13,7 +14,11 @@ const ServiceSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Web Development Card */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <motion.div
+            className="bg-white rounded-lg shadow-md p-6"
+            whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
+            transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
+          >
             <img
               src="/src/assets/serviceImages/1.png"
               alt="Web Development"
@@ -29,10 +34,13 @@ const ServiceSection = () => {
             >
               Learn More →
             </Link>
-          </div>
-
+          </motion.div>
           {/* Mobile App Development Card */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <motion.div
+            className="bg-white rounded-lg shadow-md p-6"
+            whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
+            transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
+          >
             <img
               src="/src/assets/serviceImages/3.png"
               alt="Mobile App Development"
@@ -50,10 +58,13 @@ const ServiceSection = () => {
             >
               Learn More →
             </Link>
-          </div>
-
+          </motion.div>
           {/* Cyber Security Card */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <motion.div
+            className="bg-white rounded-lg shadow-md p-6"
+            whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
+            transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
+          >
             <img
               src="/src/assets/serviceImages/2.png"
               alt="Cyber Security"
@@ -69,7 +80,7 @@ const ServiceSection = () => {
             >
               Learn More →
             </Link>
-          </div>
+          </motion.div>{" "}
         </div>
 
         <div className="text-center mt-12">
