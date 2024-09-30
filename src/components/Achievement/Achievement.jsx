@@ -7,10 +7,10 @@ import "./Achievement.css"; // If you have any custom CSS
 const Achievements = () => {
   const achievements = [
     { logo: "src/assets/achievement/frame 1.png" },
-    {  logo: "src/assets/achievement/frame 2.png" },
-    {  logo: "src/assets/achievement/frame 3.png" },
-    {  logo: "src/assets/achievement/frame 4.png" },
-    {  logo: "src/assets/achievement/frame 5.png" },
+    { logo: "src/assets/achievement/frame 2.png" },
+    { logo: "src/assets/achievement/frame 3.png" },
+    { logo: "src/assets/achievement/frame 4.png" },
+    { logo: "src/assets/achievement/frame 5.png" },
   ];
 
   return (
@@ -26,52 +26,46 @@ const Achievements = () => {
 
         {/* Swiper for sliding cards */}
         <Swiper
-  loop={true} // Enables continuous loop mode
-  autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with delay
-  centeredSlides={true} // Centers the active slide
-  spaceBetween={20} // Default space between slides
-  breakpoints={{
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 2, // Show 1 slide
-      spaceBetween: 20,
-      centeredSlides: true, // Keep slides centered
-    },
-    // when window width is >= 768px
-    768: {
-      slidesPerView: 3, // Show 2 slides
-      spaceBetween: 20,
-      centeredSlides: true, // Keep slides centered
-    },
-    // when window width is >= 1024px
-    1024: {
-      slidesPerView: 4, // Show 3 slides
-      spaceBetween: 20,
-      centeredSlides: true, // Keep slides centered
-    },
-    // when window width is >= 1280px
-    1280: {
-      slidesPerView: 4, // Show 4 slides
-      spaceBetween: 20,
-      centeredSlides: true, // Keep slides centered
-    },
-  }}
-  modules={[Autoplay]} // Use only the Autoplay module
-  className="mySwiper"
->
-  {achievements.map((achievement, index) => (
-    <SwiperSlide key={index}>
-      <div className="items-center py-2">
-        <img
-          src={achievement.logo}
-          alt={achievement.name}
-          className="h-4 object-contain mb-2"
-        />
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-
+          loop={true}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          spaceBetween={10}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2, // Show 1 slide
+              spaceBetween: 20,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 3, // Show 2 slides
+              spaceBetween: 20,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 4, // Show 3 slides
+              spaceBetween: 20,
+            },
+            // when window width is >= 1280px
+            1280: {
+              slidesPerView: 4, // Show 4 slides
+              spaceBetween: 10,
+            },
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          {achievements.map((achievement, index) => (
+            <SwiperSlide key={index}>
+              <div className="items-center py-2">
+                <img
+                  src={achievement.logo}
+                  alt={achievement.name}
+                  className="h-4 object-contain mb-2"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[linear-gradient(to_bottom,#2E6DE54D,#FFFFFF4D)] lg:px-2">
         {/* Left Image Section */}
