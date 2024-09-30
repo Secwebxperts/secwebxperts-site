@@ -32,7 +32,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between py-12 px-2 max-w-[1350px] m-auto bg-[linear-gradient(to_bottom,#2E6DE24D,#FFFFFF)]">
+    <div className="flex flex-col md:flex-row justify-between py-12 px-4 max-w-[100%] m-auto bg-[linear-gradient(to_bottom,#2E6DE24D,#FFFFFF)]">
       {/* Left Section (Text) */}
       <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0">
         <h2 className="text-customYellow text-4xl font-bold mb-4">OUR TEAM</h2>
