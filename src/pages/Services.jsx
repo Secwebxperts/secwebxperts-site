@@ -62,6 +62,16 @@ const Services = () => {
             Mobile App Development
           </button>
           <button
+            onClick={() => setActiveTab("mobile-app")}
+            className={`${
+              activeTab === "mobile-app"
+                ? "text-orange-500 font-semibold"
+                : "text-gray-600"
+            }`}
+          >
+            SAAS
+          </button>
+          <button
             onClick={() => setActiveTab("cyber-security")}
             className={`${
               activeTab === "cyber-security"
@@ -81,10 +91,12 @@ const Services = () => {
             <h2 className="text-center text-3xl font-bold mb-6">
               WEB DESIGN AND DEVELOPMENT
             </h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
-              Secwebxperts provides VAPT, penetration, and API testing, along
-              with web and mobile development, UI/UX design, and software
-              solutions, ensuring security and innovation for your business.
+            <p className="text-center text-gray-600  mx-auto mb-10">
+              Secwebxperts provides VAPT, penetration testing, system hardening,
+              API testing, mobile app testing, and data leak testing services.
+              Our expertise extends to web and mobile app development, UI/UX
+              design, and software development, ensuring robust security and
+              innovative solutions tailored to your business's unique needs.
             </p>
 
             {/* Web Design Section Content */}
@@ -92,54 +104,69 @@ const Services = () => {
               {/* Left Side: Text Content */}
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Innovative Web Design Experts
+                  The Best Web Design Company
                 </h3>
                 <ul className="list-none space-y-2">
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Perfect UX/UI designing</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Responsive and Reliable</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Scalable and well-formatted</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Easily and effectively navigated</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Digital Marketing and Branding</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Relevant content that sticks visitors</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Affordable and Pocket-friendly prices</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Fast load times and great performance</span>
-  </li>
-  <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">Optimized and Secure</span>
-  </li>
-</ul>
-
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Perfect UX/UI designing
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Responsive and Reliable
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Scalable and well-formatted
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Easily and effectively navigated
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Digital Marketing and Branding
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Relevant content that sticks visitors
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Affordable and Pocket-friendly prices
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">
+                      Fast load times and great performance
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600">Optimized and Secure</span>
+                  </li>
+                </ul>
               </div>
 
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
- src="src/assets/Group1000001287.png"
-alt="Service Image"
+                  src="src/assets/Group1000001287.png"
+                  alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
@@ -150,7 +177,7 @@ alt="Service Image"
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                      src="src/assets/Group1000001291.png"
+                  src="src/assets/Group1000001291.png"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
@@ -162,33 +189,49 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600">
-      </span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
             </div>
@@ -212,40 +255,57 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
 
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-src="src/assets/Group1000001295.png"
-alt="Service Image"
+                  src="src/assets/Group1000001295.png"
+                  alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
@@ -274,23 +334,34 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>iOS and Android development</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>iOS and Android
+                    development
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Cross-platform solutions</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Cross-platform
+                    solutions
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Secure app infrastructure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Secure app
+                    infrastructure
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>User-friendly UI/UX</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>User-friendly UI/UX
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Performance optimization</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Performance
+                    optimization
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>API integration and cloud solutions</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>API integration and
+                    cloud solutions
+                  </li>
                 </ul>
               </div>
 
@@ -321,32 +392,49 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
             </div>
@@ -370,32 +458,49 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
 
@@ -431,23 +536,31 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Penetration testing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Penetration testing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Risk management</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Risk management
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Data encryption and security</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Data encryption and
+                    security
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Compliance and regulation</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Compliance and
+                    regulation
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Security analytics</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Security analytics
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Network security</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Network security
+                  </li>
                 </ul>
               </div>
 
@@ -478,32 +591,49 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
             </div>
@@ -527,32 +657,49 @@ alt="Service Image"
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Perfect UX/UI designing</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Responsive and Reliable</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Scalable and well-formatted</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Easily and effectively navigated</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Digital Marketing and Branding</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Relevant content that sticks visitors</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Affordable and Pocket-friendly prices</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Fast load times and great performance</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
                   <li className="flex items-start">
-    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-    <span className="text-gray-600"></span>Optimized and Secure</li>
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
                 </ul>
               </div>
 
