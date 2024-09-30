@@ -49,12 +49,12 @@ const OurTeam = () => {
       </div>
 
       {/* Right Section (Team Cards) */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[50%] gap-1">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[40%]">
         <Swiper
           loop={true}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           // centeredSlides={true}
-          spaceBetween={50} // Increase space between the cards
+          // spaceBetween={50} // Increase space between the cards
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -66,15 +66,15 @@ const OurTeam = () => {
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 20,
             },
             1024: {
               slidesPerView: 2, // Decrease slides per view for more width
-              spaceBetween: 50, // More space between cards
+              spaceBetween: 20, // More space between cards
             },
             1280: {
               slidesPerView: 2, // Adjust to 2 slides to make them wider
-              spaceBetween: 60, // Increase space between slides
+              spaceBetween: 20, // Increase space between slides
             },
           }}
           modules={[Autoplay]}
@@ -82,16 +82,16 @@ const OurTeam = () => {
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className=" rounded-lg p-4 w-full max-w-[300px] mx-auto">
+              <div className=" rounded-lg p-4 w-full max-w-[400px] mx-auto bg-white text-center">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="mx-auto rounded-full mb-1 h-10 object-cover"
+                  className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
                 />
                 <h3 className="text-lg font-bold text-gray-800">
                   {member.name}
                 </h3>
-                <p className="text-yellow-500 mb-4">{member.title}</p>
+                <p className="text-yellow-500 mb-2 items-center">{member.title}</p>
                 <p className="text-gray-600 font-sans">{member.description}</p>
                 <div className="flex justify-center items-center mt-2">
                   <div className="flex justify-evenly w-[100px]">
