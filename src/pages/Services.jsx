@@ -185,7 +185,7 @@ const Services = () => {
 
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Innovative Web Design Experts
+                  Our Web design and development Services:
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
@@ -237,14 +237,39 @@ const Services = () => {
             </div>
             <div>
               <h2 className="text-3xl pb-7">
-                Importance of a Website for Business Growth
+                Why should every business need a website?
               </h2>
               <p>
-                A strong web presence is crucial for several important reasons,
-                some of which make it absolutely essential for your business. To
-                get the best results, you need the Best Web Design Company in
-                Kolkata, India—and you can fully trust Secwebxperts Technologies
-                Pvt. Ltd. to deliver.
+                There are several reasons for why you need a strong web
+                presence. Some of them are so prominent that they make your
+                online web presence of utmost importance. To get the best
+                results you need the Best Web Design Company in Kolkata, India
+                and for that you can absolutely trust on Secwebxperts
+                Technologies Pvt. Ltd. Here are some points why you need us
+                Popularity – Your web presence increases the visibility of your
+                business and hence makes it popular among your prospective
+                customers. Reach – Helps you markedly increase in reach and
+                attracts the attention of your customers towards your products
+                or services Increase Sales and Conversion – The more traffic and
+                reach, the more the chances of sales or conversion. Your website
+                is the first step toward your customers and a well-designed one
+                can drive more sales. Convenience for customers – Your website
+                offers a virtual tour of your services and solution. Hence makes
+                your customers aware of your products and solutions. It is
+                helpful for them to access the information about your services
+                whenever they need it. Availability all the time – Your website
+                makes your business or brand present around the clock in front
+                of the customers. The availability around the clock always helps
+                in generating more sales and conversion over the traditional
+                storefront. Increased Customer-base – Having your website helps
+                in a significant increase in customer base. It is easy for them
+                to contact you directly through your given contact details if
+                they liked your services. Targeted Audience – To save your money
+                and time, your web presence is the best option. It helps you in
+                communicating with the right audience. All things considered, we
+                are your best companion in making a customer-centric website for
+                you. Secwebxperts Technologies will serve you with top-notch
+                website designing and development services.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
@@ -318,11 +343,26 @@ const Services = () => {
             <h2 className="text-center text-3xl font-bold mb-6">
               MOBILE APP DEVELOPMENT
             </h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
-              We build secure, scalable, and fast mobile applications tailored
-              to your business needs. Our expertise includes cross-platform
-              development, performance optimization, and user-friendly
-              interfaces.
+            <p className="text-center text-gray-600  mx-auto mb-10">
+              We have customized our Mobile App Development Services in India
+              keeping in mind the user experience and Business need. Mobile and
+              iOS apps are the current trends. In today’s time, people are
+              always online and connected to their smart devices. The mobile has
+              engulfed the entire market with high processing speed and storage
+              like never before. Everyone is reluctant to open their laptop when
+              they can use their mobile to serve the purpose. Whether your
+              requirement is an Mobile app we have experienced software
+              engineers to deliver the app within time. Our developers are
+              well-versed in the responsiveness and design that fits every shape
+              and size of mobiles available. The team of Mobile app developers
+              are experienced with all development languages be it Kotlin, Java,
+              HTML, or CSS they are well versatile with the same. Mobile are
+              distinguishable features and face every vertical of business, be
+              it e-commerce or a complex one. These apps help the business reach
+              its own very hands. We at TP Digital Technologies understand the
+              value of every business and know-how that an app with superb
+              design sleek and fast performance can help to shape your business
+              to the next level.
             </p>
 
             {/* Mobile App Development Content */}
@@ -388,7 +428,7 @@ const Services = () => {
 
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Innovative Web Design Experts
+                  Our top-notch IOS App services include:
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">
@@ -518,14 +558,75 @@ const Services = () => {
 
         {activeTab === "cyber-security" && (
           <div id="cyber-security" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="text-center text-3xl font-bold mb-6">
-              CYBER SECURITY & ANALYTICS
-            </h2>
-            <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
-              Our cybersecurity services include penetration testing, risk
-              management, and data security. We ensure your business is
-              protected from cyber threats and vulnerabilities.
-            </p>
+            <div>
+              <h2 className="text-center text-3xl font-bold mb-6">
+                CYBER SECURITY & ANALYTICS
+              </h2>
+              <p className="text-center text-gray-600  mx-auto mb-10">
+                SecWebXperts offers comprehensive cybersecurity services,
+                including VAPT, penetration testing, system hardening, and data
+                leak testing. Our expert team uses advanced tools and
+                methodologies to protect your digital assets from threats. With
+                extensive experience and industry certifications, we ensure
+                robust security and resilience for your business’s critical
+                systems and data.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-center text-3xl font-bold mb-6">
+                Static Application Security Testing (SAST)
+              </h2>
+              <p className="text-center text-gray-600  mx-auto mb-10">
+                Static application security testing (SAST), or static analysis,
+                is a testing methodology that analyzes source code to find
+                security vulnerabilities that make your organization’s
+                applications susceptible to attack. SAST scans an application
+                before the code is compiled. It’s also known as white box
+                testing.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-center text-3xl font-bold mb-6">
+                Dynamic Application Security Testing (DAST)
+              </h2>
+              <p className="text-center text-gray-600  mx-auto mb-10">
+                Dynamic application security testing (DAST) is a method of
+                AppSec testing in which testers examine an application while
+                it’s running, but have no knowledge of the application’s
+                internal interactions or designs at the system level, and no
+                access or visibility into the source program. This “black box”
+                testing looks at an application from the outside in, examines
+                its running state, and observes its responses to simulated
+                attacks made by a testing tool. An application’s responses to
+                these simulations help determine whether the application is
+                vulnerable and could be susceptible to a real malicious attac
+                Find vulnerabilities with us before an attacker does.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-center text-3xl font-bold mb-6">
+                Application Programming Interface(API)
+              </h2>
+              <p className="text-center text-gray-600  mx-auto mb-10">
+                API testing is a type of software testing that involves testing
+                application programming interfaces (APIs) directly and as part
+                of integration testing to determine if they meet expectations
+                for functionality, reliability, performance, and security. Since
+                APIs lack a GUI, API testing is performed at the message layer.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-center text-3xl font-bold mb-6">
+                Android Penetration Testing (APT)
+              </h2>
+              <p className="text-center text-gray-600  mx-auto mb-10">
+                Android penetration testing is a process of finding security
+                vulnerabilities in an Android application by attacking it using
+                various methods and tools. This systematic approach searches for
+                weaknesses in an Android application, verifies its security and
+                makes sure it abides by security policies.
+              </p>
+            </div>
 
             {/* Cyber Security & Analytics Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -653,7 +754,8 @@ const Services = () => {
               {/* Left Side: Text Content */}
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Innovative Web Design Experts
+                  Why our service is one of the Best Mobile App Development
+                  Services in West Bengal ?
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li className="flex items-start">

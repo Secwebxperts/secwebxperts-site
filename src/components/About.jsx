@@ -74,7 +74,11 @@ const About = () => {
           {/* Mission and Vision Cards */}
           <div className=" flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
             {/* Our Mission Card */}
-            <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] ">
+            <motion.div
+              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] "
+              whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
+              transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
+            >
               <img
                 src="src/assets/mission.jpeg"
                 alt="Mission"
@@ -94,10 +98,14 @@ const About = () => {
                 READ MORE
                 <span className="ml-2">→</span>
               </a>
-            </div>
-
+            </motion.div>
             {/* Our Vision Card */}
-            <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm md:min-h-[500px]">
+            {/* < className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm md:min-h-[500px]"> */}
+            <motion.div
+              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px] "
+              whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
+              transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
+            >
               <img
                 src="src/assets/vision.jpeg"
                 alt="Vision"
@@ -117,7 +125,7 @@ const About = () => {
                 READ MORE
                 <span className="ml-2">→</span>
               </a>
-            </div>
+            </motion.div>{" "}
           </div>
         </div>
       </div>
