@@ -62,9 +62,9 @@ const Services = () => {
             Mobile App Development
           </button>
           <button
-            onClick={() => setActiveTab("mobile-app")}
+            onClick={() => setActiveTab("sass")}
             className={`${
-              activeTab === "mobile-app"
+              activeTab === "sass"
                 ? "text-orange-500 font-semibold"
                 : "text-gray-600"
             }`}
@@ -342,6 +342,224 @@ const Services = () => {
           <div id="mobile-app" className="w-full max-w-[1200px] mx-auto">
             <h2 className="text-center text-3xl font-bold mb-6">
               MOBILE APP DEVELOPMENT
+            </h2>
+            <p className="text-center text-gray-600  mx-auto mb-10">
+              We have customized our Mobile App Development Services in India
+              keeping in mind the user experience and Business need. Mobile and
+              iOS apps are the current trends. In today’s time, people are
+              always online and connected to their smart devices. The mobile has
+              engulfed the entire market with high processing speed and storage
+              like never before. Everyone is reluctant to open their laptop when
+              they can use their mobile to serve the purpose. Whether your
+              requirement is an Mobile app we have experienced software
+              engineers to deliver the app within time. Our developers are
+              well-versed in the responsiveness and design that fits every shape
+              and size of mobiles available. The team of Mobile app developers
+              are experienced with all development languages be it Kotlin, Java,
+              HTML, or CSS they are well versatile with the same. Mobile are
+              distinguishable features and face every vertical of business, be
+              it e-commerce or a complex one. These apps help the business reach
+              its own very hands. We at TP Digital Technologies understand the
+              value of every business and know-how that an app with superb
+              design sleek and fast performance can help to shape your business
+              to the next level.
+            </p>
+
+            {/* Mobile App Development Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              {/* Left Side: Text Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Comprehensive Mobile App Services
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>iOS and Android
+                    development
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Cross-platform
+                    solutions
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Secure app
+                    infrastructure
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>User-friendly UI/UX
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Performance
+                    optimization
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>API integration and
+                    cloud solutions
+                  </li>
+                </ul>
+              </div>
+
+              {/* Right Side: Images */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-24">
+              {/* Left Side: Text Content */}
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Our top-notch IOS App services include:
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl pb-7">
+                Importance of a Website for Business Growth
+              </h2>
+              <p>
+                A strong web presence is crucial for several important reasons,
+                some of which make it absolutely essential for your business. To
+                get the best results, you need the Best Web Design Company in
+                Kolkata, India—and you can fully trust Secwebxperts Technologies
+                Pvt. Ltd. to deliver.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
+              {/* Left Side: Text Content */}
+              <div>
+                <h3 className="text-xl font-semibold mb-4">
+                  Innovative Web Design Experts
+                </h3>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Perfect UX/UI
+                    designing
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Responsive and
+                    Reliable
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Scalable and
+                    well-formatted
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Easily and
+                    effectively navigated
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Digital Marketing and
+                    Branding
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Relevant content that
+                    sticks visitors
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Affordable and
+                    Pocket-friendly prices
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Fast load times and
+                    great performance
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="text-gray-600"></span>Optimized and Secure
+                  </li>
+                </ul>
+              </div>
+
+              {/* Right Side: Image */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+{activeTab === "sass" && (
+          <div id="sass" className="w-full max-w-[1200px] mx-auto">
+            <h2 className="text-center text-3xl font-bold mb-6">
+              SASS
             </h2>
             <p className="text-center text-gray-600  mx-auto mb-10">
               We have customized our Mobile App Development Services in India

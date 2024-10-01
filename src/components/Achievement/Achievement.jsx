@@ -94,10 +94,11 @@ const Achievements = () => {
             </a>
             .
           </p>
-          <ul className="list-disc list-inside py-8 px-2">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+          <ul className="list-disc list-inside py-8 px-2 font-bold">
+            <li>CVE-2023-2594 CVE-2023-3605</li>
+            <li>CVE-2023-1024 CVE-2023-1028</li>
+            <li>CVE-2022-3546 CVE-2022-3548</li>
+            <li>CVE-2022-3549 CVE-2022-4281</li>
           </ul>
         </div>
       </div>
