@@ -165,7 +165,7 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="src/assets/Group1000001287.png"
+                  src="/Group1000001287.png"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
@@ -177,7 +177,7 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="src/assets/Group1000001291.png"
+                  src="/Group1000001291.png"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
@@ -348,7 +348,7 @@ const Services = () => {
               {/* Right Side: Images */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                 src="/Group1000001291.png"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
                 />
@@ -360,8 +360,8 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
-                  alt="Service Image"
+    src="/Group1000001291.png"
+alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
@@ -453,8 +453,8 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
-                  alt="Service Image"
+  src="/Group1000001291.png"
+alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
@@ -464,7 +464,7 @@ const Services = () => {
 
         {activeTab === "sass" && (
           <div id="sass" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="text-center text-3xl font-bold mb-6">SASS</h2>
+            <h2 className="text-center text-3xl font-bold mb-6">SAAS</h2>
             <p className="text-center text-gray-600  mx-auto mb-10">
               At SecWebXperts, we provide expert SaaS development services,
               helping businesses transform with scalable, efficient, and secure
@@ -540,8 +540,8 @@ const Services = () => {
               {/* Right Side: Images */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                  alt="Service Image"
+src="/Group1000001291.png"
+alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
                 />
               </div>
@@ -552,8 +552,8 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
-                  alt="Service Image"
+src="/Group1000001291.png"
+alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
               </div>
@@ -726,7 +726,7 @@ const Services = () => {
               {/* Right Side: Images */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="src/assets/cve.jpg"
+                  src="/cve.jpg"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
@@ -741,143 +741,3 @@ const Services = () => {
 
 export default Services;
 
-// <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 my-24">
-// {/* Left Side: Text Content */}
-
-// {/* Right Side: Image */}
-// <div className="flex justify-center lg:justify-end">
-//   <img
-//     src="src/assets/cve.jpg"
-//     alt="Service Image"
-//     className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
-//   />
-// </div>
-
-// <div>
-//   <h3 className="text-xl font-semibold mb-4">
-//     Innovative Web Design Experts
-//   </h3>
-//   <ul className="list-disc list-inside text-gray-600 space-y-2">
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Perfect UX/UI
-//       designing
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Responsive and
-//       Reliable
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Scalable and
-//       well-formatted
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Easily and
-//       effectively navigated
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Digital Marketing and
-//       Branding
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Relevant content that
-//       sticks visitors
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Affordable and
-//       Pocket-friendly prices
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Fast load times and
-//       great performance
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Optimized and Secure
-//     </li>
-//   </ul>
-// </div>
-// </div>
-// <div>
-// <h2 className="text-3xl pb-7">
-//   Importance of a Website for Business Growth
-// </h2>
-// <p>
-//   A strong web presence is crucial for several important reasons,
-//   some of which make it absolutely essential for your business. To
-//   get the best results, you need the Best Web Design Company in
-//   Kolkata, India—and you can fully trust Secwebxperts Technologies
-//   Pvt. Ltd. to deliver.
-// </p>
-// </div>
-// <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24">
-// {/* Left Side: Text Content */}
-// <div>
-//   <h3 className="text-xl font-semibold mb-4">
-//     Why our service is one of the Best Mobile App Development
-//     Services in West Bengal ?
-//   </h3>
-//   <ul className="list-disc list-inside text-gray-600 space-y-2">
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Perfect UX/UI
-//       designing
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Responsive and
-//       Reliable
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Scalable and
-//       well-formatted
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Easily and
-//       effectively navigated
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Digital Marketing and
-//       Branding
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Relevant content that
-//       sticks visitors
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Affordable and
-//       Pocket-friendly prices
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Fast load times and
-//       great performance
-//     </li>
-//     <li className="flex items-start">
-//       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-//       <span className="text-gray-600"></span>Optimized and Secure
-//     </li>
-//   </ul>
-// </div>
-
-// {/* Right Side: Image */}
-// <div className="flex justify-center lg:justify-end">
-//   <img
-//     src="https://media.gettyimages.com/id/74292099/photo/unspecified-photo-of-queen-photo-by-michael-ochs-archives-getty-images.jpg?s=612x612&w=0&k=20&c=v3K3zxFVWWMHlcwmEKfFA5hR8pCbZJBkd-zjv51cBUU="
-//     alt="Service Image"
-//     className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
-//   />
-// </div>
-// </div>

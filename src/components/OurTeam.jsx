@@ -9,7 +9,7 @@ const teamMembers = [
     title: "Director",
     description:
       "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-    image: "src/assets/teamMember/Director.jpeg ", // Replace with actual image path
+    image: "/teamMember/Director.jpeg ", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -17,7 +17,7 @@ const teamMembers = [
     title: "CEO",
     description:
       "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-    image: "src/assets/teamMember/ceo.png", // Replace with actual image path
+    image: "/teamMember/ceo.png", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -25,7 +25,7 @@ const teamMembers = [
     title: "COO",
     description:
       "Overseeing daily operations, managing team performance, and driving company objectives.",
-    image: "src/assets/teamMember/COO.jpeg", // Replace with actual image path
+    image: "/teamMember/COO.jpeg", // Replace with actual image path
     linkedin: "#",
   },
 ];

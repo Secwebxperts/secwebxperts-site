@@ -6,11 +6,11 @@ import "./Achievement.css"; // If you have any custom CSS
 
 const Achievements = () => {
   const achievements = [
-    { logo: "src/assets/achievement/frame 1.png" },
-    { logo: "src/assets/achievement/frame 2.png" },
-    { logo: "src/assets/achievement/frame 3.png" },
-    { logo: "src/assets/achievement/frame 4.png" },
-    { logo: "src/assets/achievement/frame 5.png" },
+    { logo: "/achievement/frame 1.png" },
+    { logo: "/achievement/frame 2.png" },
+    { logo: "/achievement/frame 3.png" },
+    { logo: "/achievement/frame 4.png" },
+    { logo: "/achievement/frame 5.png" },
   ];
 
   return (
@@ -71,7 +71,7 @@ const Achievements = () => {
         {/* Left Image Section */}
         <div className="lg:w-1/2 w-full ml-0">
           <img
-            src="src/assets/cve.jpg"
+            src="/cve.jpg"
             alt="Cyber Security"
             className="max-w-full lg:max-w-[90%] lg:max-h-[50%] object-contain"
           />

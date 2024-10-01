@@ -65,7 +65,7 @@ export default function Navbar() {
             <span className="sr-only">Your Company</span>
             <img
               alt="Logo"
-              src="src/assets/logo.png"
+              src="/logo.png"
               className="h-14 w-auto rounded-full"
             />
           </Link>
@@ -155,7 +155,7 @@ export default function Navbar() {
               <span className="sr-only">SecWebXperts</span>
               <img
                 alt=""
-                src="src/assets/first logo.png"
+                src="/logo.png"
                 className="h-8 w-auto"
               />
             </Link>

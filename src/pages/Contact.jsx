@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">
       {/* Header Section */}
-      <div className="w-full text-center py-40 bg-[url('assets/contact/bg.jpg')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
+      <div className="w-full text-center py-40 bg-[url('/contact/bg.jpg')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
         <h1 className="text-4xl font-bold text-orange-500">
           How Can We Help You?
         </h1>
@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="relative w-full h-[300px] lg:h-[400px]">
             <img
-              src="src/assets/contact/model.jpg" // Replace with the actual image
+              src="/contact/model.jpg" // Replace with the actual image
               alt="Customer Support"
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
