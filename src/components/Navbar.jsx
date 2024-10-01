@@ -84,7 +84,7 @@ export default function Navbar() {
           <Link className="text-lg font-bold leading-6 text-gray-900">About</Link>
           <Link className="text-lg font-bold leading-6 text-gray-900">Our Team</Link>
           <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link>
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
               Services
               <ChevronDownIcon
@@ -132,7 +132,7 @@ export default function Navbar() {
                 ))}
               </div>
             </PopoverPanel>
-          </Popover>
+          </Popover> */}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
@@ -151,7 +151,7 @@ export default function Navbar() {
         <div className="fixed z-50" />
         <DialogPanel className="fixed inset-y-1 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">SecWebXperts</span>
               <img
                 alt=""
@@ -171,25 +171,25 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Our team
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portfolio
-                </a>
-                <Disclosure as="div" className="-mx-3">
+                </Link>
+                {/* <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50">
                     Services
                     <ChevronDownIcon
@@ -209,7 +209,13 @@ export default function Navbar() {
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
-                </Disclosure>
+                </Disclosure> */}
+                <Link
+                  to="/contact"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Contact
+                </Link>
               </div>
             </div>
           </div>

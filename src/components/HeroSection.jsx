@@ -186,7 +186,7 @@ const Herosection = () => {
           {/* Inner Orbit Logo */}
           <div className="absolute w-full h-full flex items-center justify-center">
             <div className="inner-orbit-logo absolute w-17 h-17 md:w-12 md:h-12 transform">
-              <div className=" bg-white rounded-full flex justify-center items-center inner-orbit-logo absolute  w-15 h-15 md:w-10 md:h-10 transform ">
+              <div className=" bg-white rounded-full flex justify-center items-center inner-orbit-logo absolute  w-20 h-20 md:w-15 md:h-15 transform ">
                 <h3 className="text-blue-500 font-bold object-contain justify-center items-center">
                   Clients <br /> 20+
                 </h3>
