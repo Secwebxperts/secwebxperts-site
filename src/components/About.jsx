@@ -3,13 +3,14 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section>
-      <section className="py-12 max-w-[1350px] mx-auto bg-[#FFFFFF]">
+      <section className="py-12 max-w-[1350px] mx-auto bg-[#FFFFFF] h-auto">
         <div className="container mx-auto text-center">
           <div className="flex flex-col md:flex-row justify-between">
             {/* Title */}
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              THE LANDINGFOLIO FACTS
-            </h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+  THE LANDINGFOLIO FACTS
+</h2>
+
             {/* Subtext */}
             <div className="flex justify-center items-start mb-8 space-x-8">
               <ul className="text-left text-gray-600">

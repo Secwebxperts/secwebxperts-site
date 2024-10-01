@@ -10,7 +10,7 @@ import Services from "./pages/Services";
 const App = () => {
   return (
     <Router>
-      <div className="h-auto containers">
+      <div >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

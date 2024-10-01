@@ -74,18 +74,56 @@ const Herosection = () => {
   useEffect(() => {
     const animateLogos = setInterval(() => {
       const outerLogos = document.querySelectorAll(".outer-orbit-logo");
-      outerLogos.forEach((logo, index) => {
-        const angle =
-          ((index / outerLogos.length) * 360 + Date.now() / 50) % 360;
-        const outerRadius = window.innerWidth < 768 ? 120 : 192;
-        const x = outerRadius * Math.cos((angle * Math.PI) / 180);
-        const y = outerRadius * Math.sin((angle * Math.PI) / 180);
+      const innerLogo = document.querySelector(".inner-orbit-logo");
+
+      const updateOrbit = (logo, index, orbitRadius, speed) => {
+        const angle = ((index / outerLogos.length) * 360 + Date.now() / speed) % 360;
+        const x = orbitRadius * Math.cos((angle * Math.PI) / 180);
+        const y = orbitRadius * Math.sin((angle * Math.PI) / 180);
         logo.style.transform = `translate(${y}px, ${x}px)`;
+      };
+
+      outerLogos.forEach((logo, index) => {
+        const windowWidth = window.innerWidth;
+        let orbitRadius = 192;
+
+        // Set specific orbit sizes based on device width
+        if (windowWidth <= 375) { // iPhone eXpensive portrait, iPhone 6-8 portrait
+          orbitRadius = 140;
+        } else if (windowWidth <= 412) { // Pixel 2 portrait, iPhone 6-8 Plump portrait
+          orbitRadius = 140;
+        } else if (windowWidth <= 667) { // iPhone 6-8 landscape
+          orbitRadius = 140;
+        } else if (windowWidth <= 734 || windowWidth <= 736) { // iPhone eXpensive landscape, iPhone 6-8 Plump landscape
+          orbitRadius = 140;
+        } else if (windowWidth <= 768) { // Tablets
+          orbitRadius = 180;
+        } else {
+          orbitRadius = 192;
+        }
+
+        updateOrbit(logo, index, orbitRadius, 50);
       });
 
-      const innerLogo = document.querySelector(".inner-orbit-logo");
+      // Inner logo
       const angleInner = (Date.now() / 70) % 360;
-      const innerRadius = window.innerWidth < 768 ? 80 : 130;
+      const windowWidth = window.innerWidth;
+      let innerRadius = 300;
+
+      if (windowWidth <= 375) {
+        innerRadius = 90;
+      } else if (windowWidth <= 412) {
+        innerRadius = 100;
+      } else if (windowWidth <= 667) {
+        innerRadius = 104;
+      } else if (windowWidth <= 734 || windowWidth <= 736) {
+        innerRadius = 100;
+      } else if (windowWidth <= 768) {
+        innerRadius = 130;
+      } else {
+        innerRadius = 145;
+      }
+
       const xInner = innerRadius * Math.cos((angleInner * Math.PI) / 180);
       const yInner = innerRadius * Math.sin((angleInner * Math.PI) / 180);
       innerLogo.style.transform = `translate(${yInner}px, ${xInner}px)`;
@@ -95,10 +133,11 @@ const Herosection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-purple-200  flex items-center justify-center h-auto"> {/* Adjust 'mt-[100px]' based on the actual navbar height */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-28 md:space-y-0 mx-auto w-full  px-4 mt-[100px]">
-        <div className="mb-8 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px] font-poppins">
+<section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[40px]" style={{padding:'70px'}}>
+        {/* Text Section */}
+        <div className="mb-8 md:mb-0 text-center md:text-left">
+          <h1 className="text-3xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px] font-poppins">
             Making Service Simple and Excellent
           </h1>
           <p className="text-gray-800 mt-4 max-w-lg font-bold leading-relaxed">
@@ -110,12 +149,16 @@ const Herosection = () => {
             Book an Appointment
           </button>
         </div>
+
+        {/* Solar Animation Section */}
         <div className="relative flex items-center justify-center">
-          <div className="absolute w-96 h-96 border-2 border-gray-300 rounded-full p-[49px]">
-            <div className="absolute w-72 h-72 border-2 border-gray-300 rounded-full"></div>
+          {/* Outer and Inner Orbits */}
+          <div className="absolute w-72 h-72 md:w-96 md:h-96 border-2 border-gray-300 rounded-full p-[39px] md:p-[49px]">
+            <div className="absolute w-52 h-52 md:w-72 md:h-72 border-2 border-gray-300 rounded-full"></div>
           </div>
 
-          <div className="relative w-28 h-28 rounded-full bg-white shadow-lg z-10">
+          {/* Center Image */}
+          <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full bg-white shadow-lg z-10">
             <img
               src={centerImages[currentCenterImage].src}
               alt={centerImages[currentCenterImage].alt}
@@ -123,11 +166,12 @@ const Herosection = () => {
             />
           </div>
 
+          {/* Outer Orbit Logos */}
           <div className="absolute w-full h-full flex items-center justify-center">
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-                className="outer-orbit-logo absolute w-12 h-12 transform"
+                className="outer-orbit-logo absolute w-8 h-8 md:w-12 md:h-12 transform"
                 style={{ filter: `drop-shadow(0 0 28px ${logo.shadowColor})` }}
               >
                 <img
@@ -139,12 +183,12 @@ const Herosection = () => {
             ))}
           </div>
 
+          {/* Inner Orbit Logo */}
           <div className="absolute w-full h-full flex items-center justify-center">
-            <div className="inner-orbit-logo absolute w-12 h-12 transform">
-              <div className="h-20 w-20 bg-white rounded-full flex justify-center items-center">
-                <h3 className="text-blue-500 font-bold">
-                  Clients <br />
-                  20+
+            <div className="inner-orbit-logo absolute w-17 h-17 md:w-12 md:h-12 transform">
+              <div className=" bg-white rounded-full flex justify-center items-center inner-orbit-logo absolute  w-15 h-15 md:w-10 md:h-10 transform ">
+                <h3 className="text-blue-500 font-bold object-contain justify-center items-center">
+                  Clients <br /> 20+
                 </h3>
               </div>
             </div>
