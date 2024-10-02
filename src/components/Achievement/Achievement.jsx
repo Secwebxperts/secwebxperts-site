@@ -15,13 +15,14 @@ const Achievements = () => {
 
   return (
     <>
+
       <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-10px]">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
           Some of our Achievements
-        </h2>
-        <p className="text-center text-gray-500 mb-10">
-          Secwebxperts team participated in security responsible programs and
-          received honors from reputed organizations.
+
+        <p className="text-center text-gray-500 mb-10 text-xl">
+          Secwebxperts team participated in security responsible programs and{" "}
+          <br /> received honors from reputed organizations.
         </p>
 
         {/* Swiper for sliding cards */}
@@ -94,7 +95,7 @@ const Achievements = () => {
             </a>
             .
           </p>
-          <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600" >
+          <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
             <li>CVE-2023-2594 CVE-2023-3605</li>
             <li>CVE-2023-1024 CVE-2023-1028</li>
             <li>CVE-2022-3546 CVE-2022-3548</li>
