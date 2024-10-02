@@ -20,7 +20,7 @@ const ServiceSection = () => {
             transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
           >
             <img
-              src="/src/assets/serviceImages/1.png"
+              src="/serviceImages/1.png"
               alt="Web Development"
               className="mx-auto mb-4 w-[188px] h-[150px] object-cover"
             />
@@ -29,7 +29,7 @@ const ServiceSection = () => {
               Build responsive and dynamic websites with modern technologies.
             </p>
             <Link
-              to="/services/web-development"
+              to="/web-development"
               className="text-blue-600 hover:underline"
             >
               Learn More →
@@ -42,7 +42,7 @@ const ServiceSection = () => {
             transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
           >
             <img
-              src="/src/assets/serviceImages/3.png"
+              src="/serviceImages/3.png"
               alt="Mobile App Development"
               className="mx-auto mb-4 w-[145px] h-[150px] object-cover "
             />
@@ -53,7 +53,7 @@ const ServiceSection = () => {
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
             <Link
-              to="/services/mobile-app-development"
+              to="/mobile-app-development"
               className="text-blue-600 hover:underline"
             >
               Learn More →
@@ -66,7 +66,7 @@ const ServiceSection = () => {
             transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
           >
             <img
-              src="/src/assets/serviceImages/2.png"
+              src="/serviceImages/2.png"
               alt="Cyber Security"
               className="mx-auto mb-4 w-[166px] h-[150px] object-cover"
             />

@@ -7,25 +7,24 @@ const teamMembers = [
   {
     name: "Hem Chandra Paira",
     title: "Director",
-    description:
-      "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-    image: "src/assets/teamMember/Director.jpeg ", // Replace with actual image path
+    description:"30+ field experience, Financial analyst",
+    image: "/teamMember/Director.jpeg ", // Replace with actual image path
     linkedin: "#",
   },
   {
     name: "Sathya Sachi Paira",
     title: "CEO",
     description:
-      "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-    image: "src/assets/teamMember/ceo.png", // Replace with actual image path
-    linkedin: "#",
+      "Leading the team, making strategic decisions, driving growth",
+    image: "/teamMember/ceo.png", // Replace with actual image path
+    linkedin: "/icon/linkdlnIcon.jpg",
   },
   {
     name: "Sabya Sachi Paira",
     title: "COO",
     description:
-      "Overseeing daily operations, managing team performance, and driving company objectives.",
-    image: "src/assets/teamMember/COO.jpeg", // Replace with actual image path
+      "Overseeing daily operations, managing team performance",
+    image: "/teamMember/COO.jpeg", // Replace with actual image path
     linkedin: "#",
   },
 ];

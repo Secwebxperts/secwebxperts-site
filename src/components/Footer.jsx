@@ -8,13 +8,13 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('src/assets/Vector.jpg')]">
+    <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('/Vector.jpg')]">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start px-6 md:px-0">
         {/* Logo and Description */}
         <div className="flex flex-col mb-8 md:mb-0">
           <div className="flex items-center mb-4">
             <img
-              src="src/assets/first logo.png"
+              src="/logo.png"
               alt="SecWebxperts"
               className="h-10 mr-3"
             />
@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="mb-8 md:mb-0">
           <div>
             <div className="flex">
-              <img src="src/assets/adthe.png" className="mr-2 h-6 w-6 mt-1" />
+              <img src="/adthe.png" className="mr-2 h-6 w-6 mt-1" />
               <h3 className="font-semibold mb-3">Customer Help Email</h3>
             </div>
             <p className="flex items-center mb-2 px-8">info@secwebxperts.com</p>
@@ -63,14 +63,14 @@ const Footer = () => {
           <div>
             <div className="flex">
               {" "}
-              <img src="src/assets/call.png" className="mr-2 h-6 w-6 mt-1"/>
+              <img src="/call.png" className="mr-2 h-6 w-6 mt-1"/>
               <h3 className="font-semibold mb-3">Customer Help Number</h3>
             </div>
             <p className="flex items-center mb-2 px-8">+91 7001008582</p>
           </div>
           <div>
             <div className="flex">
-            <img src="src/assets/action.png" className="mr-2 h-6 w-6 mt-1" />
+            <img src="/action.png" className="mr-2 h-6 w-6 mt-1" />
             <h3 className="font-semibold mb-3">Office Hours</h3>
             </div>
             <p className="flex items-center mb-2 px-8">
@@ -89,8 +89,8 @@ const Footer = () => {
             Reserved
           </p>
           <div className="flex space-x-4">
-            <FaLinkedin size={24} />
-            <FaTwitter size={24} />
+            <FaLinkedin size={30} />
+           <img src="/Vector (1).png" className="h-[28px] w-[27px"></img>
           </div>
         </div>
       </div>

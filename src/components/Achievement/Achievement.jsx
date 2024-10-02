@@ -6,19 +6,20 @@ import "./Achievement.css"; // If you have any custom CSS
 
 const Achievements = () => {
   const achievements = [
-    { logo: "src/assets/achievement/frame 1.png" },
-    { logo: "src/assets/achievement/frame 2.png" },
-    { logo: "src/assets/achievement/frame 3.png" },
-    { logo: "src/assets/achievement/frame 4.png" },
-    { logo: "src/assets/achievement/frame 5.png" },
+    { logo: "/achievement/frame 1.png" },
+    { logo: "/achievement/frame 2.png" },
+    { logo: "/achievement/frame 3.png" },
+    { logo: "/achievement/frame 4.png" },
+    { logo: "/achievement/frame 5.png" },
   ];
 
   return (
     <>
-      <div className=" py-16 mx-auto mt-[-35px] bg-[url('src/assets/bgimg/curvimg.png')]  bg-contain  bg-no-repeat ">
-        <h2 className="text-[36px]  text-center text-[#FF9D00] mb-4 font-[600]">
-          SOME OF OUR ACHIVEMENTS
-        </h2>
+
+      <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-10px]">
+        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
+          Some of our Achievements
+
         <p className="text-center text-gray-500 mb-10 text-xl">
           Secwebxperts team participated in security responsible programs and{" "}
           <br /> received honors from reputed organizations.
@@ -71,7 +72,7 @@ const Achievements = () => {
         {/* Left Image Section */}
         <div className="lg:w-1/2 w-full ml-0">
           <img
-            src="src/assets/cve.jpg"
+            src="/cve.jpg"
             alt="Cyber Security"
             className="max-w-full lg:max-w-[90%] lg:max-h-[50%] object-contain"
           />

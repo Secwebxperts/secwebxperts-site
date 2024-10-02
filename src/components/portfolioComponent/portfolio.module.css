@@ -1,31 +1,10 @@
-
-
-.carousel div {
-  transform-style: preserve-3d;
-}
 .container {
   margin: 0 auto;
-  width: 90vw; /* Responsive width based on the viewport */
-  height: 50vh; /* Responsive height based on the viewport */
-  max-width: 600px; /* Maximum width */
-  max-height: 500px; /* Maximum height */
+  width: 250px;
+  height: 200px;
   position: relative;
   perspective: 1000px;
-}
-
-/* For larger screens (tablets and up) */
-@media (min-width: 768px) {
-  .container {
-    width: 70vw;
-    height: 60vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 50vw;
-    height: 70vh;
-  }
+  padding: 20px;;
 }
 
 .carousel {
@@ -35,17 +14,18 @@
   transform-style: preserve-3d;
   transition: transform 1s;
 }
+.carousel div {
+  transform-style: preserve-3d;
+}
 
 .item {
   display: block;
   position: absolute;
   background: #000;
-  width: 80vw;
-  max-width: 300px;
-  height: 50vh;
-  max-height: 500px;
+  width: 350px;
+  height: 525px;
   line-height: 200px;
-  font-size: 2em;
+  font-size: 5em;
   text-align: center;
   color: #fff;
   opacity: 1;
@@ -53,7 +33,6 @@
   transition: transform 1s;
 }
 
-/* 3D Transformations */
 .a {
   transform: rotateY(0deg) translateZ(250px);
 }
@@ -77,5 +56,3 @@
 .f {
   transform: rotateY(300deg) translateZ(250px) rotateY(-300deg);
 }
-
-
