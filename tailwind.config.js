@@ -7,11 +7,9 @@ export default {
         customYellow: "#FF9D00",
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
   plugins: [],
 };
-
-

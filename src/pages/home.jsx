@@ -2,7 +2,7 @@ import About from "../components/About";
 import Achievements from "../components/Achievement/Achievement";
 import Herosection from "../components/HeroSection";
 import OurTeam from "../components/OurTeam";
-import Carousel from "../components/portfolioComponent/Portfolio";
+// import Carousel from "../components/portfolioComponent/Portfolio";
 import ServiceSection from "../components/Services";
 
 const Home = () => {

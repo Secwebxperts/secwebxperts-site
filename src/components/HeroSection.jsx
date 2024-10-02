@@ -3,24 +3,29 @@ import { useState, useEffect } from "react";
 const Herosection = () => {
   const outerOrbitLogos = [
     {
-      src: "/solerIcon/Background+Shadow.png",
+      src: "https://cdn-icons-png.flaticon.com/512/6119/6119533.png",
       alt: "IOT",
+      shadowColor: "#4285F4",
     },
     {
-      src: "/solerIcon/Background+Shadow1.png",
+      src: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
       alt: "React",
+      shadowColor: "#61DAFB",
     },
     {
-      src: "/solerIcon/Background+Shadow3.png",
+      src: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
       alt: "Node",
+      shadowColor: "#8CC84B",
     },
     {
-      src: "/solerIcon/Background+Shadow4.png",
+      src: "https://e7.pngegg.com/pngimages/620/322/png-clipart-angularjs-ruby-on-rails-typescript-web-application-icon-hacker-angle-triangle.png",
       alt: "Angular",
+      shadowColor: "#DD0031",
     },
     {
-      src: "/solerIcon/Background+Shadow5.png",
+      src: "https://cdn-icons-png.flaticon.com/512/2091/2091665.png",
       alt: "Blockchain",
+      shadowColor: "#F7931A",
     },
   ];
 
@@ -31,7 +36,7 @@ const Herosection = () => {
 
   const centerImages = [
     {
-      src: "/solerIcon/Mask group.png",
+      src: "https://static-00.iconduck.com/assets.00/php-icon-2048x2048-zjxns1zh.png",
       alt: "PHP Icon",
     },
     {
@@ -148,10 +153,10 @@ const Herosection = () => {
       >
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px] font-poppins">
-            Making Service Simple and Excellent
+          <h1 className="text-[50px] font-[700] text-[#FF9D00] leading-snug md:leading-[70px] font-poppins">
+            Making Service <br /> Simple and Excellent
           </h1>
-          <p className="text-gray-800 mt-4 max-w-lg font-bold leading-relaxed ">
+          <p className="text-[#1C1C1C] mt-4 font-[500] text-[16px] leading-[30px] tracking-wider max-w-[36rem]">
             Our goal is to make service simple without compromising on quality,
             offering a hassle-free experience that consistently meets your
             expectations and needs.
@@ -182,7 +187,7 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-                className="outer-orbit-logo absolute w-15 h-15 md:w-15 md:h-15 transform"
+                className="outer-orbit-logo absolute w-8 h-8 md:w-12 md:h-12 transform"
                 style={{ filter: `drop-shadow(0 0 28px ${logo.shadowColor})` }}
               >
                 <img
