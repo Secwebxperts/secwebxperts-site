@@ -7,9 +7,9 @@ const About = () => {
         <div className="container mx-auto text-center">
           <div className="flex flex-col md:flex-row justify-between">
             {/* Title */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-  THE LANDINGFOLIO FACTS
-</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl leading-[54px] font-bold text-gray-800 mb-6">
+              THE LANDINGFOLIO FACTS
+            </h2>
 
             {/* Subtext */}
             <div className="flex justify-center items-start mb-8 space-x-8">
@@ -33,8 +33,10 @@ const About = () => {
               whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
+
               <h3 className="text-4xl font-bold text-[#FF9D00]">20+</h3>
               <p className="text-[#1C1C1C] mt-2 font-poppins">Total Projects</p>
+
             </motion.div>
 
             {/* Total Clients */}
@@ -43,8 +45,10 @@ const About = () => {
               whileHover={{ scale: 1.1, x: 10 }} // Scale and slide right on hover
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
+
               <h3 className="text-4xl font-bold text-[#FF9D00]">10+</h3>
               <p className="text-[#1C1C1C] mt-2 font-poppins">Total Clients</p>
+
             </motion.div>
 
             {/* Customer Satisfaction */}
@@ -53,8 +57,10 @@ const About = () => {
               whileHover={{ scale: 1.05, y: -10 }} // Scale and slide up on hover
               transition={{ type: "spring", damping: 10 }} // Spring with more damping for a smooth effect
             >
+
               <h3 className="text-4xl font-bold text-[#FF9D00]">98.29%</h3>
               <p className="text-[#1C1C1C] mt-2 font-poppins">Customer Satisfaction Rate</p>
+
             </motion.div>
           </div>
         </div>
@@ -62,10 +68,12 @@ const About = () => {
       <div className="bg-[#F0F0F0] py-16 ">
         <div className="container px-4 text-center max-w-[1350px] mx-auto">
           {/* About Section Title */}
+
           <h1 className="text-5xl font-bold text-[#FF9D00] mb-6">ABOUT</h1>
 
           {/* Description */}
           <p className="text-[#546E7A] max-w-4xl mx-auto mb-12 text-[16px]  font-poppins">
+
             Secwebxperts is a team of IT professionals providing top-notch
             website and mobile app development, cybersecurity, and web design.
             Founded 1.2 years ago, our expertise includes VAPT, penetration
@@ -81,7 +89,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
               <img
-                src="/mission.jpeg"
+                src="public/mission.jpeg"
                 alt="Mission"
                 className="mx-auto mb-4"
               />
@@ -94,7 +102,7 @@ const About = () => {
               </p>
               {/* <a
                 href="#"
-                className="text-orange-500 font-bold hover:underline flex items-center justify-center"
+                className="text-customYellow font-bold hover:underline flex items-center justify-center"
               >
                 READ MORE
                 <span className="ml-2">→</span>
@@ -108,7 +116,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
               <img
-                src="/vision.jpeg"
+                src="public/vision.jpeg"
                 alt="Vision"
                 className="mx-auto mb-4"
               />
@@ -121,7 +129,7 @@ const About = () => {
               </p>
               {/* <a
                 href="#"
-                className="text-orange-500 font-bold hover:underline flex items-center justify-center"
+                className="text-customYellow font-bold hover:underline flex items-center justify-center"
               >
                 READ MORE
                 <span className="ml-2">→</span>

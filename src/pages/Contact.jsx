@@ -4,15 +4,15 @@ const Contact = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">
       {/* Header Section */}
-      <div className="w-full text-center py-20 bg-[url('/contact/Frame6.png')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
-        <h1 className="text-4xl font-bold text-orange-500">
+      <div className="w-full text-center py-32 bg-[url('/contact/Frame6.png')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
+        <h1 className="text-4xl font-bold text-customYellow ">
           How Can We Help You?
         </h1>
         <div className="flex justify-center mt-6">
           <div className="relative w-full max-w-md">
             <input
               type="text"
-              className="w-full px-5 py-3 text-sm border border-gray-300 rounded-full focus:outline-none shadow-md"
+              className="bg-black  w-full px-5 py-3 text-sm text-white rounded-full focus:outline-none shadow-md"
               placeholder="Search"
             />
             <button className="absolute inset-y-0 right-0 flex items-center pr-5">
@@ -20,7 +20,7 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <p className="text-gray-500 mt-4">
+        <p className="text-[##1C1C1C] mt-4 text-[16px]">
           Secwebxperts Support / Submit a Request
         </p>
       </div>
@@ -40,7 +40,7 @@ const Contact = () => {
 
         {/* Form */}
         <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-8">
-          <h2 className=" font-Poppins font-bold	 text-[#1E2D4D] mb-6">
+          <h2 className=" font-Poppins font-semibold text-[#1E2D4D] mb-6 text-3xl">
             Talk To us
           </h2>
           <form className="space-y-4">
