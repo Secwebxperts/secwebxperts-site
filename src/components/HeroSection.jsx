@@ -77,7 +77,8 @@ const Herosection = () => {
       const innerLogo = document.querySelector(".inner-orbit-logo");
 
       const updateOrbit = (logo, index, orbitRadius, speed) => {
-        const angle = ((index / outerLogos.length) * 360 + Date.now() / speed) % 360;
+        const angle =
+          ((index / outerLogos.length) * 360 + Date.now() / speed) % 360;
         const x = orbitRadius * Math.cos((angle * Math.PI) / 180);
         const y = orbitRadius * Math.sin((angle * Math.PI) / 180);
         logo.style.transform = `translate(${y}px, ${x}px)`;
@@ -88,15 +89,20 @@ const Herosection = () => {
         let orbitRadius = 192;
 
         // Set specific orbit sizes based on device width
-        if (windowWidth <= 375) { // iPhone eXpensive portrait, iPhone 6-8 portrait
+        if (windowWidth <= 375) {
+          // iPhone eXpensive portrait, iPhone 6-8 portrait
           orbitRadius = 140;
-        } else if (windowWidth <= 412) { // Pixel 2 portrait, iPhone 6-8 Plump portrait
+        } else if (windowWidth <= 412) {
+          // Pixel 2 portrait, iPhone 6-8 Plump portrait
           orbitRadius = 140;
-        } else if (windowWidth <= 667) { // iPhone 6-8 landscape
+        } else if (windowWidth <= 667) {
+          // iPhone 6-8 landscape
           orbitRadius = 140;
-        } else if (windowWidth <= 734 || windowWidth <= 736) { // iPhone eXpensive landscape, iPhone 6-8 Plump landscape
+        } else if (windowWidth <= 734 || windowWidth <= 736) {
+          // iPhone eXpensive landscape, iPhone 6-8 Plump landscape
           orbitRadius = 140;
-        } else if (windowWidth <= 768) { // Tablets
+        } else if (windowWidth <= 768) {
+          // Tablets
           orbitRadius = 180;
         } else {
           orbitRadius = 192;
@@ -133,14 +139,24 @@ const Herosection = () => {
   }, []);
 
   return (
-<section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[40px]" style={{padding:'70px'}}>
+    // <section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
+    <section
+      className="py-20  sm:py-45  md:py-40 lg:py-32 flex flex-col md:flex-row items-center justify-center"
+      style={{
+        background:
+          "linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,237,255,1) 45%, rgba(237,233,255,1) 100%)",
+      }}
+    >
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[40px]"
+        style={{ padding: "70px" }}
+      >
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left">
           <h1 className="text-3xl md:text-5xl font-bold text-orange-500 leading-snug md:leading-[70px] font-poppins">
             Making Service Simple and Excellent
           </h1>
-          <p className="text-gray-800 mt-4 max-w-lg font-bold leading-relaxed">
+          <p className="text-gray-800 mt-4 max-w-lg font-bold leading-relaxed ">
             Our goal is to make service simple without compromising on quality,
             offering a hassle-free experience that consistently meets your
             expectations and needs.
