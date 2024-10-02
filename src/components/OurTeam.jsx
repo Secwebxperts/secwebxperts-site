@@ -32,24 +32,23 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="bg-[url('public/bgimg/curve.png')] bg-contain bg-no-repeat">
-      <div className="flex flex-col md:flex-row justify-between py-12 px-20 max-w-screen-xl m-auto ">
-        {/* Left Section (Text) */}
-        <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0">
-          <h2 className="text-customYellow text-4xl font-semibold mb-4">
-            OUR TEAM
-          </h2>
-          <p className="leading-8 py-4 text-[#546E7A] max-w-md text-[18px] font-[400]">
-            Clarity delivers components for professional SaaS websites, landing
-            pages, or admin panels with Cybersecurity expertise.
+
+    <div className="flex flex-col md:flex-row justify-between py-12 px-20 max-w-[100%] m-auto bg-[url('src/assets/bgimg/curve.png')]  bg-contain  bg-no-repeat ">
+      {/* Left Section (Text) */}
+      <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
+        <h2 className="text-[#FF9D00] text-[36px] font-bold mb-2 font-poppins">OUR TEAM</h2>
+        <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins">
+          Clarity delivers components for professional SaaS websites, landing
+          pages, or admin panels with Cybersecurity expertise.
+        </p>
+        {/* <Link to="/team">
+          <p className="text-blue-600 font-medium">
+            View all members
+            <span className="ml-2">→</span>
           </p>
-          <Link to="/team">
-            <p className="text-blue-600 font-medium">
-              View all members
-              <span className="ml-2">→</span>
-            </p>
-          </Link>
-        </div>
+        </Link> */}
+      </div>
+
 
         {/* Right Section (Team Cards) */}
         <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[40%]">

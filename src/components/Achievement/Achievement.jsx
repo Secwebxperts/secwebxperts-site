@@ -18,6 +18,7 @@ const Achievements = () => {
       <div className="bg-[url('public/bgimg/curvimg.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
         <h2 className="uppercase text-4xl font-semibold text-center text-customYellow mb-4">
           Some of our Achievements
+
         </h2>
         <p className="text-center text-[#546E7A] mb-10 text-[16px] leading-20 tracking-wider">
           Secwebxperts team participated in security responsible programs and{" "}

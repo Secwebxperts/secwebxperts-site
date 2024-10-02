@@ -6,10 +6,10 @@ const ServiceSection = () => {
     <section className="py-12 bg-[#F9F9F9] mx-auto">
       <div className="max-w-[1200px] mx-auto text-center">
         <div className="text-center mb-12">
-          <h2 className="text-[#FF9D00] text-4xl font-semibold">
-            OUR SERVICES
-          </h2>
-          <p className=" text-[16px] tracking-wider font-medium mt-4">
+
+          <h2 className="text-[#FF9D00] text-[36px] font-bold font-poppins">OUR SERVICES</h2>
+          <p className="text-[#546E7A] text-[16px] tracking-wider font-extrabold font-poppins mt-4">
+
             Innovative Solutions for Development and Security
           </p>
         </div>
@@ -31,7 +31,7 @@ const ServiceSection = () => {
               Build responsive and dynamic websites with modern technologies.
             </p>
             <Link
-              to="/web-development"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →
@@ -53,7 +53,7 @@ const ServiceSection = () => {
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
             <Link
-              to="/mobile-app-development"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →
@@ -75,7 +75,7 @@ const ServiceSection = () => {
               Protect your digital assets with top-tier security solutions.
             </p>
             <Link
-              to="/services/cyber-security"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →
