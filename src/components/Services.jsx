@@ -75,7 +75,7 @@ const ServiceSection = () => {
               Protect your digital assets with top-tier security solutions.
             </p>
             <Link
-              to="/services/cyber-security"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →
