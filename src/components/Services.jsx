@@ -6,8 +6,10 @@ const ServiceSection = () => {
     <section className="py-12 bg-[#F9F9F9] mx-auto">
       <div className="max-w-[1200px] mx-auto text-center">
         <div className="text-center mb-12">
-          <h2 className="text-[#FF9D00] text-4xl font-bold">OUR SERVICES</h2>
-          <p className="uppercase text-xl tracking-wider font-extrabold mt-4">
+          <h2 className="text-[#FF9D00] text-4xl font-semibold">
+            OUR SERVICES
+          </h2>
+          <p className=" text-[16px] tracking-wider font-medium mt-4">
             Innovative Solutions for Development and Security
           </p>
         </div>
@@ -24,8 +26,8 @@ const ServiceSection = () => {
               alt="Web Development"
               className="mx-auto mb-4 w-[188px] h-[150px] object-cover"
             />
-            <h3 className="text-2xl font-semibold mb-2">Web Development</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-xl font-medium mb-2">Web Development</h3>
+            <p className="text-[#546E7A] mb-4 font-normal text-sm">
               Build responsive and dynamic websites with modern technologies.
             </p>
             <Link
@@ -46,10 +48,8 @@ const ServiceSection = () => {
               alt="Mobile App Development"
               className="mx-auto mb-4 w-[145px] h-[150px] object-cover "
             />
-            <h3 className="text-2xl font-semibold mb-2">
-              Mobile App Development
-            </h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-xl font-medium mb-2">Mobile App Development</h3>
+            <p className="text-[#546E7A] mb-4 font-normal text-sm">
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
             <Link
@@ -70,8 +70,8 @@ const ServiceSection = () => {
               alt="Cyber Security"
               className="mx-auto mb-4 w-[166px] h-[150px] object-cover"
             />
-            <h3 className="text-2xl font-semibold mb-2">Cyber Security</h3>
-            <p className="text-gray-600 mb-4">
+            <h3 className="text-xl font-medium mb-2">Cyber Security</h3>
+            <p className="text-[#546E7A] mb-4 font-normal text-sm">
               Protect your digital assets with top-tier security solutions.
             </p>
             <Link

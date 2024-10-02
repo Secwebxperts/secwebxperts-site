@@ -15,12 +15,11 @@ const Achievements = () => {
 
   return (
     <>
-
-      <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-10px]">
-        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
+      <div className="bg-[url('public/bgimg/curvimg.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
+        <h2 className="uppercase text-4xl font-semibold text-center text-customYellow mb-4">
           Some of our Achievements
-
-        <p className="text-center text-gray-500 mb-10 text-xl">
+        </h2>
+        <p className="text-center text-[#546E7A] mb-10 text-[16px] leading-20 tracking-wider">
           Secwebxperts team participated in security responsible programs and{" "}
           <br /> received honors from reputed organizations.
         </p>
@@ -68,7 +67,7 @@ const Achievements = () => {
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[linear-gradient(to_bottom,#2E6DE54D,#FFFFFF4D)] lg:px-2">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('public/bgimg/curvimg.png')] bg-contain bg-no-repeat  lg:px-2">
         {/* Left Image Section */}
         <div className="lg:w-1/2 w-full ml-0">
           <img
@@ -80,10 +79,10 @@ const Achievements = () => {
 
         {/* Right Text Section */}
         <div className="lg:w-1/2 w-full">
-          <h2 className="text-orange-500 text-3xl lg:text-4xl font-bold mb-6 py-6 px-2">
+          <h2 className="text-customYellow text-3xl lg:text-4xl font-semibold mb-6 pt-10 px-2">
             EXPERT IN CYBER SECURITY
           </h2>
-          <p className="text-gray-600 text-lg lg:text-xl px-2">
+          <p className="text-[#546E7A] text-lg max-w-xl px-2 leading-8">
             Secwebxperts team holds CVEs for finding vulnerabilities in open
             source projects that are published on{" "}
             <a
