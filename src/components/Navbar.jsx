@@ -55,7 +55,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-red-50 w-full max-w-screen-xl mx-auto rounded-full shadow-lg my-1 fixed top-0 left-0 right-0 z-50 justify-between">
+    <header className="bg-[#FFFBFD] w-full max-w-screen-xl mx-auto rounded-full shadow-lg my-1 fixed top-0 left-0 right-0 z-50 justify-between">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-4"

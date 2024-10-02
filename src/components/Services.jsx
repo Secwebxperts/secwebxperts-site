@@ -6,8 +6,8 @@ const ServiceSection = () => {
     <section className="py-12 bg-[#F9F9F9] mx-auto">
       <div className="max-w-[1200px] mx-auto text-center">
         <div className="text-center mb-12">
-          <h2 className="text-[#FF9D00] text-4xl font-bold">OUR SERVICES</h2>
-          <p className="uppercase text-xl tracking-wider font-extrabold mt-4">
+          <h2 className="text-[#FF9D00] text-[36px] font-bold font-poppins">OUR SERVICES</h2>
+          <p className="text-[#546E7A] text-[16px] tracking-wider font-extrabold font-poppins mt-4">
             Innovative Solutions for Development and Security
           </p>
         </div>
@@ -29,7 +29,7 @@ const ServiceSection = () => {
               Build responsive and dynamic websites with modern technologies.
             </p>
             <Link
-              to="/web-development"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →
@@ -53,7 +53,7 @@ const ServiceSection = () => {
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
             <Link
-              to="/mobile-app-development"
+              to="/services"
               className="text-blue-600 hover:underline"
             >
               Learn More →

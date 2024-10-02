@@ -136,15 +136,15 @@ const Herosection = () => {
   return (
     // <section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
     <section
-      className="py-20  sm:py-45  md:py-40 lg:py-32 flex flex-col md:flex-row items-center justify-center"
-      style={{
-        background:
-          "linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(247,237,255,1) 45%, rgba(237,233,255,1) 100%)",
-      }}
+      className="py-20  sm:py-35 md:py-45 lg:py-45 flex flex-col md:flex-row items-center justify-center bg-[url('/BG_color.png')] bg-cover bg-center"
+      // style={{
+      //   background:
+      //     "bg-[url('/BG color.png')]",
+      // }}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[40px]"
-        style={{ padding: "70px" }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[90px] h-auto"
+        style={{ padding: "40px" }}
       >
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left">
@@ -156,9 +156,9 @@ const Herosection = () => {
             offering a hassle-free experience that consistently meets your
             expectations and needs.
           </p>
-          <button className="mt-8 bg-black text-white py-3 px-6 rounded-full hover:bg-gray-700 transition">
+          {/* <button className="mt-8 bg-black text-white py-3 px-6 rounded-full hover:bg-gray-700 transition">
             Book an Appointment
-          </button>
+          </button> */}
         </div>
 
         {/* Solar Animation Section */}

@@ -19,7 +19,7 @@ const Achievements = () => {
       <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-10px]">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
           Some of our Achievements
-
+</h2>
         <p className="text-center text-gray-500 mb-10 text-xl">
           Secwebxperts team participated in security responsible programs and{" "}
           <br /> received honors from reputed organizations.
