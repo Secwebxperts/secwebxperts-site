@@ -19,7 +19,8 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="min-h-screen my-16 bg-white -mt-12">
+    <div className="min-h-screen my-16 bg-white -mt-12 h-auto">
+      <div className="bg-[url('/solerIcon/_Group_.png')] bg-cover h-30 w-25">
       <div className="text-center my-11 mb-18">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4">
           <span className="text-[#FF9D00]">OUR</span> AWESOME PORTFOLIO
@@ -73,6 +74,7 @@ const Carousel = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

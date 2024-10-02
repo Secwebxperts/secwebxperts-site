@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">
       {/* Header Section */}
-      <div className="w-full text-center py-40 bg-[url('/contact/bg.jpg')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
+      <div className="w-full text-center py-20 bg-[url('/contact/Frame6.png')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
         <h1 className="text-4xl font-bold text-orange-500">
           How Can We Help You?
         </h1>
@@ -33,14 +33,14 @@ const Contact = () => {
             <img
               src="/contact/model.jpg" // Replace with the actual image
               alt="Customer Support"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-full  rounded-lg shadow-lg"
             />
           </div>
         </div>
 
         {/* Form */}
         <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-8">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-6">
+          <h2 className=" font-Poppins font-bold	 text-[#1E2D4D] mb-6">
             Talk To us
           </h2>
           <form className="space-y-4">
@@ -74,7 +74,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors"
+              className="w-[30%] bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition-colors"
             >
               Request a call back
             </button>

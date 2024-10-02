@@ -15,7 +15,7 @@ const Achievements = () => {
 
   return (
     <>
-      <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-65px]">
+      <div className="bg-[linear-gradient(to_bottom_left,#2E6DE54D_10%,#FFFFFF4D_90%)] py-16 mx-auto mt-[-10px]">
         <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
           Some of our Achievements
         </h2>

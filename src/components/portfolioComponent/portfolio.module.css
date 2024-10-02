@@ -4,6 +4,7 @@
   height: 200px;
   position: relative;
   perspective: 1000px;
+  padding: 20px;;
 }
 
 .carousel {

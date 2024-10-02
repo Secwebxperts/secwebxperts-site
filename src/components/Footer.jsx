@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('src/assets/Vector.jpg')]">
+    <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('/Vector.jpg')]">
       <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start px-6 md:px-0">
         {/* Logo and Description */}
         <div className="flex flex-col mb-8 md:mb-0">
@@ -89,8 +89,8 @@ const Footer = () => {
             Reserved
           </p>
           <div className="flex space-x-4">
-            <FaLinkedin size={24} />
-            <FaTwitter size={24} />
+            <FaLinkedin size={30} />
+           <img src="/Vector (1).png" className="h-[28px] w-[27px"></img>
           </div>
         </div>
       </div>

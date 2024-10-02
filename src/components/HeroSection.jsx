@@ -3,29 +3,24 @@ import { useState, useEffect } from "react";
 const Herosection = () => {
   const outerOrbitLogos = [
     {
-      src: "https://cdn-icons-png.flaticon.com/512/6119/6119533.png",
+      src: "/solerIcon/Background+Shadow.png",
       alt: "IOT",
-      shadowColor: "#4285F4",
     },
     {
-      src: "https://cdn-icons-png.flaticon.com/512/919/919851.png",
+      src: "/solerIcon/Background+Shadow1.png",
       alt: "React",
-      shadowColor: "#61DAFB",
     },
     {
-      src: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
+      src: "/solerIcon/Background+Shadow3.png",
       alt: "Node",
-      shadowColor: "#8CC84B",
     },
     {
-      src: "https://e7.pngegg.com/pngimages/620/322/png-clipart-angularjs-ruby-on-rails-typescript-web-application-icon-hacker-angle-triangle.png",
+      src: "/solerIcon/Background+Shadow4.png",
       alt: "Angular",
-      shadowColor: "#DD0031",
     },
     {
-      src: "https://cdn-icons-png.flaticon.com/512/2091/2091665.png",
+      src: "/solerIcon/Background+Shadow5.png",
       alt: "Blockchain",
-      shadowColor: "#F7931A",
     },
   ];
 
@@ -36,7 +31,7 @@ const Herosection = () => {
 
   const centerImages = [
     {
-      src: "https://static-00.iconduck.com/assets.00/php-icon-2048x2048-zjxns1zh.png",
+      src: "/solerIcon/Mask group.png",
       alt: "PHP Icon",
     },
     {
@@ -171,7 +166,7 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-                className="outer-orbit-logo absolute w-8 h-8 md:w-12 md:h-12 transform"
+                className="outer-orbit-logo absolute w-15 h-15 md:w-15 md:h-15 transform"
                 style={{ filter: `drop-shadow(0 0 28px ${logo.shadowColor})` }}
               >
                 <img

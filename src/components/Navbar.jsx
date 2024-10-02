@@ -81,9 +81,11 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link className="text-lg font-bold leading-6 text-gray-900">About</Link>
+          <Link to="/" className="text-lg font-bold leading-6 text-gray-900">About</Link>
           <Link className="text-lg font-bold leading-6 text-gray-900">Our Team</Link>
           <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link>
+          <Link to="/services" className="text-lg font-bold leading-6 text-gray-900">Service</Link>
+
           {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
               Services
@@ -172,23 +174,23 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  to="#"
+                  to="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </Link>
-                <Link
+                {/* <Link
                   to="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Our team
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   to="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Portfolio
-                </Link>
+                </Link> */}
                 {/* <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50">
                     Services
@@ -210,6 +212,12 @@ export default function Navbar() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure> */}
+                <Link
+                  to="/services"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Service
+                </Link>
                 <Link
                   to="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"

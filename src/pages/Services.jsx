@@ -11,7 +11,7 @@ const Services = () => {
         className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center"
         style={{
           backgroundImage:
-            "linear-gradient(to right, rgb(0 0 0 / 70%) 20%, rgb(221 189 63 / 80%) 60%, rgb(206 0 0 / 20%) 100%), url('src/assets/serviceImages/serviceBG.jpg')",
+            "linear-gradient(to right, rgb(0 0 0 / 70%) 20%, rgb(221 189 63 / 80%) 60%, rgb(206 0 0 / 20%) 100%), url('/serviceImages/serviceBG.jpg')",
         }}
       >
         {/* Gradient and Background */}
