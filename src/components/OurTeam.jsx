@@ -9,7 +9,7 @@ const teamMembers = [
     title: "Director",
     description:
       "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-    image: "public/teamMember/Director.jpeg ", // Replace with actual image path
+    image: "/teamMember/Director.jpeg ", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -17,7 +17,7 @@ const teamMembers = [
     title: "CEO",
     description:
       "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-    image: "public/teamMember/ceo.png", // Replace with actual image path
+    image: "/teamMember/ceo.png", // Replace with actual image path
     linkedin: "#",
   },
   {
@@ -25,7 +25,7 @@ const teamMembers = [
     title: "COO",
     description:
       "Overseeing daily operations, managing team performance, and driving company objectives.",
-    image: "public/teamMember/COO.jpeg", // Replace with actual image path
+    image: "/teamMember/COO.jpeg", // Replace with actual image path
     linkedin: "#",
   },
 ];
@@ -33,9 +33,9 @@ const teamMembers = [
 const OurTeam = () => {
   return (
 
-    <div className="flex flex-col md:flex-row justify-between py-12 px-20 max-w-[100%] m-auto bg-[url('src/assets/bgimg/curve.png')]  bg-contain  bg-no-repeat ">
+    <div className="flex flex-col md:flex-row justify-between py-12 px-20 max-w-[100%] m-auto bg-[url('/bgimg/curve.png')]  bg-contain  bg-no-repeat ">
       {/* Left Section (Text) */}
-      <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
+      <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-80px]">
         <h2 className="text-[#FF9D00] text-[36px] font-bold mb-2 font-poppins">OUR TEAM</h2>
         <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins">
           Clarity delivers components for professional SaaS websites, landing
@@ -121,7 +121,7 @@ const OurTeam = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    
   );
 };
 
