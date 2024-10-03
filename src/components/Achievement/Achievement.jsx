@@ -15,12 +15,11 @@ const Achievements = () => {
 
   return (
     <>
-      <div className="bg-[url('public/bgimg/curvimg.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
-        <h2 className="uppercase text-4xl font-semibold text-center text-customYellow mb-4">
+      <div className="bg-[url('public/bgimg/ach.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
+        <h2 className="uppercase text-[36px] font-[600] font-poppins text-center text-customYellow mb-4">
           Some of our Achievements
-
         </h2>
-        <p className="text-center text-[#546E7A] mb-10 text-[16px] leading-20 tracking-wider">
+        <p className="font-poppins text-center text-[#546E7A] mb-10 text-[16px] leading-20 tracking-wider font-[500]">
           Secwebxperts team participated in security responsible programs and{" "}
           <br /> received honors from reputed organizations.
         </p>
@@ -68,39 +67,41 @@ const Achievements = () => {
           ))}
         </Swiper>
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('public/bgimg/curvimg.png')] bg-contain bg-no-repeat  lg:px-2">
-        {/* Left Image Section */}
-        <div className="lg:w-1/2 w-full ml-0">
-          <img
-            src="/cve.jpg"
-            alt="Cyber Security"
-            className="max-w-full lg:max-w-[90%] lg:max-h-[50%] object-contain"
-          />
-        </div>
+      <div className="bg-[url('bgimg/binary.png')] bg-contain bg-no-repeat">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('bgimg/achievement.png')] bg-contain bg-no-repeat lg:px-2 ">
+          {/* Left Image Section */}
+          <div className="lg:w-1/2 w-full ml-0">
+            <img
+              src="/cve.jpg"
+              alt="Cyber Security"
+              className="max-w-full lg:max-w-[90%] lg:max-h-[50%] object-contain"
+            />
+          </div>
 
-        {/* Right Text Section */}
-        <div className="lg:w-1/2 w-full">
-          <h2 className="text-customYellow text-3xl lg:text-4xl font-semibold mb-6 pt-10 px-2">
-            EXPERT IN CYBER SECURITY
-          </h2>
-          <p className="text-[#546E7A] text-lg max-w-xl px-2 leading-8">
-            Secwebxperts team holds CVEs for finding vulnerabilities in open
-            source projects that are published on{" "}
-            <a
-              href="https://cve.mitre.org"
-              target="_blank"
-              className="text-blue-500 underline"
-            >
-              cve.mitre.org
-            </a>
-            .
-          </p>
-          <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
-            <li>CVE-2023-2594 CVE-2023-3605</li>
-            <li>CVE-2023-1024 CVE-2023-1028</li>
-            <li>CVE-2022-3546 CVE-2022-3548</li>
-            <li>CVE-2022-3549 CVE-2022-4281</li>
-          </ul>
+          {/* Right Text Section */}
+          <div className="lg:w-1/2 w-full">
+            <h2 className="text-customYellow text-[36px] lg:text-4xl font-[600] mb-6 pt-10 px-2">
+              EXPERT IN CYBER SECURITY
+            </h2>
+            <p className="text-[#546E7A] text-lg max-w-xl px-2 leading-8">
+              Secwebxperts team holds CVEs for finding vulnerabilities in open
+              source projects that are published on{" "}
+              <a
+                href="https://cve.mitre.org"
+                target="_blank"
+                className="text-blue-500 underline"
+              >
+                cve.mitre.org
+              </a>
+              .
+            </p>
+            <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
+              <li>CVE-2023-2594 CVE-2023-3605</li>
+              <li>CVE-2023-1024 CVE-2023-1028</li>
+              <li>CVE-2022-3546 CVE-2022-3548</li>
+              <li>CVE-2022-3549 CVE-2022-4281</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
