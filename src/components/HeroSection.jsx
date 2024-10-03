@@ -136,9 +136,9 @@ const Herosection = () => {
       >
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left mt-1">
-          <h1 className=" font-poppins font-bold text-[50px] text-[#FF9D00] leading-snug md:leading-[70px]">
+          <h5 className=" font-poppins font-bold text-[45px] text-[#FF9D00] leading-snug md:leading-[70px]">
             Making Service <br /> Simple and Excellent
-          </h1>
+          </h5>
           <p className="text-[#1C1C1C] mt-4 font-[500] text-[16px] leading-[30px] tracking-wider max-w-[36rem]">
             Our goal is to make service simple without compromising on quality,
             offering a hassle-free experience that consistently meets your

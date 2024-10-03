@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <section>
-      <section className="py-12 max-w-[1250px] mx-auto h-auto">
+      <section className="py-12 max-w-[1150px] mx-auto h-auto">
         <div className="container mx-auto text-center">
           <div className="flex flex-col md:flex-row justify-between">
             {/* Title */}
@@ -17,11 +17,11 @@ const About = () => {
             <div className="flex justify-center items-start mb-8 space-x-8">
               <ul className="text-left text-gray-600">
                 <li className="mb-2">
-                  <span className="text-[#FF9D00] mr-2">•</span>
+                  <span className="text-[#FF9D00] mr-2 text-[20px]">•</span>
                   Young And Hardworking Professional
                 </li>
                 <li>
-                  <span className="text-[#FF9D00] mr-2">•</span>
+                  <span className="text-[#FF9D00] mr-2 text-[20px]">•</span>
                   Innovation And Research
                 </li>
               </ul>
@@ -29,24 +29,24 @@ const About = () => {
           </div>
           {/* Stats */}
           {/* Single Box for all Stats */}
-          <div className="bg-[#F4F4F4] shadow-md rounded-lg h-[155px]">
+          <div className="bg-[#F4F4F4] border border-b-2 border-[#D7D7D7] rounded-lg h-[155px]">
             <div className="grid grid-cols-1 md:grid-cols-3 text-left h-full">
               {/* Total Project */}
               <div className="md:border-r-2 border-[#D7D7D7] flex flex-col justify-center items-start px-4 h-full">
-                <h3 className="text-4xl text-customYellow font-bold">20+</h3>
-                <p className="text-gray-600 mt-2">Total Project</p>
+                <h3 className="text-[60px] text-customYellow font-bold font-poppins">20+</h3>
+                <p className="text-[#1C1C1C] font-poppins  text[18px]">Total Project</p>
               </div>
 
               {/* Total Client */}
               <div className="md:border-r-2 border-[#D7D7D7] flex flex-col justify-center items-start px-14 h-full">
-                <h3 className="text-4xl text-customYellow font-bold">10+</h3>
-                <p className="text-gray-600 mt-2">Total Client</p>
+                <h3 className="text-[60px] text-customYellow font-bold font-poppins">10+</h3>
+                <p className="text-[#1C1C1C] font-poppins text[18px]">Total Client</p>
               </div>
 
               {/* Customer Satisfaction Rate */}
               <div className="flex flex-col justify-center items-start px-14 h-full">
-                <h3 className="text-4xl text-customYellow font-bold">98.29%</h3>
-                <p className="text-gray-600 mt-2">Customer Satisfaction Rate</p>
+                <h3 className="text-[60px] text-customYellow font-bold font-poppins">98.29%</h3>
+                <p className="text-[#1C1C1C] font-poppins text[18px]">Customer Satisfaction Rate</p>
               </div>
             </div>
           </div>
