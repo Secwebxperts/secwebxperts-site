@@ -19,10 +19,10 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="min-h-screen mb-[200px] bg-white mt-12 h-auto">
-      <div className="bg-[url('/solerIcon/_Group_.png')] bg-contain bg-no-repeat h-30 w-25">
+    <div className="min-h-screen mb-[200px] bg-white  h-auto">
+      <div className="bg-[url('/solerIcon/_Group_.png')] bg-contain bg-no-repeat  h-30 w-25">
         <div className="text-center my-11 mb-18">
-          <h2 className="text-[36px] font-[600] mt-4 text-[#FF9D00] font-poppins">
+          <h2 className="text-[36px] font-[600] mt-[-12] text-[#FF9D00] font-poppins">
             OUR AWESOME PORTFOLIO
           </h2>
           <p className="text-[16px] font-[500] text-[#546E7A]">

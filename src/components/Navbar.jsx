@@ -55,7 +55,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-[#FFFBFD] w-full max-w-screen-xl mx-auto rounded-full shadow-lg my-1 fixed top-0 left-0 right-0 z-50 justify-between">
+    <header className="bg-[#FFFBFD] w-full max-w-screen-xl mx-auto rounded-full shadow-sm my-1 fixed top-0 left-0 right-0 z-50 justify-between h-[76px]">
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-4"
@@ -81,10 +81,10 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-lg font-bold leading-6 text-gray-900">About</Link>
+          <Link to="/" className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]">ABOUT</Link>
           {/* <Link className="text-lg font-bold leading-6 text-gray-900">Our Team</Link>
           <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link> */}
-          <Link to="/services" className="text-lg font-bold leading-6 text-gray-900">Service</Link>
+          <Link to="/services" className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]">SERVICES</Link>
 
           {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
@@ -141,7 +141,7 @@ export default function Navbar() {
             to="/contact"
             className="text-lg font-bold leading-6 text-gray-900 border p-3 rounded-full border-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
           >
-            Contact Us <span aria-hidden="true">&rarr;</span>
+            Contact Us 
           </Link>
         </div>
       </nav>
