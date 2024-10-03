@@ -9,7 +9,9 @@ const teamMembers = [
     title: "Director",
     description:
       "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
+
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
+
     linkedin: "#",
   },
   {
@@ -25,13 +27,16 @@ const teamMembers = [
     title: "COO",
     description:
       "Overseeing daily operations, managing team performance, and driving company objectives.",
+
     image: "/teamMember/sabya.png", // Replace with actual image path
+
     linkedin: "#",
   },
 ];
 
 const OurTeam = () => {
   return (
+
     <div className="flex flex-col md:flex-row justify-between py-12 px-20 m-auto bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat ">
       {/* Left Section (Text) */}
       <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
@@ -39,6 +44,7 @@ const OurTeam = () => {
           OUR TEAM
         </h2>
         <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins max-w-96">
+
           Clarity delivers components for professional SaaS websites, landing
           pages, or admin panels with Cybersecurity expertise.
         </p>
@@ -122,8 +128,9 @@ const OurTeam = () => {
           ))}
         </Swiper>
       </div>
+
     </div>
-    // </div>
+
   );
 };
 

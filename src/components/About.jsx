@@ -7,7 +7,9 @@ const About = () => {
         <div className="container mx-auto text-center">
           <div className="flex flex-col md:flex-row justify-between">
             {/* Title */}
+
             <h2 className="font-poppins text-[36px] leading-[54px] font-[600] text-gray-800 mb-6">
+
               THE LANDINGFOLIO FACTS
             </h2>
 
@@ -54,7 +56,7 @@ const About = () => {
         <div className="container px-4 text-center max-w-[1350px] mx-auto">
           {/* About Section Title */}
 
-          <h1 className="text-5xl font-bold text-[#FF9D00] mb-6">ABOUT</h1>
+          <h1 className="text-[36px] font-bold text-[#FF9D00] mb-6">ABOUT</h1>
 
           {/* Description */}
           <p className="text-[#546E7A] max-w-4xl mx-auto mb-12 text-[16px]  font-poppins">
@@ -78,7 +80,7 @@ const About = () => {
               }}
             >
               <img
-                src="public/mission.jpeg"
+                src="/mission.jpeg"
                 alt="Mission"
                 className="mx-auto mb-4"
               />
@@ -110,7 +112,7 @@ const About = () => {
               }}
             >
               <img
-                src="public/vision.jpeg"
+                src="/vision.jpeg"
                 alt="Vision"
                 className="mx-auto mb-4"
               />
