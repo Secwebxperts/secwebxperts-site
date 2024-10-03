@@ -25,7 +25,7 @@ const Herosection = () => {
   ];
 
   const innerOrbitLogo = {
-    src: "https://cdn-icons-png.flaticon.com/512/1051/1051277.png",
+    src: "solerIcon/client.png",
     alt: "JavaScript",
   };
 
@@ -34,37 +34,25 @@ const Herosection = () => {
       src: "solerIcon/Mask group.png",
       alt: "PHP Icon",
     },
-    // {
-    //   src: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-    //   alt: "HTML Icon",
-    // },
-    // {
-    //   src: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-    //   alt: "CSS Icon",
-    // },
-    // {
-    //   src: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
-    //   alt: "Java Icon",
-    // },
   ];
 
   const [currentCenterImage, setCurrentCenterImage] = useState(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
 
-  useEffect(() => {
-    const imageChangeInterval = setInterval(() => {
-      setFadeClass("fade-out");
+  // useEffect(() => {
+  //   const imageChangeInterval = setInterval(() => {
+  //     setFadeClass("fade-out");
 
-      setTimeout(() => {
-        setCurrentCenterImage(
-          (prevIndex) => (prevIndex + 1) % centerImages.length
-        );
-        setFadeClass("fade-in");
-      }, 100);
-    }, 3000);
+  //     setTimeout(() => {
+  //       setCurrentCenterImage(
+  //         (prevIndex) => (prevIndex + 1) % centerImages.length
+  //       );
+  //       setFadeClass("fade-in");
+  //     }, 100);
+  //   }, 3000);
 
-    return () => clearInterval(imageChangeInterval);
-  }, [centerImages.length]);
+  //   return () => clearInterval(imageChangeInterval);
+  // }, [centerImages.length]);
 
   useEffect(() => {
     const animateLogos = setInterval(() => {
@@ -81,12 +69,12 @@ const Herosection = () => {
 
       outerLogos.forEach((logo, index) => {
         const windowWidth = window.innerWidth;
-        let orbitRadius = 192;
+        let orbitRadius = 140;
 
         // Set specific orbit sizes based on device width
         if (windowWidth <= 375) {
           // iPhone eXpensive portrait, iPhone 6-8 portrait
-          orbitRadius = 140;
+          orbitRadius = 120;
         } else if (windowWidth <= 412) {
           // Pixel 2 portrait, iPhone 6-8 Plump portrait
           orbitRadius = 140;
@@ -95,12 +83,12 @@ const Herosection = () => {
           orbitRadius = 140;
         } else if (windowWidth <= 734 || windowWidth <= 736) {
           // iPhone eXpensive landscape, iPhone 6-8 Plump landscape
-          orbitRadius = 140;
+          orbitRadius = 90;
         } else if (windowWidth <= 768) {
           // Tablets
-          orbitRadius = 180;
+          orbitRadius = 90;
         } else {
-          orbitRadius = 192;
+          orbitRadius = 140;
         }
 
         updateOrbit(logo, index, orbitRadius, 50);
@@ -122,7 +110,7 @@ const Herosection = () => {
       } else if (windowWidth <= 768) {
         innerRadius = 130;
       } else {
-        innerRadius = 145;
+        innerRadius = 100;
       }
 
       const xInner = innerRadius * Math.cos((angleInner * Math.PI) / 180);
@@ -136,18 +124,18 @@ const Herosection = () => {
   return (
     // <section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
     <section
-      className="py-20  sm:py-35 md:py-45 lg:py-45 flex flex-col md:flex-row items-center justify-center bg-[url('/BG_color.png')] bg-cover bg-center"
+      className="max-w-auto flex flex-col m-auto md:flex-row items-center justify-center bg-[url('/BG_color.png')] bg-cover bg-center h-[530px]"
       // style={{
       //   background:
       //     "bg-[url('/BG color.png')]",
       // }}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 md:space-y-0 mx-auto w-full px-4 mt-[90px] h-auto"
-        style={{ padding: "40px" }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-2  mx-auto w-[70%] py-8 mt-[70px]"
+        // style={{ padding: "10px" }}
       >
         {/* Text Section */}
-        <div className="mb-8 md:mb-0 text-center md:text-left">
+        <div className="mb-8 md:mb-0 text-center md:text-left mt-1">
           <h1 className=" font-poppins font-bold text-[50px] text-[#FF9D00] leading-snug md:leading-[70px]">
             Making Service <br /> Simple and Excellent
           </h1>
@@ -162,19 +150,31 @@ const Herosection = () => {
         </div>
 
         {/* Solar Animation Section */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center mt-[20px]">
           {/* Outer and Inner Orbits */}
-          <div className="absolute w-72 h-72 md:w-96 md:h-96 border-2 border-gray-300 rounded-full p-[39px] md:p-[49px]">
-            <div className="absolute w-52 h-52 md:w-72 md:h-72 border-2 border-gray-300 rounded-full"></div>
+          <div className="absolute w-65 h-65 md:w-72 md:h-72 border-2 border-gray-300 rounded-full p-[35px]">
+            {/* Outer orbit with 10px gap */}
+            <div className="absolute w-[calc(100%-70px)] h-[calc(100%-70px)] border-2 border-gray-300 rounded-full flex items-center justify-center">
+              {/* Inner orbit */}
+              <div className="inner-orbit-logo w-14 h-14 md:w-[70px] md:h-[70px] bg-white rounded-full flex items-center justify-center">
+                <img
+                  src={innerOrbitLogo.src}
+                  alt={innerOrbitLogo.alt}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Center Image */}
-          <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full bg-white shadow-lg z-10">
+          <div className="p-2 bg-white rounded-full">
+          <div className="relative w-[100px] h-[100px] rounded-full bg-white shadow-lg z-10">
             <img
               src={centerImages[currentCenterImage].src}
               alt={centerImages[currentCenterImage].alt}
               className={`w-full h-full object-cover rounded-full transition-all duration-500 ease-in-out ${fadeClass}`}
             />
+          </div>
           </div>
 
           {/* Outer Orbit Logos */}
@@ -182,8 +182,7 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-                className="outer-orbit-logo absolute w-15 h-15 md:w-15 md:h-15 transform"
-                // style={{ filter: `drop-shadow(0 0 28px ${logo.shadowColor})` }}
+                className="outer-orbit-logo absolute w-[50px] h-[50px]  transform"
               >
                 <img
                   src={logo.src}
@@ -192,17 +191,6 @@ const Herosection = () => {
                 />
               </div>
             ))}
-          </div>
-
-          {/* Inner Orbit Logo */}
-          <div className="absolute w-full h-full flex items-center justify-center">
-            <div className="inner-orbit-logo absolute w-17 h-17 md:w-12 md:h-12 transform">
-              <div className=" bg-white rounded-full flex justify-center items-center inner-orbit-logo absolute  w-20 h-20 md:w-15 md:h-15 transform ">
-                <h3 className="text-blue-500 font-bold object-contain justify-center items-center">
-                  Clients <br /> 20+
-                </h3>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -14,15 +14,12 @@ const Footer = () => {
         <div className="flex flex-col mb-8 md:mb-0">
           <div className="flex items-center mb-4">
             <img
-              src="/logo.png"
+              src="/footerLogo.png"
               alt="SecWebxperts"
-              className="h-10 mr-3"
+              className="h-16 mr-3"
             />
-            <h2 className="text-2xl font-bold">
-              Sec <span className="text-black">Webxperts</span>
-            </h2>
           </div>
-          <p className="text-sm leading-relaxed max-w-72">
+          <p className="text-[#1C1C1C] leading-relaxed max-w-72 text-[14px] font-poppins">
             Secwebxperts provides top-tier IT solutions, specializing in
             development and cyber security, ensuring comprehensive protection
             and innovation for clients.
@@ -31,23 +28,23 @@ const Footer = () => {
 
         {/* Services Links */}
         <div className="mb-8 md:mb-0">
-          <h3 className="font-semibold mb-3">Our Services</h3>
-          <ul className="space-y-2 text-sm">
-            <li>Web Development</li>
-            <li>Mobile App Development</li>
-            <li>Cyber Security</li>
+          <h3 className="font-poppins text-[22px] mb-3 font-semibold">Our Services</h3>
+          <ul className="space-y-2 text-sm ">
+            <li className="font-poppins text-[13px]">Web Development</li>
+            <li className="font-poppins text-[13px]">Mobile App Development</li>
+            <li className="font-poppins text-[13px]">Cyber Security</li>
           </ul>
         </div>
 
         {/* Company Links */}
         <div className="mb-8 md:mb-0">
-          <h3 className="font-semibold mb-3">Company</h3>
+          <h3 className="font-semibold mb-3 text-[22px] font-poppins ">Company</h3>
           <ul className="space-y-2 text-sm">
-            <li>About Us</li>
-            <li>Our Teams</li>
-            <li>Our Services</li>
-            <li>Portfolio</li>
-            <li>Projects</li>
+            <li className="font-poppins text-[13px]">About Us</li>
+            <li className="font-poppins text-[13px]">Our Teams</li>
+            <li className="font-poppins text-[13px]">Our Services</li>
+            <li className="font-poppins text-[13px]">Portfolio</li>
+            <li className="font-poppins text-[13px]">Projects</li>
           </ul>
         </div>
 
@@ -56,24 +53,24 @@ const Footer = () => {
           <div>
             <div className="flex">
               <img src="/adthe.png" className="mr-2 h-6 w-6 mt-1" />
-              <h3 className="font-semibold mb-3">Customer Help Email</h3>
+              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Customer Help Email</h3>
             </div>
-            <p className="flex items-center mb-2 px-8">info@secwebxperts.com</p>
+            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">info@secwebxperts.com</p>
           </div>
           <div>
             <div className="flex">
               {" "}
               <img src="/call.png" className="mr-2 h-6 w-6 mt-1"/>
-              <h3 className="font-semibold mb-3">Customer Help Number</h3>
+              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Customer Help Number</h3>
             </div>
-            <p className="flex items-center mb-2 px-8">+91 7001008582</p>
+            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">+91 7001008582</p>
           </div>
           <div>
             <div className="flex">
             <img src="/action.png" className="mr-2 h-6 w-6 mt-1" />
-            <h3 className="font-semibold mb-3">Office Hours</h3>
+            <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Office Hours</h3>
             </div>
-            <p className="flex items-center mb-2 px-8">
+            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">
               Mon - Fri (10am - 7pm) & Sat Half <br />
               Sunday - Closed
             </p>

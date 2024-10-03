@@ -89,7 +89,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
               <img
-                src="public/mission.jpeg"
+                src="/mission.jpeg"
                 alt="Mission"
                 className="mx-auto mb-4"
               />
@@ -116,7 +116,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 200 }} // Softer spring animation
             >
               <img
-                src="public/vision.jpeg"
+                src="/vision.jpeg"
                 alt="Vision"
                 className="mx-auto mb-4"
               />
