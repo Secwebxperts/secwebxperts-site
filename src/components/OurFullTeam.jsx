@@ -27,7 +27,7 @@ const OurTeam = () => {
       title: "Director",
       description:
         "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-      image: "src/assets/teamMember/Director.jpeg", // Replace with actual image path
+      image: "teamMember/Director.jpeg", // Replace with actual image path
       linkedin: "#",
     },
     {
@@ -35,7 +35,7 @@ const OurTeam = () => {
       title: "CEO",
       description:
         "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-      image: "src/assets/teamMember/CEO.jpeg", // Replace with actual image path
+      image: "teamMember/CEO.jpeg", // Replace with actual image path
       linkedin: "#",
     },
     {
@@ -43,7 +43,7 @@ const OurTeam = () => {
       title: "COO",
       description:
         "Oversees daily operations, ensures efficiency, implements strategies, and drives operational growth.",
-      image: "src/assets/teamMember/COO.jpeg", // Replace with actual image path
+      image: "/teamMember/COO.jpeg", // Replace with actual image path
       linkedin: "#",
     },
     {
@@ -51,7 +51,7 @@ const OurTeam = () => {
       title: "Cyber Security Analyst",
       description:
         "Protects systems by monitoring, identifying threats, & implementing security measures.",
-      image: "src/assets/teamMember/rkdas.jpeg", // Replace with actual image path
+      image: "/teamMember/rkdas.jpeg", // Replace with actual image path
       linkedin: "#",
     },
     {
@@ -59,7 +59,7 @@ const OurTeam = () => {
       title: "Full Stack (Jr. Developer)",
       description:
         "Builds & maintains web applications, working with both front-end and back-end technologies.",
-      image: "src/assets/teamMember/pinaki.jpeg", // Replace with actual image path
+      image: "/teamMember/pinaki.jpeg", // Replace with actual image path
       linkedin: "#",
     },
     {
