@@ -36,7 +36,6 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-
     <div className="flex flex-col md:flex-row justify-between py-12 px-20 m-auto bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat ">
       {/* Left Section (Text) */}
       <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
@@ -44,7 +43,6 @@ const OurTeam = () => {
           OUR TEAM
         </h2>
         <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins max-w-96">
-
           Clarity delivers components for professional SaaS websites, landing
           pages, or admin panels with Cybersecurity expertise.
         </p>
@@ -94,7 +92,7 @@ const OurTeam = () => {
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className=" rounded-lg p-4 w-[350px]  mx-auto bg-white text-center shadow-lg ">
+              <div className=" rounded-lg p-4 w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -128,9 +126,7 @@ const OurTeam = () => {
           ))}
         </Swiper>
       </div>
-
     </div>
-
   );
 };
 
