@@ -1,134 +1,126 @@
 /* eslint-disable react/prop-types */
-const EmployeeCard = ({ image, name, title, description, linkedin }) => {
+import React from 'react';
+import { FaLinkedin } from 'react-icons/fa'; 
+const OurFullTeam = () => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 max-w-xs mx-auto">
-      <img
-        src={image}
-        alt={name}
-        className="mx-auto rounded-full w-24 h-24 mb-4"
-      />
-      <h3 className="text-lg font-bold text-gray-800">{name}</h3>
-      <p className="text-yellow-500 mb-4">{title}</p>
-      <p className="text-gray-600">{description}</p>
-      <div className="flex justify-center mt-4">
-        {linkedin && (
-          <a href={linkedin} className="text-blue-500 hover:underline mx-2">
-            <i className="fab fa-linkedin"></i>
-          </a>
-        )}
+    <>
+    <div className="flex flex-col items-center justify-center  bg-gradient-to-b from-white to-purple-50 max-h-[800px] md:py-30 min-h-[350px]">
+    <h1 className="text-4xl font-bold text-orange-500 text-center">
+      We Bring A Wealth Of Skills And Experience <br /> From A Wide Range Of Background
+    </h1>
+    <p className="mt-4 text-lg text-gray-500 text-center">
+      Our Philosophy is simple; hire great people and give them the resources and support to do their best work.
+    </p>
+  </div>
+ {/* teamSection */}
+  {/* director */}
+ <div className='items-center justify-center flex'>
+    <div className="max-w-sm bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6">
+      {/* Profile Image */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="/teamMember/hem_ch.png" // Replace with the actual image path
+          alt="Hem Chandra Paira"
+          className="w-24 h-24 rounded-full border-1 border-gray-300"
+        />
       </div>
-    </div>
-  );
-};
-const OurTeam = () => {
-  const teamMembers = [
-    {
-      name: "Hem Chandra Paira",
-      title: "Director",
-      description:
-        "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
-      image: "teamMember/Director.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Sathya Sachi Paira",
-      title: "CEO",
-      description:
-        "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-      image: "teamMember/CEO.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Sabhya Sachi Paira",
-      title: "COO",
-      description:
-        "Oversees daily operations, ensures efficiency, implements strategies, and drives operational growth.",
-      image: "/teamMember/COO.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "R.K Das",
-      title: "Cyber Security Analyst",
-      description:
-        "Protects systems by monitoring, identifying threats, & implementing security measures.",
-      image: "/teamMember/rkdas.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Pinaki Sasmal",
-      title: "Full Stack (Jr. Developer)",
-      description:
-        "Builds & maintains web applications, working with both front-end and back-end technologies.",
-      image: "/teamMember/pinaki.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Ankit Das",
-      title: "Mobile App Developer",
-      description:
-        "Builds and maintains apps for mobile devices, ensuring functionality and performance.",
-      image: "src/assets/teamMember/ankitdas.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Narayan Das",
-      title: "UI/UX & Graphic Designer",
-      description:
-        "Creates visual content, logos, layouts, and marketing materials, ensuring brand consistency.",
-      image: "src/assets/teamMember/narayandas.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Jahan Ara",
-      title: "UI/UX Designer",
-      description:
-        "Creates intuitive, user-friendly designs focused on usability and experience.",
-      image: "src/assets/teamMember/jahanara.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Sudipta Ghorami",
-      title: "Web Developer (Intern)",
-      description:
-        "Building & maintaining websites, handling both front-end and back-end tasks, and supporting the development team.",
-      image: "src/assets/teamMember/sudiptaghorami.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Samiksha Manohar",
-      title: "Sr Sales Representative",
-      description:
-        "Drives revenue by acquiring new clients, managing relationships, and meeting sales targets.",
-      image: "src/assets/teamMember/samikshamanohar.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-    {
-      name: "Suvigya Sinha",
-      title: "Jr Sales Representative",
-      description:
-        "Generates revenue by pursuing leads, closing deals, and maintaining client relationships.",
-      image: "src/assets/teamMember/suvigyasinha.jpeg", // Replace with actual image path
-      linkedin: "#",
-    },
-  ];
+      
+      {/* Name and Title */}
+      <h2 className="text-xl font-semibold font-poppins text-[#000000]">Hem Chandra Paira</h2>
+      <p className="text-[#FF9D00] font-medium font-poppins">Director</p>
+      
+      {/* Description */}
+      <p className="mt-4 text-[#546E7A] font-poppins">
+        Experienced IT leader dedicated to driving innovation and excellence in
+        technology solutions and cybersecurity.
+      </p>
+      
+      {/* LinkedIn Icon */}
+      <div className="mt-4 items-center justify-center flex">
+        <a
+          href="https://www.linkedin.com" // Replace with the actual LinkedIn profile URL
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-gray-800"
+        >
+          <FaLinkedin size={30} />
+        </a>
+      </div>
+  </div>
+ </div>
 
-  return (
-    <div className="bg-white py-16 max-w-[1350px] mx-auto text-center">
-      <h2 className="text-5xl font-bold text-yellow-500 mb-8">OUR TEAM</h2>
-      <div className="flex flex-wrap justify-center gap-8">
-        {teamMembers.map((member, index) => (
-          <EmployeeCard
-            key={index}
-            name={member.name}
-            title={member.title}
-            description={member.description}
-            image={member.image}
-            linkedin={member.linkedin}
-          />
-        ))}
+<div className='flex items-center justify-between sm:max-w-[400px] md:max-w-[700px] lg:max-w-[800px] mx-auto my-8'>
+
+    <div className="max-w-sm bg-white shadow-lg rounded-lg p-6 text-center">
+      {/* Profile Image */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="path-to-image.jpg" // Replace with the actual image path
+          alt="Hem Chandra Paira"
+          className="w-24 h-24 rounded-full border-2 border-gray-300"
+        />
+      </div>
+      
+      {/* Name and Title */}
+      <h2 className="text-xl font-semibold text-gray-800">Hem Chandra Paira</h2>
+      <p className="text-orange-500 font-medium">Director</p>
+      
+      {/* Description */}
+      <p className="mt-4 text-gray-500">
+        Experienced IT leader dedicated to driving innovation and excellence in
+        technology solutions and cybersecurity.
+      </p>
+      
+      {/* LinkedIn Icon */}
+      <div className="mt-4">
+        <a
+          href="https://www.linkedin.com" // Replace with the actual LinkedIn profile URL
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-gray-800"
+        >
+          <FaLinkedin size={30} />
+        </a>
       </div>
     </div>
+
+
+    <div className="max-w-sm bg-white shadow-lg rounded-lg p-6 text-center">
+      {/* Profile Image */}
+      <div className="flex justify-center mb-4">
+        <img
+          src="path-to-image.jpg" // Replace with the actual image path
+          alt="Hem Chandra Paira"
+          className="w-24 h-24 rounded-full border-2 border-gray-300"
+        />
+      </div>
+      
+      {/* Name and Title */}
+      <h2 className="text-xl font-semibold text-gray-800">Hem Chandra Paira</h2>
+      <p className="text-orange-500 font-medium">Director</p>
+      
+      {/* Description */}
+      <p className="mt-4 text-gray-500">
+        Experienced IT leader dedicated to driving innovation and excellence in
+        technology solutions and cybersecurity.
+      </p>
+      
+      {/* LinkedIn Icon */}
+      <div className="mt-4">
+        <a
+          href="https://www.linkedin.com" // Replace with the actual LinkedIn profile URL
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-gray-800"
+        >
+          <FaLinkedin size={30} />
+        </a>
+      </div>
+    </div>
+
+    </div>
+    </>
   );
 };
 
-export default OurTeam;
+export default OurFullTeam;

@@ -26,10 +26,10 @@ const Contact = () => {
       </div>
 
       {/* Talk to Us Section */}
-      <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-10 px-5 py-10">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-10 px-5 py-10 ">
         {/* Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
-          <div className="relative w-full h-[300px] lg:h-[400px] ml-[59px]">
+          <div className="relative w-full h-[330px] lg:h-[400px] ml-[59px]">
             <img
               src="/contact/model.jpg" // Replace with the actual image
               alt="Customer Support"
@@ -39,8 +39,8 @@ const Contact = () => {
         </div>
 
         {/* Form */}
-        <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-8">
-          <h2 className=" font-Poppins font-semibold text-[#1E2D4D] mb-6 text-3xl">
+        <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-6">
+          <h2 className=" font-Poppins font-semibold text-[#1E2D4D] mb-6 text-[28px] leading-[39px]">
             Talk To us
           </h2>
           <form className="space-y-4">

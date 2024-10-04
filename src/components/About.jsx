@@ -29,12 +29,12 @@ const About = () => {
           </div>
           {/* Stats */}
           {/* Single Box for all Stats */}
-          <div className="bg-[#F4F4F4] border border-b-2 border-[#D7D7D7] rounded-lg h-[155px]">
+          <div className="bg-[#F4F4F4] border border-b-2 border-[#D7D7D7] rounded-lg h-[140px]">
             <div className="grid grid-cols-1 md:grid-cols-3 text-left h-full">
               {/* Total Project */}
               <div className="md:border-r-2 border-[#D7D7D7] flex flex-col justify-center items-start px-4 h-full">
-                <h3 className="text-[60px] text-customYellow font-bold font-poppins">20+</h3>
-                <p className="text-[#1C1C1C] font-poppins  text[18px]">Total Project</p>
+                <h3 className="text-[60px] text-[#FF9D00] font-bold font-poppins">20+</h3>
+                <p className="text-[#1C1C1C] font-poppins  text[18px] leading-[28px]">Total Project</p>
               </div>
 
               {/* Total Client */}
@@ -59,7 +59,7 @@ const About = () => {
           <h1 className="text-[36px] font-bold text-[#FF9D00] mb-6">ABOUT</h1>
 
           {/* Description */}
-          <p className="text-[#546E7A] max-w-4xl mx-auto mb-12 text-[16px]  font-poppins">
+          <p className="text-[#546E7A] max-w-4xl mx-auto mb-10 text-[16px]  font-poppins">
             Secwebxperts is a team of IT professionals providing top-notch
             website and mobile app development, cybersecurity, and web design.
             Founded 1.2 years ago, our expertise includes VAPT, penetration

@@ -6,8 +6,8 @@ import "./Achievement.css"; // If you have any custom CSS
 
 const Achievements = () => {
   const achievements = [
-    { logo: "/achievement/frame 1.png" },
     { logo: "/achievement/frame 2.png" },
+    { logo: "/achievement/frame 1.png" },
     { logo: "/achievement/frame 3.png" },
     { logo: "/achievement/frame 4.png" },
     { logo: "/achievement/frame 5.png" },
