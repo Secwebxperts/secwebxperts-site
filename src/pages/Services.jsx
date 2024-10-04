@@ -17,8 +17,8 @@ const Services = () => {
         {/* Gradient and Background */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10">
-          <h1 className="text-5xl font-bold text-orange-500">Services</h1>
-          <p className="mt-4 text-white max-w-2xl mx-auto">
+          <h1 className="text-5xl font-bold text-[#FF9D00]">Services</h1>
+          <p className="mt-6 text-white max-w-2xl mx-auto text-[16px]">
             We provide IT consulting, managed services, cloud solutions,
             cybersecurity, infrastructure management, and data analytics to
             optimize your technology and ensure security.
@@ -40,46 +40,46 @@ const Services = () => {
 
       {/* Service Tabs */}
       <div className="w-full bg-white text-center border-b">
-        <div className="container mx-auto py-4 flex justify-around">
+        <div className="container mx-auto py-4 flex justify-around relative">
           <button
             onClick={() => setActiveTab("web-design")}
-            className={`${
+            className={`relative font-poppins pb-2 ${
               activeTab === "web-design"
-                ? "text-orange-500 font-semibold"
-                : "text-gray-600"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                : "text-[#ACACAC]"
             }`}
           >
             Web Design And Development
           </button>
           <button
             onClick={() => setActiveTab("mobile-app")}
-            className={`${
+            className={`relative font-poppins pb-2 ${
               activeTab === "mobile-app"
-                ? "text-orange-500 font-semibold"
-                : "text-gray-600"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                : "text-[#ACACAC]"
             }`}
           >
             Mobile App Development
           </button>
           <button
-            onClick={() => setActiveTab("sass")}
-            className={`${
-              activeTab === "sass"
-                ? "text-orange-500 font-semibold"
-                : "text-gray-600"
-            }`}
-          >
-            SAAS
-          </button>
-          <button
             onClick={() => setActiveTab("cyber-security")}
-            className={`${
+            className={`relative font-poppins pb-2 ${
               activeTab === "cyber-security"
-                ? "text-orange-500 font-semibold"
-                : "text-gray-600"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                : "text-[#ACACAC]"
             }`}
           >
             Cyber Security & Analytics
+          </button>
+          <button
+            onClick={() => setActiveTab("sass")}
+            className={`relative font-poppins pb-2 ${
+              activeTab === "sass"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                : "text-[#ACACAC]"
+            }`}
+          >
+            SaaS
           </button>
         </div>
       </div>
@@ -109,55 +109,55 @@ const Services = () => {
                 <ul className="list-none space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Perfect UX/UI designing
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Responsive and Reliable
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Scalable and well-formatted
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Easily and effectively navigated
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Digital Marketing and Branding
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Relevant content that sticks visitors
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Affordable and Pocket-friendly prices
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Fast load times and great performance
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600">Optimized and Secure</span>
+                    <span className="text-[#546E7A]">Optimized and Secure</span>
                   </li>
                 </ul>
               </div>
@@ -186,39 +186,45 @@ const Services = () => {
                   <h3 className="text-xl font-semibold mb-4">
                     Advanced Website Design & Development
                   </h3>
-                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>E-commerce Website
-                      Development.
+                      <span className="text-[#546E7A]">
+                        E-commerce Website Development.
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>CMS Websites.
+                      <span className="text-[#546E7A]">CMS Websites.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Responsive Website
-                      Designing.
+                      <span className="text-[#546E7A]">
+                        Responsive Website Designing.
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Static Website
-                      Designing.
+                      <span className="text-[#546E7A]">
+                        Static Website Designing.
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Dynamic Website
-                      Designing
+                      <span className="text-[#546E7A]">
+                        Dynamic Website Designing
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Flat Web Designing
+                      <span className="text-[#546E7A]">Flat Web Designing</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Single Page Web
-                      Designing.
+                      <span className="text-[#546E7A]">
+                        {" "}
+                        Single Page Web Designing.
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -242,39 +248,39 @@ const Services = () => {
                 <ul className="list-none space-y-2">
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">Popularity</span>
+                    <span className="text-[#546E7A]">Popularity</span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">Reach</span>
+                    <span className="text-[#546E7A]">Reach</span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Increase Sales and Conversion
                     </span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Convenience for customers
                     </span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Availability all the time
                     </span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">
+                    <span className="text-[#546E7A]">
                       Increased Customer-base
                     </span>
                   </li>
                   <li className="flex items-center">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
-                    <span className="text-gray-600">Targeted Audience</span>
+                    <span className="text-[#546E7A]">Targeted Audience</span>
                   </li>
                 </ul>
               </div>
@@ -310,24 +316,26 @@ const Services = () => {
                   <h3 className="text-xl font-semibold mb-4">
                     Our top-notch Mobile App services include:
                   </h3>
-                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Mobile Apps
-                      Development
+                      <span className="text-[#546E7A]">
+                        Mobile Apps Development
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Mobile UX Design
+                      <span className="text-[#546E7A]">Mobile UX Design</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Mobile Support
-                      Maintenance
+                      <span className="text-[#546E7A]">
+                        Mobile Support Maintenance
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Mobile Consulting
+                      <span className="text-[#546E7A]">Mobile Consulting</span>
                     </li>
                   </ul>
                 </div>
@@ -359,23 +367,24 @@ const Services = () => {
                   <h3 className="text-xl font-semibold mb-4">
                     Our top-notch IOS App services include:
                   </h3>
-                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>IOS Development
+                      <span className="text-[#546E7A]">IOS Development</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>IOS UX Design
+                      <span className="text-[#546E7A]">IOS UX Design</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>IOS Support
-                      Maintenance
+                      <span className="text-[#546E7A]">
+                        IOS Support Maintenance
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>IOS Consulting
+                      <span className="text-[#546E7A]">IOS Consulting</span>
                     </li>
                   </ul>
                 </div>
@@ -396,31 +405,36 @@ const Services = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-24 max-w-[1100px] mx-auto">
               {/* Left Side: Text Content */}
               <div className="flex items-center">
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600"></span>Get apps from
-                    experienced Mobile App developers with 100% on-time delivery
-                    rates.
+                    <span className="text-[#546E7A]">
+                      Get apps from experienced Mobile App developers with 100%
+                      on-time delivery rates.
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600"></span>Consistent quality
+                    <span className="text-[#546E7A]">Consistent quality</span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600"></span>100% clean source
-                    code easier to maintain in future
+                    <span className="text-[#546E7A]">
+                      100% clean source code easier to maintain in future
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600"></span> Flexible price
-                    models
+                    <span className="text-[#546E7A]">
+                      {" "}
+                      Flexible price models
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                    <span className="text-gray-600"></span> Dedicated testing
-                    team for each app developed
+                    <span className="text-[#546E7A]">
+                      Dedicated testing team for each app developed
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -454,28 +468,32 @@ const Services = () => {
               <div className="items-center flex">
                 <div>
                   <h3 className="text-xl font-semibold mb-4">
-                    Kay Responsibilities
+                    Key Responsibilities
                   </h3>
-                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Static Application
-                      Security Testing (SAST)
+                      <span className="text-[#546E7A]">
+                        Static Application Security Testing (SAST)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Dynamic Application
-                      Security Testing (DAST)
+                      <span className="text-[#546E7A]">
+                        Dynamic Application Security Testing (DAST)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Application
-                      Programming Interface(API)
+                      <span className="text-[#546E7A]">
+                        Application Programming Interface(API)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Android Penetration
-                      Testing (APT)
+                      <span className="text-[#546E7A]">
+                        Android Penetration Testing (APT)
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -510,47 +528,50 @@ const Services = () => {
                   <h3 className="text-xl font-semibold mb-4">
                     Key Points of SaaS{" "}
                   </h3>
-                  <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Cloud-Based
+                      <span className="text-[#546E7A]">Cloud-Based</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>No Installation
+                      <span className="text-[#546E7A]">No Installation</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Subscription Model
+                      <span className="text-[#546E7A]">Subscription Model</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Automatic Updates
+                      <span className="text-[#546E7A]">Automatic Updates</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Scalable
+                      <span className="text-[#546E7A]">Scalable</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Accessible Anywhere
+                      <span className="text-[#546E7A]">
+                        Accessible Anywhere
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Cost-Effective
+                      <span className="text-[#546E7A]">Cost-Effective</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Multi-Tenant
-                      Architecture
+                      <span className="text-[#546E7A]">
+                        Multi-Tenant Architecture
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Easy Collaboration
+                      <span className="text-[#546E7A]">Easy Collaboration</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
-                      <span className="text-gray-600"></span>Secure
+                      <span className="text-[#546E7A]">Secure</span>
                     </li>
                   </ul>
                 </div>

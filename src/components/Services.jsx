@@ -88,15 +88,6 @@ const ServiceSection = () => {
             </Link>
           </motion.div>{" "}
         </div>
-
-        <div className="text-center mt-12">
-          <Link
-            to="/services"
-            className="text-blue-600 hover:underline flex items-center justify-center"
-          >
-            View all Services <span className="ml-2">→</span>
-          </Link>
-        </div>
       </div>
     </section>
   );
