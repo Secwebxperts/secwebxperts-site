@@ -94,7 +94,7 @@ const OurTeam = () => {
         >
           {teamMembers.map((member, index) => (
             <SwiperSlide key={index}>
-              <div className=" rounded-lg p-4 w-[270px]  mx-auto bg-white text-center shadow-lg ">
+              <div className=" rounded-lg p-4 w-[350px]  mx-auto bg-white text-center shadow-lg ">
                 <img
                   src={member.image}
                   alt={member.name}
