@@ -82,8 +82,8 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link to="/" className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]">ABOUT</Link>
-          {/* <Link className="text-lg font-bold leading-6 text-gray-900">Our Team</Link>
-          <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link> */}
+          <Link to="/full-team" className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]">OUR TEAM</Link>
+          {/* <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link> */}
           <Link to="/services" className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]">SERVICES</Link>
 
           {/* <Popover className="relative">
