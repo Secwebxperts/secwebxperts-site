@@ -24,8 +24,8 @@ const TeamCard = ({ img, name, position, description }) => {
       {/* LinkedIn Icon */}
       <div className="mt-4 items-center justify-center flex">
         <a
-          href="https://www.linkedin.com"
-          target="_blank"
+          href="#"
+          // target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-800"
         >
