@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/autoplay"; // Include autoplay CSS if needed
 import { Autoplay } from "swiper/modules";
 import "./Achievement.css"; // If you have any custom CSS
+import CVESlideIn from "./Cve";
 
 const Achievements = () => {
   const achievements = [
@@ -95,12 +96,13 @@ const Achievements = () => {
               </a>
               .
             </p>
-            <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
+            <CVESlideIn />
+            {/* <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
               <li>CVE-2023-2594 CVE-2023-3605</li>
               <li>CVE-2023-1024 CVE-2023-1028</li>
               <li>CVE-2022-3546 CVE-2022-3548</li>
               <li>CVE-2022-3549 CVE-2022-4281</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>
