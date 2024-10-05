@@ -35,7 +35,10 @@ const ServiceSection = () => {
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
               Build responsive and dynamic websites with modern technologies.
             </p>
-            <Link to="/services" className="text-blue-600 hover:underline">
+            <Link
+              to="/services?tab=mobile-app"
+              className="text-blue-600 hover:underline"
+            >
               Learn More →
             </Link>
           </motion.div>
@@ -59,7 +62,10 @@ const ServiceSection = () => {
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
-            <Link to="/services" className="text-blue-600 hover:underline">
+            <Link
+              to="/services?tab=mobile-app"
+              className="text-blue-600 hover:underline"
+            >
               Learn More →
             </Link>
           </motion.div>
@@ -83,7 +89,10 @@ const ServiceSection = () => {
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
               Protect your digital assets with top-tier security solutions.
             </p>
-            <Link to="/services" className="text-blue-600 hover:underline">
+            <Link
+              to="/services?tab=cyber-security"
+              className="text-blue-600 hover:underline"
+            >
               Learn More →
             </Link>
           </motion.div>{" "}

@@ -6,11 +6,13 @@ import Home from "./pages/home";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import ScrollToTop from "./components/ScrollTotop";
 
 const App = () => {
   return (
     <Router>
-      <div >
+      <ScrollToTop />
+      <div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
