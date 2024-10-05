@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 const Services = () => {
-  const [activeTab, setActiveTab] = useState("web-design"); // State to track the active tab
+  // const [activeTab, setActiveTab] = useState("web-design"); // State to track the active tab
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const initialTab = queryParams.get("tab") || "web-design"; // Default to web-design if no query param
+
+  const [activeTab, setActiveTab] = useState(initialTab);
+
+  useEffect(() => {
+    setActiveTab(initialTab); // Update activeTab when query changes
+  }, [initialTab]);
 
   return (
     <section className="min-h-screen w-[100%]">
