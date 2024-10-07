@@ -82,9 +82,9 @@ const Services = () => {
             Cyber Security & Analytics
           </button>
           <button
-            onClick={() => setActiveTab("sass")}
+            onClick={() => setActiveTab("saas")}
             className={`relative font-poppins pb-2 ${
-              activeTab === "sass"
+              activeTab === "saas"
                 ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
                 : "text-[#ACACAC]"
             }`}
@@ -521,8 +521,8 @@ const Services = () => {
           </div>
         )}
 
-        {activeTab === "sass" && (
-          <div id="sass" className="w-full max-w-[1200px] mx-auto">
+        {activeTab === "saas" && (
+          <div id="saas" className="w-full max-w-[1200px] mx-auto">
             <h2 className="uppercase text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
               Software as a Service (SaaS){" "}
             </h2>
