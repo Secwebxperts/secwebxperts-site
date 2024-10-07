@@ -39,7 +39,7 @@ const About = () => {
 
               {/* Total Client */}
               <div className="md:border-r-2 border-[#D7D7D7] flex flex-col justify-center items-start px-14 h-full">
-                <h3 className="text-[60px] text-customYellow font-bold font-poppins">10+</h3>
+                <h3 className="text-[60px] text-customYellow font-bold font-poppins">20+</h3>
                 <p className="text-[#1C1C1C] font-poppins text[18px]">Total Client</p>
               </div>
 
@@ -84,7 +84,7 @@ const About = () => {
                 alt="Mission"
                 className="mx-auto mb-4"
               />
-              <h2 className=" text-[#1C1C1C] mb-4 font-poppins text-[20px]">
+              <h2 className=" text-[#1C1C1C] mb-4 font-poppins font-semibold text-[20px]">
                 Our Mission
               </h2>
               <p className="text-[#546E7A] mb-6">
@@ -116,7 +116,7 @@ const About = () => {
                 alt="Vision"
                 className="mx-auto mb-4"
               />
-              <h2 className="text-2xl  text-[#1C1C1C] mb-4 font-poppins text-[20px]">
+              <h2 className="text-2xl  text-[#1C1C1C] mb-4 font-poppins font-semibold text-[20px]">
                 Our Vision
               </h2>
               <p className="text-[#546E7A] mb-6">

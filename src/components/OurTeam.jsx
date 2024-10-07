@@ -46,12 +46,12 @@ const OurTeam = () => {
           Clarity delivers components for professional SaaS websites, landing
           pages, or admin panels with Cybersecurity expertise.
         </p>
-        {/* <Link to="/team">
+        <Link to="/full-team">
           <p className="text-blue-600 font-medium">
             View all members
             <span className="ml-2">→</span>
           </p>
-        </Link> */}
+        </Link>
       </div>
 
       {/* Right Section (Team Cards) */}
@@ -113,12 +113,12 @@ const OurTeam = () => {
                     >
                       <FaLinkedin size={20} color="gray" />
                     </a>
-                    <a
+                    {/* <a
                       href={member.linkedin}
                       className="text-blue-500 hover:text-blue-700 mx-2"
                     >
                       <FaTwitter size={20} color="gray" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
