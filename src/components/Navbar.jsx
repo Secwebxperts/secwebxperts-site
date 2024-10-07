@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -81,10 +81,31 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]">ABOUT</Link>
-          <Link to="/full-team" className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]">OUR TEAM</Link>
+          <Link
+            to="/"
+            className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]"
+          >
+            ABOUT
+          </Link>
+          <Link
+            to="/full-team"
+            className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]"
+          >
+            OUR TEAM
+          </Link>
           {/* <Link className="text-lg font-bold leading-6 text-gray-900">Portfolio</Link> */}
-          <Link to="/services" className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]">SERVICES</Link>
+          <Link
+            to="/services"
+            className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]"
+          >
+            SERVICES
+          </Link>
+          <Link
+            to="/portfolio"
+            className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]"
+          >
+            PORTFOLIO
+          </Link>
 
           {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
@@ -141,7 +162,7 @@ export default function Navbar() {
             to="/contact"
             className="text-lg font-bold leading-6 text-gray-900 border p-3 rounded-full border-black hover:bg-black hover:text-white transition-colors duration-300 ease-in-out"
           >
-            Contact Us 
+            Contact Us
           </Link>
         </div>
       </nav>
@@ -155,11 +176,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">SecWebXperts</span>
-              <img
-                alt=""
-                src="/logo.png"
-                className="h-8 w-auto"
-              />
+              <img alt="" src="/logo.png" className="h-8 w-auto" />
             </Link>
             <button
               type="button"
@@ -232,4 +249,3 @@ export default function Navbar() {
     </header>
   );
 }
-

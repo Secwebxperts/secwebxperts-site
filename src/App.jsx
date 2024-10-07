@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollTotop";
+import Portfolio from "./pages/Portfolio";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/full-team" element={<OurFullTeam />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </div>
