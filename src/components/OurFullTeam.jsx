@@ -1,6 +1,6 @@
 import { FaLinkedin } from "react-icons/fa";
 
-const TeamCard = ({ img, name, position, description }) => {
+const TeamCard = ({ img, name, position, description, profileLink }) => {
   return (
     <div className="max-w-xs bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6">
       {/* Profile Image */}
@@ -24,8 +24,8 @@ const TeamCard = ({ img, name, position, description }) => {
       {/* LinkedIn Icon */}
       <div className="mt-4 items-center justify-center flex">
         <a
-          href="https://www.linkedin.com"
-          target="_blank"
+          href={profileLink}
+           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-800"
         >
@@ -61,10 +61,20 @@ const OurFullTeam = () => {
               "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results."
             }
             position={"Director"}
+            profileLink={"https://www.linkedin.com/in/hem-chandra-paira-aa3526326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
           />
         </div>
-
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <TeamCard
+            img={"/teamMember/ceo.png"}
+            name={"Satya Sachi Paira"}
+            description={
+              "Leading the team, making strategic decisions, driving growth, and ensuring operational success."
+            }
+            position={"CEO"}
+            profileLink={"https://www.linkedin.com/in/sathya-sachi-paira32281178/"}
+          />
           <TeamCard
             img={"/teamMember/sabya.png"}
             name={"Sabhya Sachi Paira"}
@@ -72,7 +82,9 @@ const OurFullTeam = () => {
               "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals."
             }
             position={"COO"}
+            profileLink={"https://www.linkedin.com/in/sabhya-sachi-paira-8229a8325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
           />
+
           <TeamCard
             img={"/teamMember/ceo.png"}
             name={"Sathya Sachi Paira"}
@@ -81,6 +93,7 @@ const OurFullTeam = () => {
             }
             position={"CEO"}
           />
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
@@ -91,6 +104,7 @@ const OurFullTeam = () => {
               "Focuses on generating new business opportunities by identifying and qualifying leads for the sales team."
             }
             position={"Business Development Representative"}
+            profileLink={"https://www.linkedin.com/in/aditi-jaiswal-5129aa15"}
           />
           <TeamCard
             img={"/teamMember/sachin.png"}
@@ -99,6 +113,7 @@ const OurFullTeam = () => {
               "Focuses on generating new business opportunities by identifying and qualifying leads for the sales team."
             }
             position={"Business Development Representative"}
+            profileLink={"https://www.linkedin.com/in/sachin-aghao-ba991619"}
           />
         </div>
 
@@ -110,6 +125,7 @@ const OurFullTeam = () => {
               "Creates intuitive, user-friendly designs focused on usability and experience."
             }
             position={"UI/UX Designer"}
+            profileLink={"https://www.linkedin.com/in/jahan-ara-7a293a214/"}
           />
           <TeamCard
             img={"/teamMember/pinaki.png"}
@@ -118,6 +134,7 @@ const OurFullTeam = () => {
               "Builds & maintains web applications, working with both front-end and back-end technologies."
             }
             position={"Full Stack (Jr. Developer)"}
+            profileLink={"https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"}
           />
           <TeamCard
             img={"/teamMember/sudipta.png"}
@@ -126,6 +143,7 @@ const OurFullTeam = () => {
               "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
             }
             position={"Web Developer (Intern)"}
+            profileLink={"https://www.linkedin.com/in/sudipta-ghorami-261a81292/"}
           />
         </div>
       </div>
