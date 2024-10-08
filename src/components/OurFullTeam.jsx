@@ -85,6 +85,15 @@ const OurFullTeam = () => {
             profileLink={"https://www.linkedin.com/in/sabhya-sachi-paira-8229a8325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
           />
 
+          <TeamCard
+            img={"/teamMember/ceo.png"}
+            name={"Sathya Sachi Paira"}
+            description={
+              "Leading the team, making strategic decisions, driving growth, and ensuring operational success."
+            }
+            position={"CEO"}
+          />
+
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
