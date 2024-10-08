@@ -39,7 +39,7 @@ const CVESlideIn = () => {
   return (
     <div ref={cveRef} className="lg:w-1/2 w-full">
       {/* CVE List */}
-      <ul className="list-disc list-inside py-8 px-2 font-bold text-gray-600">
+      <ul className="list-disc list-inside py-8 px-2 font-bold text-[#1C1C1C]">
         <li
           className={`${visibleItems >= 1 ? "animate-slideIn" : "opacity-0"}`}
         >
