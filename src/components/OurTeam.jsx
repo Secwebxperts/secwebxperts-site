@@ -2,7 +2,9 @@ import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const teamMembers = [
   {
     name: "Hem Chandra Paira",
@@ -35,6 +37,32 @@ const teamMembers = [
 ];
 
 const OurTeam = () => {
+  const settings = {
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 2, // Increase this to show more cards
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0, // For continuous scroll
+    cssEase: "linear", // Smooth transition
+    arrows: false, // Remove arrows
+    pauseOnHover: false, // Keep sliding on hover
+    // Add custom responsive settings if needed
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Change for medium screens
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1, // Change for small screens
+        },
+      },
+    ],
+  };
   return (
     <div className="flex flex-col md:flex-row justify-between py-12 px-20 m-auto bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat ">
       {/* Left Section (Text) */}
@@ -55,76 +83,42 @@ const OurTeam = () => {
       </div>
 
       {/* Right Section (Team Cards) */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between items-center w-full md:w-[50%]">
-        <Swiper
-          loop={true}
-          autoplay={{
-            delay: 0, // Set to 0 to continuously slide
-            disableOnInteraction: false,
-          }}
-          speed={10000} // Adjust the speed to control smoothness
-          // centeredSlides={true}
-          // spaceBetween={50} // Increase space between the cards
-          breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 2, // Decrease slides per view for more width
-              spaceBetween: -20, // More space between cards
-            },
-            1280: {
-              slidesPerView: 2, // Adjust to 2 slides to make them wider
-              spaceBetween: -120, // Increase space between slides
-            },
-          }}
-          modules={[Autoplay]}
-          // className="mySwiper"
-        >
+      <div className="w-full md:w-[50%]">
+        <Slider {...settings}>
           {teamMembers.map((member, index) => (
-            <SwiperSlide key={index}>
-              <div className=" rounded-lg p-4 w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
-                />
-                <h3 className="text-lg font-bold text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="text-yellow-500 mb-2 items-center">
-                  {member.title}
-                </p>
-                <p className="text-gray-600 font-sans">{member.description}</p>
-                <div className="flex justify-center items-center mt-2">
-                  <div className="flex justify-evenly w-[100px]">
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaLinkedin size={20} color="gray" />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaTwitter size={20} color="gray" />
-                    </a>
-                  </div>
+            <div
+              className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]"
+              key={index}
+            >
+              <img
+                src={member.image}
+                alt={member.name}
+                className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
+              />
+              <h3 className="text-lg font-bold text-gray-800">{member.name}</h3>
+              <p className="text-yellow-500 mb-2 items-center">
+                {member.title}
+              </p>
+              <p className="text-gray-600 font-sans">{member.description}</p>
+              <div className="flex justify-center items-center mt-2">
+                <div className="flex justify-evenly w-[100px]">
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-500 hover:text-blue-700 mx-2"
+                  >
+                    <FaLinkedin size={20} color="gray" />
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-500 hover:text-blue-700 mx-2"
+                  >
+                    <FaTwitter size={20} color="gray" />
+                  </a>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+        </Slider>
       </div>
     </div>
   );

@@ -1,29 +1,13 @@
-import { useState } from "react";
+import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
+import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from "@headlessui/react";
-import {
-  ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const products = [
@@ -45,10 +29,6 @@ const products = [
     href: "#",
     icon: FingerPrintIcon,
   },
-];
-const callsToAction = [
-  { name: "Watch demo", to: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", to: "#", icon: PhoneIcon },
 ];
 
 export default function Navbar() {
@@ -82,7 +62,7 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link
-            to="/"
+            to="/about"
             className="text-[14px] font-poppins font-semibold leading-6 text-[#1C1C1C]"
           >
             ABOUT

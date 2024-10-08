@@ -75,7 +75,7 @@ const OurFullTeam = () => {
           />
           <TeamCard
             img={"/teamMember/ceo.png"}
-            name={"Satya Sachi Paira"}
+            name={"Sathya Sachi Paira"}
             description={
               "Leading the team, making strategic decisions, driving growth, and ensuring operational success."
             }

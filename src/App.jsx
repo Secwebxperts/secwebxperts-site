@@ -1,5 +1,4 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import About from "./components/About";
 import Navbar from "./components/Navbar";
 import OurFullTeam from "./components/OurFullTeam";
 import Home from "./pages/home";
@@ -8,6 +7,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollTotop";
 import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 
 const App = () => {
   return (

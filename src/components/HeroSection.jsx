@@ -39,21 +39,6 @@ const Herosection = () => {
   const [currentCenterImage, setCurrentCenterImage] = useState(0);
   const [fadeClass, setFadeClass] = useState("fade-in");
 
-  // useEffect(() => {
-  //   const imageChangeInterval = setInterval(() => {
-  //     setFadeClass("fade-out");
-
-  //     setTimeout(() => {
-  //       setCurrentCenterImage(
-  //         (prevIndex) => (prevIndex + 1) % centerImages.length
-  //       );
-  //       setFadeClass("fade-in");
-  //     }, 100);
-  //   }, 3000);
-
-  //   return () => clearInterval(imageChangeInterval);
-  // }, [centerImages.length]);
-
   useEffect(() => {
     const animateLogos = setInterval(() => {
       const outerLogos = document.querySelectorAll(".outer-orbit-logo");
@@ -73,19 +58,14 @@ const Herosection = () => {
 
         // Set specific orbit sizes based on device width
         if (windowWidth <= 375) {
-          // iPhone eXpensive portrait, iPhone 6-8 portrait
           orbitRadius = 120;
         } else if (windowWidth <= 412) {
-          // Pixel 2 portrait, iPhone 6-8 Plump portrait
           orbitRadius = 140;
         } else if (windowWidth <= 667) {
-          // iPhone 6-8 landscape
           orbitRadius = 140;
         } else if (windowWidth <= 734 || windowWidth <= 736) {
-          // iPhone eXpensive landscape, iPhone 6-8 Plump landscape
           orbitRadius = 90;
         } else if (windowWidth <= 768) {
-          // Tablets
           orbitRadius = 90;
         } else {
           orbitRadius = 140;
@@ -122,21 +102,11 @@ const Herosection = () => {
   }, []);
 
   return (
-    // <section className="py-20  sm:py-45  md:py-40 lg:py-32 bg-gradient-to-b from-white to-purple-200 flex flex-col md:flex-row items-center justify-center">
-    <section
-      className="max-w-auto flex flex-col m-auto md:flex-row items-center justify-center bg-[url('/BG_color.png')] bg-cover bg-center h-[530px]"
-      // style={{
-      //   background:
-      //     "bg-[url('/BG color.png')]",
-      // }}
-    >
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-2  mx-auto w-[70%] py-8 mt-[70px]"
-        // style={{ padding: "10px" }}
-      >
+    <section className=" bg-[url('/BG_color.png')] bg-cover bg-center h-[400px] w-full">
+      <div className="flex justify-between flex-col md:flex-row items-center mx-auto max-w-[1100px] mt-[130px] px-4 ">
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left mt-1">
-          <h5 className=" font-poppins font-bold text-[45px] text-[#FF9D00] leading-snug md:leading-[70px]">
+          <h5 className="font-poppins font-bold text-[45px] text-[#FF9D00] leading-snug md:leading-[70px]">
             Making Service <br /> Simple and Excellent
           </h5>
           <p className="text-[#1C1C1C] mt-4 font-[500] text-[16px] leading-[30px] tracking-wider max-w-[36rem]">
@@ -144,13 +114,10 @@ const Herosection = () => {
             offering a hassle-free experience that consistently meets your
             expectations and needs.
           </p>
-          {/* <button className="mt-8 bg-black text-white py-3 px-6 rounded-full hover:bg-gray-700 transition">
-            Book an Appointment
-          </button> */}
         </div>
 
         {/* Solar Animation Section */}
-        <div className="relative flex items-center justify-center mt-[20px]">
+        <div className="relative flex items-center justify-center mt-[20px] md:mr-[100px]">
           {/* Outer and Inner Orbits */}
           <div className="absolute w-65 h-65 md:w-72 md:h-72 border-2 border-gray-300 rounded-full p-[35px]">
             {/* Outer orbit with 10px gap */}
@@ -168,13 +135,13 @@ const Herosection = () => {
 
           {/* Center Image */}
           <div className="p-2 bg-white rounded-full">
-          <div className="relative w-[100px] h-[100px] rounded-full bg-white shadow-lg z-10">
-            <img
-              src={centerImages[currentCenterImage].src}
-              alt={centerImages[currentCenterImage].alt}
-              className={`w-full h-full object-cover rounded-full transition-all duration-500 ease-in-out ${fadeClass}`}
-            />
-          </div>
+            <div className="relative w-[100px] h-[100px] rounded-full bg-white shadow-lg z-10">
+              <img
+                src={centerImages[currentCenterImage].src}
+                alt={centerImages[currentCenterImage].alt}
+                className={`w-full h-full object-cover rounded-full transition-all duration-500 ease-in-out ${fadeClass}`}
+              />
+            </div>
           </div>
 
           {/* Outer Orbit Logos */}
@@ -182,7 +149,7 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-                className="outer-orbit-logo absolute w-[50px] h-[50px]  transform"
+                className="outer-orbit-logo absolute w-[50px] h-[50px] transform"
               >
                 <img
                   src={logo.src}
