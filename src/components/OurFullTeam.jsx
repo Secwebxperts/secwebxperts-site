@@ -25,7 +25,7 @@ const TeamCard = ({ img, name, position, description, profileLink }) => {
       <div className="mt-4 items-center justify-center flex">
         <a
           href={profileLink}
-           target="_blank"
+          target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-800"
         >
@@ -61,21 +61,13 @@ const OurFullTeam = () => {
               "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results."
             }
             position={"Director"}
-            profileLink={"https://www.linkedin.com/in/hem-chandra-paira-aa3526326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
+            profileLink={
+              "https://www.linkedin.com/in/hem-chandra-paira-aa3526326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            }
           />
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-        <TeamCard
-            img={"/teamMember/ceo.png"}
-            name={"Satya Sachi Paira"}
-            description={
-              "Leading the team, making strategic decisions, driving growth, and ensuring operational success."
-            }
-            position={"CEO"}
-            profileLink={"https://www.linkedin.com/in/sathya-sachi-paira32281178/"}
-          />
-         
           <TeamCard
             img={"/teamMember/ceo.png"}
             name={"Sathya Sachi Paira"}
@@ -83,8 +75,23 @@ const OurFullTeam = () => {
               "Leading the team, making strategic decisions, driving growth, and ensuring operational success."
             }
             position={"CEO"}
+            profileLink={
+              "https://www.linkedin.com/in/sathya-sachi-paira32281178/"
+            }
           />
 
+          <TeamCard
+            img={"/teamMember/sabya.png"}
+            name={"Sabhya Sachi Paira"}
+            description={
+              "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals."
+            }
+            position={"COO"}
+            profileLink={
+              "https://www.linkedin.com/in/sabhya-sachi-paira-8229a8325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+
+            }
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
@@ -125,7 +132,9 @@ const OurFullTeam = () => {
               "Builds & maintains web applications, working with both front-end and back-end technologies."
             }
             position={"Full Stack (Jr. Developer)"}
-            profileLink={"https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"}
+            profileLink={
+              "https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"
+            }
           />
           <TeamCard
             img={"/teamMember/sudipta.png"}
@@ -134,7 +143,9 @@ const OurFullTeam = () => {
               "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
             }
             position={"Web Developer (Intern)"}
-            profileLink={"https://www.linkedin.com/in/sudipta-ghorami-261a81292/"}
+            profileLink={
+              "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+            }
           />
         </div>
       </div>

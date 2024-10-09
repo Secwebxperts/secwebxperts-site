@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ServiceSection = () => {
   return (
     <section className="py-12 bg-[#F9F9F9] mx-auto">
-      <div className="max-w-[1000px] mx-auto text-center">
+      <div className="max-w-[1300px] mx-auto text-center">
         <div className="text-center mb-12">
           <h2 className="text-[#FF9D00] text-[36px] font-semibold font-poppins">
             OUR SERVICES
@@ -31,14 +31,13 @@ const ServiceSection = () => {
               alt="Web Development"
               className="mx-auto mb-4 w-full max-w-[188px] h-[150px] object-cover"
             />
-            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">Web Development</h3>
+            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">
+              Web Development
+            </h3>
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
               Build responsive and dynamic websites with modern technologies.
             </p>
-            <Link
-              to="/services?tab=web-design"
-              className="text-blue-600 "
-            >
+            <Link to="/services?tab=web-design" className="text-blue-600 ">
               Learn More →
             </Link>
           </motion.div>
@@ -59,14 +58,13 @@ const ServiceSection = () => {
               alt="Mobile App Development"
               className="mx-auto mb-4 w-full max-w-[145px] h-[150px] object-cover"
             />
-            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">Mobile App Development</h3>
+            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">
+              Mobile App Development
+            </h3>
             <p className="text-[#546E7A] mb-2 font-[400] text-[14px]">
               Develop cutting-edge mobile apps for iOS and Android platforms.
             </p>
-            <Link
-              to="/services?tab=mobile-app"
-              className="text-blue-600 "
-            >
+            <Link to="/services?tab=mobile-app" className="text-blue-600 ">
               Learn More →
             </Link>
           </motion.div>
@@ -87,14 +85,13 @@ const ServiceSection = () => {
               alt="Cyber Security"
               className="mx-auto mb-4 w-full max-w-[166px] h-[150px] object-cover"
             />
-            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">Cyber Security</h3>
+            <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">
+              Cyber Security
+            </h3>
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
               Protect your digital assets with top-tier security solutions.
             </p>
-            <Link
-              to="/services?tab=cyber-security"
-              className="text-blue-600 "
-            >
+            <Link to="/services?tab=cyber-security" className="text-blue-600 ">
               Learn More →
             </Link>
           </motion.div>
@@ -115,14 +112,14 @@ const ServiceSection = () => {
               alt="Cyber Security"
               className="mx-auto mb-4 w-full max-w-[166px] h-[150px] object-cover"
             />
-            <h3 className="text-[17px] font-semibold font-poppins mb-1 text-[#1C1C1C]">SaaS</h3>
+            <h3 className="text-[17px] font-semibold font-poppins mb-1 text-[#1C1C1C]">
+              SaaS
+            </h3>
             <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
-            SaaS is software delivered online, accessed via a browser, & managed by the provider.
+              SaaS is software delivered online, accessed via a browser, &
+              managed by the provider.
             </p>
-            <Link
-              to="/services?tab=saas"
-              className="text-blue-600"
-            >
+            <Link to="/services?tab=saas" className="text-blue-600">
               Learn More →
             </Link>
           </motion.div>
