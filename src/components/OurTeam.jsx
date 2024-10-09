@@ -1,16 +1,13 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { Autoplay } from "swiper/modules";
-import { SwiperSlide, Swiper } from "swiper/react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 const teamMembers = [
   {
     name: "Hem Chandra Paira",
     title: "Director",
     description:
-      "Experienced IT leader dedicated to driving innovation and excellence in technology solutions and cybersecurity.",
+      "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results.",
 
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
 
@@ -28,7 +25,7 @@ const teamMembers = [
     name: "Sabya Sachi Paira",
     title: "COO",
     description:
-      "Overseeing daily operations, managing team performance, and driving company objectives.",
+      "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals.",
 
     image: "/teamMember/sabya.png", // Replace with actual image path
 
@@ -88,7 +85,7 @@ const OurTeam = () => {
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
               <div
-                className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]"
+                className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[580px]"
                 key={index}
               >
                 <img
