@@ -75,16 +75,7 @@ const OurFullTeam = () => {
             position={"CEO"}
             profileLink={"https://www.linkedin.com/in/sathya-sachi-paira32281178/"}
           />
-          <TeamCard
-            img={"/teamMember/sabya.png"}
-            name={"Sabhya Sachi Paira"}
-            description={
-              "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals."
-            }
-            position={"COO"}
-            profileLink={"https://www.linkedin.com/in/sabhya-sachi-paira-8229a8325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
-          />
-
+         
           <TeamCard
             img={"/teamMember/ceo.png"}
             name={"Sathya Sachi Paira"}
