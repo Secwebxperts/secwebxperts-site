@@ -149,7 +149,9 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
+
                 className="outer-orbit-logo absolute w-[50px] h-[50px] transform"
+
               >
                 <img
                   src={logo.src}

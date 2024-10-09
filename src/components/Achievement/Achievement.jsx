@@ -16,7 +16,7 @@ const Achievements = () => {
 
   return (
     <>
-      <div className="bg-[url('public/bgimg/ach.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
+      <div className="bg-[url('/bgimg/ach.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
         <h2 className="uppercase text-[36px] font-[600] font-poppins text-center text-customYellow mb-4">
           Some of our Achievements
         </h2>
@@ -68,8 +68,8 @@ const Achievements = () => {
           ))}
         </Swiper>
       </div>
-      <div className="bg-[url('bgimg/binary.png')] bg-contain bg-no-repeat">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('bgimg/achievement.png')] bg-contain bg-no-repeat lg:px-2 ">
+      <div className="bg-[url('/bgimg/binary.png')] bg-contain bg-no-repeat">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('/bgimg/achievement.png')] bg-contain bg-no-repeat lg:px-2 ">
           {/* Left Image Section */}
           <div className="lg:w-1/2 w-full ml-0">
             <img

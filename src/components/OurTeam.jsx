@@ -64,65 +64,61 @@ const OurTeam = () => {
     ],
   };
   return (
-    <div className=" bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat">
-      <div className="max-w-[1300px]  flex flex-col md:flex-row justify-between py-12 px-20 m-auto">
-        {/* Left Section (Text) */}
-        <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
-          <h2 className="text-[#FF9D00] text-[36px] font-semibold mb-2 font-poppins">
-            OUR TEAM
-          </h2>
-          <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins max-w-96">
-            Clarity delivers components for professional SaaS websites, landing
-            pages, or admin panels with Cybersecurity expertise.
-          </p>
-          {/* <Link to="/team">
+    <div className="flex flex-col md:flex-row justify-between py-12 px-20 m-auto bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat ">
+      {/* Left Section (Text) */}
+      <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
+        <h2 className="text-[#FF9D00] text-[36px] font-semibold mb-2 font-poppins">
+          OUR TEAM
+        </h2>
+        <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins max-w-96">
+          Clarity delivers components for professional SaaS websites, landing
+          pages, or admin panels with Cybersecurity expertise.
+        </p>
+        {/* <Link to="/team">
           <p className="text-blue-600 font-medium">
             View all members
             <span className="ml-2">→</span>
           </p>
         </Link> */}
-        </div>
+      </div>
 
-        {/* Right Section (Team Cards) */}
-        <div className="w-full md:w-[50%]">
-          <Slider {...settings}>
-            {teamMembers.map((member, index) => (
-              <div
-                className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]"
-                key={index}
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
-                />
-                <h3 className="text-lg font-bold text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="text-yellow-500 mb-2 items-center">
-                  {member.title}
-                </p>
-                <p className="text-gray-600 font-sans">{member.description}</p>
-                <div className="flex justify-center items-center mt-2">
-                  <div className="flex justify-evenly w-[100px]">
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaLinkedin size={20} color="gray" />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaTwitter size={20} color="gray" />
-                    </a>
-                  </div>
+      {/* Right Section (Team Cards) */}
+      <div className="w-full md:w-[50%]">
+        <Slider {...settings}>
+          {teamMembers.map((member, index) => (
+            <div
+              className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[460px]"
+              key={index}
+            >
+              <img
+                src={member.image}
+                alt={member.name}
+                className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
+              />
+              <h3 className="text-lg font-bold text-gray-800">{member.name}</h3>
+              <p className="text-yellow-500 mb-2 items-center">
+                {member.title}
+              </p>
+              <p className="text-gray-600 font-sans">{member.description}</p>
+              <div className="flex justify-center items-center mt-2">
+                <div className="flex justify-evenly w-[100px]">
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-500 hover:text-blue-700 mx-2"
+                  >
+                    <FaLinkedin size={20} color="gray" />
+                  </a>
+                  <a
+                    href={member.linkedin}
+                    className="text-blue-500 hover:text-blue-700 mx-2"
+                  >
+                    <FaTwitter size={20} color="gray" />
+                  </a>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
