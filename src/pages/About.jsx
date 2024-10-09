@@ -231,13 +231,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="testimonial-slider">
+      <div className="testimonial-slider max-w-[1300px] mx-auto">
         <h2 className="text-center font-[600] text-[#FF9D00] text-[36px] mb-8">
           TESTIMONIAL
         </h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className=" max-h-[350px] max-w-[370px]">
+            <div key={index} className=" max-h-[310px] max-w-[300px]">
               <div className="border-2 border-[#007bff] rounded-lg p-6 text-center">
                 <img
                   src={testimonial.image}
