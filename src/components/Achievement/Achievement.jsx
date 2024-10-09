@@ -1,10 +1,7 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/autoplay"; // Include autoplay CSS if needed
-import { Autoplay } from "swiper/modules";
-import "./Achievement.css"; // If you have any custom CSS
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import CVESlideIn from "./Cve";
-
 const Achievements = () => {
   const achievements = [
     { logo: "/achievement/frame 2.png" },
@@ -13,10 +10,35 @@ const Achievements = () => {
     { logo: "/achievement/frame 4.png" },
     { logo: "/achievement/frame 5.png" },
   ];
-
+  const settings = {
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 4, // Increase this to show more cards
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0, // For continuous scroll
+    cssEase: "linear", // Smooth transition
+    arrows: false, // Remove arrows
+    pauseOnHover: false, // Keep sliding on hover
+    // Add custom responsive settings if needed
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Change for medium screens
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1, // Change for small screens
+        },
+      },
+    ],
+  };
   return (
-    <>
-      <div className="bg-[url('/bgimg/ach.png')] bg-contain bg-no-repeat py-16 mx-auto mt-[-10px]">
+    <div className="bg-[url('/bgimg/ach.png')] bg-contain bg-no-repeat">
+      <div className=" py-16 mx-auto mt-[-10px] max-w-[1300px]">
         <h2 className="uppercase text-[36px] font-[600] font-poppins text-center text-customYellow mb-4">
           Some of our Achievements
         </h2>
@@ -26,50 +48,20 @@ const Achievements = () => {
         </p>
 
         {/* Swiper for sliding cards */}
-        <Swiper
-          loop={true}
-          autoplay={{ delay: 2000, disableOnInteraction: false }}
-          spaceBetween={10}
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              slidesPerView: 2, // Show 1 slide
-              spaceBetween: 20,
-            },
-            // when window width is >= 768px
-            768: {
-              slidesPerView: 3, // Show 2 slides
-              spaceBetween: 20,
-            },
-            // when window width is >= 1024px
-            1024: {
-              slidesPerView: 4, // Show 3 slides
-              spaceBetween: 20,
-            },
-            // when window width is >= 1280px
-            1280: {
-              slidesPerView: 4, // Show 4 slides
-              spaceBetween: 10,
-            },
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
+        <Slider {...settings}>
           {achievements.map((achievement, index) => (
-            <SwiperSlide key={index}>
-              <div className="items-center py-2">
-                <img
-                  src={achievement.logo}
-                  alt={achievement.name}
-                  className="h-4 object-contain mb-2"
-                />
-              </div>
-            </SwiperSlide>
+            <div className="items-center py-2" key={index}>
+              <img
+                src={achievement.logo}
+                alt={achievement.name}
+                className="h-[150px] w-[400px] object-contain mb-2" // Increase height and width here
+              />
+            </div>
           ))}
-        </Swiper>
+        </Slider>
       </div>
       <div className="bg-[url('/bgimg/binary.png')] bg-contain bg-no-repeat">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('/bgimg/achievement.png')] bg-contain bg-no-repeat lg:px-2 ">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start bg-[url('/bgimg/achievement.png')] bg-contain bg-no-repeat lg:px-2 max-w-[1300px] mx-auto">
           {/* Left Image Section */}
           <div className="lg:w-1/2 w-full ml-0">
             <img
@@ -106,7 +98,7 @@ const Achievements = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

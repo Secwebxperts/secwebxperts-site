@@ -26,7 +26,7 @@ const Contact = () => {
       </div>
 
       {/* Talk to Us Section */}
-      <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-10 px-5 py-10 ">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-10 px-5 py-10 max-w-[1300px]">
         {/* Image */}
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="relative w-full h-[330px] lg:h-[400px] ml-[59px]">
