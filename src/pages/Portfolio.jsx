@@ -1,40 +1,65 @@
+// const portfolioItems = [
+//   {
+//     id: 1,
+//     image: "portfolio/img1.png", // You can replace with actual image URLs
+//     title: "BOOKPOINT",
+//     description:
+//       "Book point is an online haven for book lovers to explore genres, share reviews, and connect with fellow readers.",
+//   },
+//   {
+//     id: 2,
+//     image: "portfolio/img2.png",
+//     title: "INSTANT BEAUTY",
+//     description:
+//       "Instant Beauty is a platform for quick beauty solutions and products, helping users enhance their look effortlessly.",
+//   },
+//   {
+//     id: 3,
+//     image: "portfolio/img3.png",
+//     title: "HEALTHY TEA",
+//     description:
+//       "Healthy Tea is an online store offering a variety of wellness teas designed to promote health and overall well-being.",
+//   },
+//   {
+//     id: 4,
+//     image: "portfolio/img4.png",
+//     title: "FLEXEXES",
+//     description:
+//       "Flexexes is a platform for flexible exercise solutions, offering workout plans and fitness resources for all levels.",
+//   },
+//   {
+//     id: 5,
+//     image: "portfolio/img5.png",
+//     title: "BYTEBUCKS",
+//     description:
+//       "Bytebucks is a platform that rewards users for engaging with technology and tech-related content.",
+//   },
+// ];
+
 const portfolioItems = [
   {
     id: 1,
-    image: "portfolio/img1.png", // You can replace with actual image URLs
-    title: "BOOKPOINT",
+    image: "portfolio/img6.png", // You can replace with actual image URLs
+    title: "HR RECRUITMENT",
     description:
-      "Book point is an online haven for book lovers to explore genres, share reviews, and connect with fellow readers.",
+      "It focuses on sourcing, screening, and hiring the right candidates to fill job roles, align with the company's needs and culture.",
   },
   {
     id: 2,
-    image: "portfolio/img2.png",
-    title: "INSTANT BEAUTY",
+    image: "portfolio/img7.png", // You can replace with actual image URLs
+    title: "SKIN FIRTS",
     description:
-      "Instant Beauty is a platform for quick beauty solutions and products, helping users enhance their look effortlessly.",
+      "It emphasizes over makeup, focusing on maintaining healthy, glowing skin through proper care routines, hydration.",
   },
   {
     id: 3,
-    image: "portfolio/img3.png",
-    title: "HEALTHY TEA",
+    image: "portfolio/img8.png", // You can replace with actual image URLs
+    title: "LOREM IPSUM",
     description:
-      "Healthy Tea is an online store offering a variety of wellness teas designed to promote health and overall well-being.",
-  },
-  {
-    id: 4,
-    image: "portfolio/img4.png",
-    title: "FLEXEXES",
-    description:
-      "Flexexes is a platform for flexible exercise solutions, offering workout plans and fitness resources for all levels.",
-  },
-  {
-    id: 5,
-    image: "portfolio/img5.png",
-    title: "BYTEBUCKS",
-    description:
-      "Bytebucks is a platform that rewards users for engaging with technology and tech-related content.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
   },
 ];
+
 const Portfolio = () => {
   return (
     <div>
