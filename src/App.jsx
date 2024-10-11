@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollTotop";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
+import CaseStudy from "./pages/caseStudy";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/case-study" element={<CaseStudy />} />
         </Routes>
         <Footer />
       </div>
