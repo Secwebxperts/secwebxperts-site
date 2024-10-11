@@ -86,6 +86,12 @@ export default function Navbar() {
           >
             PORTFOLIO
           </Link>
+          <Link
+            to="/case-study"
+            className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]"
+          >
+            CASE-STUDY
+          </Link>
 
           {/* <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
