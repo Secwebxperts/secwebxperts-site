@@ -43,9 +43,11 @@ const Footer = () => {
         <div className="mb-8 md:mb-0">
           <h3 className="font-semibold mb-3 text-[22px] font-poppins ">Company</h3>
           <ul className="space-y-2 text-sm">
-            <li className="font-poppins text-[13px]"><Link to="/">About Us</Link></li>
+            <li className="font-poppins text-[13px]"><Link to="/about">About Us</Link></li>
             <li className="font-poppins text-[13px]"><Link to="/full-team">Our Teams</Link></li>
-          
+            <li className="font-poppins text-[13px]"><Link to="/services">Services</Link></li>
+            <li className="font-poppins text-[13px]"><Link to="/portfolio">Portfolio</Link></li>
+
           </ul>
         </div>
 
@@ -88,7 +90,7 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4">
             <a href="https://www.linkedin.com/company/secwebxperts/" target="_blank"><FaLinkedin size={30} /></a>
-           <a href="#"><img src="/Vector (1).png" className="h-[28px] w-[27px"></img></a>
+           {/* <a href="#"><img src="/Vector (1).png" className="h-[28px] w-[27px"></img></a> */}
           </div>
         </div>
       </div>
