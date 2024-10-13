@@ -3,27 +3,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
-    name: "Sanjay Sharma",
+    name: "Sarah M",
     image: "about/testi/img1.png", // replace with image path or URL
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    text: "SecWebXperts redesigned our outdated website into a sleek platform, exceeding expectations and boosting client engagement quickly.",
     rating: 5,
   },
   {
-    name: "Ankit Pandey",
+    name: "John D",
     image: "about/testi/img2.png",
-    text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+    text: "SecWebXperts built a fast, user-friendly e-commerce app, handled every detail, and provided seamless maintenance. Highly recommended!.",
     rating: 5,
   },
   {
-    name: "Pawan Gupta",
+    name: "Rajesh P",
     image: "about/testi/img3.png",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    text: "SecWebXperts delivered a robust platform, optimized security and performance, with clear communication. We're now planning our next project!.",
     rating: 5,
   },
   {
-    name: "Pawan Gupta",
+    name: "Emily R",
     image: "about/testi/img3.png",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    text: "SecWebXperts developed a game-changing SaaS solution, streamlining our operations and saving time and money. Highly recommended IT partner!.",
     rating: 5,
   },
   // Add more testimonials here
@@ -33,25 +33,24 @@ const About = () => {
   const settings = {
     infinite: true,
     speed: 5000,
-    slidesToShow: 4, // Increase this to show more cards
+    slidesToShow: 4, // Show 4 slides on large screens
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // For continuous scroll
+    autoplaySpeed: 0, // Continuous scroll
     cssEase: "linear", // Smooth transition
-    arrows: false, // Remove arrows
+    arrows: false, // No arrows
     pauseOnHover: false, // Keep sliding on hover
-    // Add custom responsive settings if needed
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Change for medium screens
+          slidesToShow: 2, // Show 2 slides on tablets
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1, // Change for small screens
+          slidesToShow: 1, // Show 1 slide on mobile devices
         },
       },
     ],
@@ -59,17 +58,22 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-[url('about/img1.png')] bg-cover bg-center bg-no-repeat min-h-[300px] mt-[80px]">
-        <div className="pt-[80px] ps-[120px]">
-          <h2 className="text-[#FF9D00] text-[50px] font-[700]">ABOUT US</h2>
-          <p className="text-[16px] font-[500] text-[#1C1C1C]">
+      <div className="bg-[url('about/img1.png')] bg-cover bg-center bg-no-repeat min-h-[300px] mt-[40px] sm:mt-[60px] lg:mt-[80px]">
+        <div className="pt-[40px] sm:pt-[60px] lg:pt-[80px] ps-[20px] sm:ps-[60px] lg:ps-[120px]">
+          <h2 className="text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] font-poppins">
+            ABOUT US
+          </h2>
+          <p className="text-[14px] sm:text-[16px] font-[500] text-[#1C1C1C] font-poppins">
             We make life better for billions of people, billions of times a day
           </p>
         </div>
       </div>
-      <div className="text-center max-w-[1300px] mx-auto leading-[30px] py-20">
-        <h2 className="text-[36px] font-[600] text-[#FF9D00]">OUR STORY</h2>
-        <p className="text-[#546E7A] text-[16px] font-[500] pt-[20px]">
+
+      <div className="text-center w-[100%] mx-auto leading-[30px] py-20 bg-[#F9F9F9] mt-2 mb-2">
+        <h2 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[600] text-[#FF9D00] font-poppins">
+          OUR STORY
+        </h2>
+        <p className="text-[#546E7A] text-[16px] font-[500] p-[40px] text-center font-poppins ml-12 mr-12">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -86,10 +90,10 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between items-center min-h-[400px]">
             {/* Left side content */}
             <div className="w-full md:w-1/2 text-center md:text-left">
-              <h2 className="font-[600] text-[#FF9D00] text-[36px] mb-4">
+              <h2 className="font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] mb-4 font-poppins">
                 OUR MISSION
               </h2>
-              <p className="text-[#546E7A] text-[16px] max-w-[400px] mb-8">
+              <p className="text-[#546E7A] text-[16px] max-w-[400px] mb-8 font-poppins">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
@@ -111,7 +115,7 @@ const About = () => {
                     alt="Development Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Continual Development And Innovation
                   </p>
                 </div>
@@ -123,7 +127,7 @@ const About = () => {
                     alt="Counselling Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Professional Counselling
                   </p>
                 </div>
@@ -135,7 +139,7 @@ const About = () => {
                     alt="Cooperation Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Customer-Oriented Cooperation
                   </p>
                 </div>
@@ -147,7 +151,7 @@ const About = () => {
                     alt="Quality Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Best Quality
                   </p>
                 </div>
@@ -156,7 +160,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="my-10 bg-[url('about/img3.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
+      <div className="my-7 bg-[url('about/img3.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
         <div className="container mx-auto px-4 max-w-[1300px]">
           <div className="flex flex-col md:flex-row justify-center items-center min-h-[400px]">
             {/* Left side content */}
@@ -174,7 +178,7 @@ const About = () => {
                     alt="Development Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Defining and Communicating the Vision
                   </p>
                 </div>
@@ -186,7 +190,7 @@ const About = () => {
                     alt="Counselling Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Strategic Thinking and Long-Term Planning
                   </p>
                 </div>
@@ -198,7 +202,7 @@ const About = () => {
                     alt="Cooperation Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Decision-Making and Prioritization{" "}
                   </p>
                 </div>
@@ -210,7 +214,7 @@ const About = () => {
                     alt="Quality Icon"
                     className="mb-4"
                   />
-                  <p className="text-center text-[#546E7A] font-[700] text-[16px]">
+                  <p className="text-center text-[#546E7A] font-[700] text-[16px] font-poppins">
                     Adaptation and Flexibility
                   </p>
                 </div>
@@ -219,10 +223,10 @@ const About = () => {
 
             {/* Right side content */}
             <div className="w-full md:w-1/2 max-w-[400px] text-center md:text-left">
-              <h2 className="font-[600] text-[#FF9D00] text-[36px] mb-4">
+              <h2 className="font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] mb-4 font-poppins">
                 OUR VISION
               </h2>
-              <p className="text-[#546E7A] text-[16px] mb-8">
+              <p className="text-[#546E7A] text-[16px] mb-8 font-poppins">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s.
@@ -231,20 +235,25 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="testimonial-slider max-w-[1300px] mx-auto">
-        <h2 className="text-center font-[600] text-[#FF9D00] text-[36px] mb-8">
+      <div className="testimonial-slider max-w-[1300px] mx-auto bg-[#F9F9F9]">
+        <h2 className="text-center font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[40px] mb-8 font-poppins">
           TESTIMONIAL
         </h2>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
-            <div key={index} className=" max-h-[310px] max-w-[300px]">
+            <div
+              key={index}
+              className="h-auto w-full md:max-w-[250px] lg:max-w-[300px] mb-8 mx-auto"
+            >
               <div className="border-2 border-[#007bff] rounded-lg p-6 text-center">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="mx-auto rounded-full w-[100px] h-[100px] mb-4"
+                  className="mx-auto rounded-full w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] mb-4"
                 />
-                <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                <h3 className="text-base sm:text-lg font-semibold">
+                  {testimonial.name}
+                </h3>
                 <div className="flex justify-center my-2">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
                     <span key={i} className="text-blue-500">
@@ -252,7 +261,9 @@ const About = () => {
                     </span>
                   ))}
                 </div>
-                <p className="text-gray-600">{testimonial.text}</p>
+                <p className="text-sm sm:text-base text-gray-600">
+                  {testimonial.text}
+                </p>
               </div>
             </div>
           ))}

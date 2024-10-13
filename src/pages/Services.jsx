@@ -18,7 +18,7 @@ const Services = () => {
     <section className="min-h-screen w-[100%]">
       {/* Header Section */}
       <div
-        className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center"
+        className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center mt-[80px]"
         style={{
           backgroundImage:
             "linear-gradient(to right, rgb(0 0 0 / 70%) 20%, rgb(221 189 63 / 80%) 60%, rgb(206 0 0 / 20%) 100%), url('/serviceImages/serviceBG.jpg')",

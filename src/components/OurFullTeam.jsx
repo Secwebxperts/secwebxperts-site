@@ -41,15 +41,17 @@ const OurFullTeam = () => {
     <>
       {/* Intro Section */}
       <div className="flex flex-col items-center justify-center py-36 bg-[url('/BG_color.png')] bg-cover bg-center">
-        <h1 className="text-2xl md:text-[50px] font-[700] leading-[58.59px] text-[#FF9D00] font-poppins text-center">
-          We Bring A Wealth Of Skills And Experience
-          <br /> From A Wide Range Of Backgrounds
-        </h1>
-        <p className="mt-4 text-base md:text-lg text-[#1C1C1C] font-[500] text-center max-w-2xl mx-auto">
-          Our philosophy is simple: hire great people and give them the
-          resources and support to do their best work.
-        </p>
-      </div>
+  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] font-[700] leading-tight text-[#FF9D00] font-poppins text-center">
+    We Bring A Wealth Of Skills And Experience
+    <br /> From A Wide Range Of Backgrounds
+  </h3>
+  <p className="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-[#1C1C1C] font-[500] text-center max-w-2xl mx-auto">
+    Our philosophy is simple: hire great people and give them the
+    resources and support to do their best work.
+  </p>
+</div>
+
+
 
       {/* Team Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 justify-items-center px-4 md:px-8 lg:px-16">
@@ -96,7 +98,7 @@ const OurFullTeam = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
           <TeamCard
-            img={"/teamMember/aditi.png"}
+            img={"/teamMember/Aditi-jaiswal.png"}
             name={"Aditi Jaiswal"}
             description={
               "Focuses on generating new business opportunities by identifying and qualifying leads for the sales team."
