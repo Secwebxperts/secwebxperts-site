@@ -1,6 +1,6 @@
 const CaseStudy = () => {
   return (
-    <div className="pt-24 container ">
+    <div className="pt-24 container mx-auto max-w-[1700px]">
       <div className="h-[500px] bg-pink-50 max-w-[1300px] mx-auto">
         <h1 className="uppercase text-[#012169] text-[64px] font-[600] font-poppins">
           hr Recruitment
@@ -55,7 +55,7 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center bg-white p-8 max-w-[1300px] mx-auto">
+      <div className="flex flex-col lg:flex-row justify-between items-center bg-white p-8 max-w-[1300px] mx-auto">
         {/* Left Side - Text Content */}
         <div className="max-w-lg">
           <h1 className="text-3xl font-bold text-[#FF9D00] mb-4">
@@ -74,19 +74,15 @@ const CaseStudy = () => {
               <li className="flex items-start">
                 <span className="text-[#FF9D00] mr-2">●</span>
                 <p className="text-[#546E7A] text-[16px]">
-                  <strong className="text-[#1C1C1C]" className="text-[#1C1C1C]">
-                    Needs:
-                  </strong>{" "}
-                  Easy navigation, clear job descriptions, and simple
-                  application processes.
+                  <strong className="text-[#1C1C1C]">Needs:</strong> Easy
+                  navigation, clear job descriptions, and simple application
+                  processes.
                 </p>
               </li>
               <li className="flex items-start">
                 <span className="text-[#FF9D00] mr-2">●</span>
                 <p className="text-[#546E7A] text-[16px]">
-                  <strong className="text-[#1C1C1C]" className="text-[#1C1C1C]">
-                    Pain Points:
-                  </strong>{" "}
+                  <strong className="text-[#1C1C1C]">Pain Points:</strong>{" "}
                   Lengthy applications, unclear job roles, or difficult user
                   interfaces.
                 </p>
@@ -119,7 +115,7 @@ const CaseStudy = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="w-1/2">
+        <div className="md:w-1/2 py-10 md:py-0">
           <img
             src="case_study/img1.png"
             alt="Research Phase"
@@ -372,6 +368,34 @@ const CaseStudy = () => {
                 hover states, clickable elements).
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#F9F9F9]">
+        <div className=" mx-auto my-10 p-6 max-w-[1300px] ">
+          {/* Title */}
+          <h2 className="text-[#FF9D00] text-[36px] font-[600] mb-2 font-poppins">
+            CONCLUSION
+          </h2>
+
+          {/* Sub-heading */}
+          <p className="text-[#546E7A] text-[16px] mb-6 font-poppins">
+            The conclusion summarizes findings, reflects on the project’s
+            impact, and offers recommendations for future steps.
+          </p>
+
+          {/* Bullet point section */}
+          <div className="flex justify-start items-center text-left">
+            {/* Dot */}
+            <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-3"></span>
+            {/* Text */}
+            <p className="text-[16px] font-[300] text-[#546E7A] max-w-6xl">
+              By focusing on a user-centered design approach and conducting
+              thorough testing, the recruitment website should offer a seamless
+              experience for both job seekers and recruiters. The platform
+              should be scalable, intuitive, and responsive to cater to
+              different user needs and devices.
+            </p>
           </div>
         </div>
       </div>
