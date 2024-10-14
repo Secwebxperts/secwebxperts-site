@@ -74,15 +74,7 @@ const About = () => {
           OUR STORY
         </h2>
         <p className="text-[#546E7A] text-[16px] font-[500] p-[40px] text-center font-poppins ml-12 mr-12">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not five
-          centuries, but also the leap into electronic typesetting, remaining
-          essentially unchanged. It was the 1960s with the release Letraset
-          sheets containing Lor Ipsum passages, and more recently with desktop
-          publishing software like Aldus PageMaker including versions of Lorem
-          Ipsum.
+        With the goal of revolutionizing the digital world, SecWebXperts was founded eighteen months ago. Sathya founded the business, which first offered support for developing mobile and online applications. With an enthusiastic staff with backgrounds from Dell, IBM, Deloitte, and Samsung, we have grown into a reliable business partner. With a goal of providing creative, customized solutions worldwide, our emphasis on developing state-of-the-art digital solutions has propelled our growth into SaaS development, UI/UX design, and software development.
         </p>
       </div>
       <div className="bg-[url('about/img2.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">

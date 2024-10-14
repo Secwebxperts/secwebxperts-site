@@ -106,7 +106,7 @@ const OurTeam = () => {
                   <div className="flex justify-evenly w-[100px]">
                     <a
                       href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
+                      className="text-[#959595] mx-2"
                     >
                       <FaLinkedin size={20} />
                     </a>
