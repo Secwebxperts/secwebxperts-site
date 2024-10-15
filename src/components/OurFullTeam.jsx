@@ -106,7 +106,7 @@ const OurFullTeam = () => {
             position={"Business Development Representative"}
             profileLink={"https://www.linkedin.com/in/aditi-jaiswal-5129aa15"}
           />
-          <TeamCard
+          {/* <TeamCard
             img={"/teamMember/sachin.png"}
             name={"Sachin Subhashrao Aghao"}
             description={
@@ -114,10 +114,7 @@ const OurFullTeam = () => {
             }
             position={"Business Development Representative"}
             profileLink={"https://www.linkedin.com/in/sachin-aghao-ba991619"}
-          />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-32">
+          /> */}
           <TeamCard
             img={"/teamMember/jahan.png"}
             name={"Jahan Ara"}
@@ -127,6 +124,18 @@ const OurFullTeam = () => {
             position={"UI/UX Designer"}
             profileLink={"https://www.linkedin.com/in/jahan-ara-7a293a214/"}
           />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 pb-32">
+          {/* <TeamCard
+            img={"/teamMember/jahan.png"}
+            name={"Jahan Ara"}
+            description={
+              "Creates intuitive, user-friendly designs focused on usability and experience."
+            }
+            position={"UI/UX Designer"}
+            profileLink={"https://www.linkedin.com/in/jahan-ara-7a293a214/"}
+          /> */}
           <TeamCard
             img={"/teamMember/pinaki.png"}
             name={"Pinaki Sasmal"}

@@ -1,4 +1,5 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -6,9 +7,7 @@ const teamMembers = [
   {
     name: "Hem Chandra Paira",
     title: "Director",
-    description:
-      "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results.",
-
+    description: "With 40 years in construction, expertise in leading teams, fostering excellence, innovation, and mentorship.",
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
 
     linkedin: "#",
@@ -22,28 +21,27 @@ const teamMembers = [
     linkedin: "#",
   },
   {
-    name: "Sabya Sachi Paira",
+    name: "Sabhya Sachi Paira",
     title: "COO",
-    description:
-      "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals.",
-
+    description: "Oversees operations, ensures efficiency, implements strategies, and drives growth to achieve company goals",
     image: "/teamMember/sabya.png", // Replace with actual image path
 
     linkedin: "#",
   },
 ];
 
+
 const OurTeam = () => {
   const settings = {
     infinite: true,
-    speed: 5000,
+    speed: 8000,
     slidesToShow: 2, // Shows two slides on larger screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0, // Continuous scroll
     cssEase: "linear", // Smooth transition
     arrows: false, // Remove arrows
-    pauseOnHover: false, // Keep sliding on hover
+    pauseOnHover: true, // Stop scrolling on hover
     responsive: [
       {
         breakpoint: 1024,
@@ -78,6 +76,9 @@ const OurTeam = () => {
             Clarity delivers components for professional SaaS websites, landing
             pages, or admin panels with Cybersecurity expertise.
           </p>
+          <Link to="/full-team" className="text-[#2E6DE5] font-poppins">
+            View all Member →
+          </Link>
         </div>
 
         {/* Right Section (Team Cards) */}
@@ -85,7 +86,7 @@ const OurTeam = () => {
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
               <div
-                className="rounded-lg p-4 mx-auto bg-white text-center shadow-lg h-[380px] sm:h-[450px] md:h-[580px] max-w-[270px]"
+                className="rounded-lg p-4 mx-auto bg-white text-center shadow-lg max-w-[270px]"
                 key={index}
               >
                 <img
@@ -96,18 +97,13 @@ const OurTeam = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-gray-800">
                   {member.name}
                 </h3>
-                <p className="text-yellow-500 mb-2">
-                  {member.title}
-                </p>
+                <p className="text-[#FF9D00] mb-2">{member.title}</p>
                 <p className="text-gray-600 font-sans text-sm sm:text-base">
                   {member.description}
                 </p>
                 <div className="flex justify-center items-center mt-4">
                   <div className="flex justify-evenly w-[100px]">
-                    <a
-                      href={member.linkedin}
-                      className="text-[#959595] mx-2"
-                    >
+                    <a href={member.linkedin} className="text-[#959595] mx-2">
                       <FaLinkedin size={20} />
                     </a>
                   </div>
@@ -122,3 +118,4 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
+

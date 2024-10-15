@@ -12,9 +12,9 @@ const About = () => {
             </h2>
 
             {/* Subtext */}
-            <div className="flex justify-center items-start mb-8 md:mb-0 space-x-2 sm:space-x-4 md:space-x-8">
+            <div className="flex justify-center items-start mb-8 md:mb-6 space-x-2 sm:space-x-4 md:space-x-8">
               <ul className="text-left text-gray-600">
-                <li className="mb-2 text-[12px] sm:text-[14px] md:text-[16px]">
+                <li className="mb-0 text-[12px] sm:text-[14px] md:text-[16px]">
                   <span className="text-[#FF9D00] mr-2 text-[14px] sm:text-[16px] md:text-[20px]">
                     •
                   </span>
@@ -85,7 +85,7 @@ const About = () => {
           <div className=" flex flex-col md:flex-row md:space-x-6 mx-auto justify-center items-center">
             {/* Our Mission Card */}
             <motion.div
-              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px]"
+              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs  mb-6 md:mb-0 md:min-h-[400px] md:max-w-[300px]"
               whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
               transition={{
                 type: "spring",
@@ -113,7 +113,7 @@ const About = () => {
             {/* Our Vision Card */}
             {/* < className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm md:min-h-[500px]"> */}
             <motion.div
-              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs md:max-w-sm mb-6 md:mb-0 md:min-h-[500px]"
+              className="bg-white shadow-md rounded-lg p-8 w-full max-w-xs  mb-6 md:mb-0 md:min-h-[400px] md:max-w-[300px]"
               whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
               transition={{
                 type: "spring",

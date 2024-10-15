@@ -3,10 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
-    name: "Sarah M",
+    name: "Mahendra Kumar",
     image: "about/testi/img1.png", // replace with image path or URL
-    text: "SecWebXperts redesigned our outdated website into a sleek platform, exceeding expectations and boosting client engagement quickly.",
-    rating: 5,
+    text: "SecWebXperts transformed our outdated website into a sleek, modern platform, surpassing expectations and significantly boosting client engagement.",
+    rating: 4,
   },
   {
     name: "John D",
@@ -20,20 +20,20 @@ const testimonials = [
     text: "SecWebXperts delivered a robust platform, optimized security and performance, with clear communication. We're now planning our next project!.",
     rating: 5,
   },
-  {
-    name: "Emily R",
-    image: "about/testi/img3.png",
-    text: "SecWebXperts developed a game-changing SaaS solution, streamlining our operations and saving time and money. Highly recommended IT partner!.",
-    rating: 5,
-  },
+  // {
+  //   name: "Emily R",
+  //   image: "about/testi/img3.png",
+  //   text: "SecWebXperts developed a game-changing SaaS solution, streamlining our operations and saving time and money. Highly recommended IT partner!.",
+  //   rating: 5,
+  // },
   // Add more testimonials here
 ];
 
 const About = () => {
   const settings = {
     infinite: true,
-    speed: 5000,
-    slidesToShow: 4, // Show 4 slides on large screens
+    speed: 8000,
+    slidesToShow: 3, // Show 4 slides on large screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0, // Continuous scroll
@@ -44,7 +44,7 @@ const About = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Show 2 slides on tablets
+          slidesToShow: 3, // Show 2 slides on tablets
         },
       },
       {
@@ -58,7 +58,7 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-[url('about/img1.png')] bg-cover bg-center bg-no-repeat min-h-[300px] mt-[40px] sm:mt-[60px] lg:mt-[80px]">
+      <div className="bg-[url('/about/img1.png')] bg-cover bg-center bg-no-repeat min-h-[300px] mt-[40px] sm:mt-[60px] lg:mt-[80px]">
         <div className="pt-[40px] sm:pt-[60px] lg:pt-[80px] ps-[20px] sm:ps-[60px] lg:ps-[120px]">
           <h2 className="text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] font-poppins">
             ABOUT US
@@ -74,10 +74,17 @@ const About = () => {
           OUR STORY
         </h2>
         <p className="text-[#546E7A] text-[16px] font-[500] p-[40px] text-center font-poppins ml-12 mr-12">
-        With the goal of revolutionizing the digital world, SecWebXperts was founded eighteen months ago. Sathya founded the business, which first offered support for developing mobile and online applications. With an enthusiastic staff with backgrounds from Dell, IBM, Deloitte, and Samsung, we have grown into a reliable business partner. With a goal of providing creative, customized solutions worldwide, our emphasis on developing state-of-the-art digital solutions has propelled our growth into SaaS development, UI/UX design, and software development.
+          With the goal of revolutionizing the digital world, SecWebXperts was
+          founded eighteen months ago. Sathya founded the business, which first
+          offered support for developing mobile and online applications. With an
+          enthusiastic staff with backgrounds from Dell, IBM, Deloitte, and
+          Samsung, we have grown into a reliable business partner. With a goal
+          of providing creative, customized solutions worldwide, our emphasis on
+          developing state-of-the-art digital solutions has propelled our growth
+          into SaaS development, UI/UX design, and software development.
         </p>
       </div>
-      <div className="bg-[url('about/img2.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
+      <div className="bg-[url('/about/img2.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
         <div className="container mx-auto px-4 max-w-[1300px]">
           <div className="flex flex-col md:flex-row justify-between items-center min-h-[400px]">
             {/* Left side content */}
@@ -86,9 +93,8 @@ const About = () => {
                 OUR MISSION
               </h2>
               <p className="text-[#546E7A] text-[16px] max-w-[400px] mb-8 font-poppins">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                At Secwebxperts, our mission is to provide innovative, reliable,
+                and comprehensive IT solutions.
               </p>
             </div>
 
@@ -103,7 +109,7 @@ const About = () => {
                 {/* Item 1 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/mission1.png"
+                    src="/about/icons/mission1.png"
                     alt="Development Icon"
                     className="mb-4"
                   />
@@ -115,7 +121,7 @@ const About = () => {
                 {/* Item 2 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/mission2.png"
+                    src="/about/icons/mission2.png"
                     alt="Counselling Icon"
                     className="mb-4"
                   />
@@ -127,7 +133,7 @@ const About = () => {
                 {/* Item 3 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/mission3.png"
+                    src="/about/icons/mission3.png"
                     alt="Cooperation Icon"
                     className="mb-4"
                   />
@@ -139,7 +145,7 @@ const About = () => {
                 {/* Item 4 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/mission4.png"
+                    src="/about/icons/mission4.png"
                     alt="Quality Icon"
                     className="mb-4"
                   />
@@ -152,7 +158,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="my-7 bg-[url('about/img3.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
+      <div className="my-7 bg-[url('/about/img3.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
         <div className="container mx-auto px-4 max-w-[1300px]">
           <div className="flex flex-col md:flex-row justify-center items-center min-h-[400px]">
             {/* Left side content */}
@@ -166,7 +172,7 @@ const About = () => {
                 {/* Item 1 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/vision1.png"
+                    src="/about/icons/vision1.png"
                     alt="Development Icon"
                     className="mb-4"
                   />
@@ -178,7 +184,7 @@ const About = () => {
                 {/* Item 2 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/vision2.png"
+                    src="/about/icons/vision2.png"
                     alt="Counselling Icon"
                     className="mb-4"
                   />
@@ -190,7 +196,7 @@ const About = () => {
                 {/* Item 3 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/vision3.png"
+                    src="/about/icons/vision3.png"
                     alt="Cooperation Icon"
                     className="mb-4"
                   />
@@ -202,7 +208,7 @@ const About = () => {
                 {/* Item 4 */}
                 <div className="flex items-center max-w-52 justify-around">
                   <img
-                    src="about/icons/vision4.png"
+                    src="/about/icons/vision4.png"
                     alt="Quality Icon"
                     className="mb-4"
                   />
@@ -219,15 +225,15 @@ const About = () => {
                 OUR VISION
               </h2>
               <p className="text-[#546E7A] text-[16px] mb-8 font-poppins">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
+                At Secwebxperts, our vision is to become the top provider of
+                comprehensive IT solutions.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="testimonial-slider max-w-[1300px] mx-auto bg-[#F9F9F9]">
+      <div className=" max-w-[100%] mx-auto bg-[#F9F9F9]">
+      <div className="testimonial-slider max-w-[1100px] mx-auto ">
         <h2 className="text-center font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[40px] mb-8 font-poppins">
           TESTIMONIAL
         </h2>
@@ -235,9 +241,11 @@ const About = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="h-auto w-full md:max-w-[250px] lg:max-w-[300px] mb-8 mx-auto"
+              className="h-auto w-full md:max-w-[300px] lg:max-w-[350px] mb-8 mx-auto"
+              // Add responsive margins for different screen sizes
+              style={{ marginRight: "5px", marginLeft: "5px" }} // Small space for desktop view
             >
-              <div className="border-2 border-[#007bff] rounded-lg p-6 text-center">
+              <div className="border-2 border-[#007bff] rounded-lg p-4 text-center">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
@@ -260,6 +268,7 @@ const About = () => {
             </div>
           ))}
         </Slider>
+      </div>
       </div>
     </>
   );

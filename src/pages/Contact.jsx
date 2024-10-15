@@ -40,7 +40,7 @@ const Contact = () => {
 
         {/* Form */}
         <div className="w-full lg:w-1/2 bg-white shadow-lg rounded-lg p-6">
-          <h2 className=" font-Poppins font-semibold text-[#1E2D4D] mb-6 text-[28px] leading-[39px]">
+          <h2 className=" font-Poppins font-bold text-[#1E2D4D] mb-4 text-[20px] leading-[29px]">
             Talk To us
           </h2>
           <form className="space-y-4">

@@ -4,15 +4,21 @@ import "slick-carousel/slick/slick.css";
 import CVESlideIn from "./Cve";
 const Achievements = () => {
   const achievements = [
-    { logo: "/achievement/frame 2.png" },
-    { logo: "/achievement/frame 1.png" },
-    { logo: "/achievement/frame 3.png" },
-    { logo: "/achievement/frame 4.png" },
-    { logo: "/achievement/frame 5.png" },
+    { logo: "/achievement/frame1.png" },
+    { logo: "/achievement/frame2.png" },
+    { logo: "/achievement/frame3.png" },
+    { logo: "/achievement/frame4.png" },
+    { logo: "/achievement/frame5.png" },
+    { logo: "/achievement/frame6.png" },
+    { logo: "/achievement/frame7.png" },
+    { logo: "/achievement/frame8.png" },
+    { logo: "/achievement/frame9.png" },
+    { logo: "/achievement/frame10.png" },
+
   ];
   const settings = {
     infinite: true,
-    speed: 5000,
+    speed: 8000,
     slidesToShow: 4, // Increase this to show more cards
     slidesToScroll: 1,
     autoplay: true,
@@ -31,7 +37,7 @@ const Achievements = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1, // Change for small screens
+          slidesToShow: 2, // Change for small screens
         },
       },
     ],

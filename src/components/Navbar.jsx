@@ -3,7 +3,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
 
-
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation(); // Get current location
@@ -17,7 +16,7 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-4"
       >
         <div className="flex lg:flex-1">
-          <Link to={"/"} className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
             <img
               alt="Logo"
@@ -37,14 +36,17 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <Link
-            to="/"
-            className={`text-[14px] font-poppins font-semibold leading-6 ${
-              isActive("/") ? "text-customYellow" : "text-[#1C1C1C]"
-            }`}
-          >
-            HOME
-          </Link>
+          {/* Only show HOME when not on the home page */}
+          {!isActive("/") && (
+            <Link
+              to="/"
+              className={`text-[14px] font-poppins font-semibold leading-6 ${
+                isActive("/") ? "text-customYellow" : "text-[#1C1C1C]"
+              }`}
+            >
+              HOME
+            </Link>
+          )}
           <Link
             to="/about"
             className={`text-[14px] font-poppins font-semibold leading-6 ${
@@ -77,64 +79,6 @@ export default function Navbar() {
           >
             PORTFOLIO
           </Link>
-
-          <Link
-            to="/case-study"
-            className="text-[14px] font-poppins  font-semibold leading-6 text-[#1C1C1C]"
-          >
-            CASE-STUDY
-          </Link>
-
-          {/* <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-gray-900">
-              Services
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="h-5 w-5 flex-none text-gray-400"
-              />
-            </PopoverButton>
-
-            <PopoverPanel className="absolute -left-8 top-full mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 z-50">
-              <div className="p-4">
-                {products.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                  >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <item.icon
-                        aria-hidden="true"
-                        className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-                      />
-                    </div>
-                    <div className="flex-auto">
-                      <Link to={"/"} className="font-bold text-gray-900">
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </Link>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                {callsToAction.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.to}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-lg font-bold leading-6 text-gray-900 hover:bg-gray-100"
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-none text-gray-400"
-                    />
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Popover> */}
-
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
@@ -184,11 +128,25 @@ export default function Navbar() {
                   About
                 </Link>
                 <Link
+                  to="/full-team"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                >
+                  OurTeam
+                </Link>
+                <Link
                   to="/services"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)} // Close menu on click
                 >
                   Service
+                </Link>
+                <Link
+                  to="/portfolio"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)} // Close menu on click
+                >
+                  Portfolio
                 </Link>
                 <Link
                   to="/contact"
