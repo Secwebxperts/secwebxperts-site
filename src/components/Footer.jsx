@@ -59,6 +59,10 @@ const Footer = () => {
             <li className="font-poppins text-[13px]">
               <Link to="/full-team">Our Teams</Link>
             </li>
+           
+            <li className="font-poppins text-[13px]">
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
           </ul>
         </div>
 

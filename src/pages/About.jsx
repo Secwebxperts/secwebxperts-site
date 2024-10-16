@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const testimonials = [
   {
     name: "Mahendra Kumar",
@@ -30,6 +31,7 @@ const testimonials = [
 ];
 
 const About = () => {
+
   const settings = {
     infinite: true,
     speed: 8000,
@@ -84,11 +86,11 @@ const About = () => {
           into SaaS development, UI/UX design, and software development.
         </p>
       </div>
-      <div className="bg-[url('/about/img2.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
+      <div  className="bg-[url('/about/img2.png')] bg-cover bg-center bg-no-repeat py-16 min-h-[400px]">
         <div className="container mx-auto px-4 max-w-[1300px]">
           <div className="flex flex-col md:flex-row justify-between items-center min-h-[400px]">
             {/* Left side content */}
-            <div className="w-full md:w-1/2 text-center md:text-left">
+            <div id="our-mission" className="w-full md:w-1/2 text-center md:text-left">
               <h2 className="font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] mb-4 font-poppins">
                 OUR MISSION
               </h2>
@@ -220,7 +222,7 @@ const About = () => {
             </div>
 
             {/* Right side content */}
-            <div className="w-full md:w-1/2 max-w-[400px] text-center md:text-left">
+            <div id="our-vission" className="w-full md:w-1/2 max-w-[400px] text-center md:text-left">
               <h2 className="font-[600] text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] mb-4 font-poppins">
                 OUR VISION
               </h2>
