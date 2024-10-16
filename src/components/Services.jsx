@@ -1,9 +1,37 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const ServiceSection = () => {
+  const settings = {
+    infinite: true,
+    speed: 8000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    arrows: false,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="py-12 bg-[#F9F9F9] mx-auto">
+    <section className="py-12 bg-[#F9F9F9] mx-auto ">
       <div className="max-w-[1300px] mx-auto text-center">
         <div className="text-center mb-12">
           <h2 className="text-[#FF9D00] text-[36px] font-semibold font-poppins">
@@ -14,18 +42,9 @@ const ServiceSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:min-w-[1100px] justify-items-center mx-auto">
+        <Slider {...settings}>
           {/* Web Development Card */}
-          <motion.div
-            className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto md:w-auto"
-            whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
-            transition={{
-              type: "spring",
-              stiffness: 30, // Softer spring
-              damping: 10, // Adds smoothness
-              duration: 0.5, // Slower animation duration
-            }}
-          >
+          <div className="bg-white rounded-lg shadow-md p-6 w-full h-[350px] mx-3">
             <img
               src="/serviceImages/2.png"
               alt="Web Development"
@@ -40,19 +59,10 @@ const ServiceSection = () => {
             <Link to="/services?tab=web-design" className="text-blue-600 ">
               Learn More →
             </Link>
-          </motion.div>
+          </div>
 
           {/* Mobile App Development Card */}
-          <motion.div
-            className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto md:w-full lg:w-full"
-            whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
-            transition={{
-              type: "spring",
-              stiffness: 30, // Softer spring
-              damping: 10, // Adds smoothness
-              duration: 0.5, // Slower animation duration
-            }}
-          >
+          <div className="bg-white rounded-lg shadow-md p-6 w-full h-[350px] mx-3">
             <img
               src="/serviceImages/3.png"
               alt="Mobile App Development"
@@ -67,19 +77,9 @@ const ServiceSection = () => {
             <Link to="/services?tab=mobile-app" className="text-blue-600 ">
               Learn More →
             </Link>
-          </motion.div>
-
+          </div>
           {/* Cyber Security Card */}
-          <motion.div
-            className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto"
-            whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
-            transition={{
-              type: "spring",
-              stiffness: 30, // Softer spring
-              damping: 10, // Adds smoothness
-              duration: 0.5, // Slower animation duration
-            }}
-          >
+          <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto h-[350px] mx-3">
             <img
               src="/serviceImages/1.png"
               alt="Cyber Security"
@@ -94,19 +94,10 @@ const ServiceSection = () => {
             <Link to="/services?tab=cyber-security" className="text-blue-600 ">
               Learn More →
             </Link>
-          </motion.div>
+          </div>
 
           {/* SaaS Card */}
-          <motion.div
-            className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto"
-            whileHover={{ scale: 1.1, x: 1 }} // Scale and slide right on hover
-            transition={{
-              type: "spring",
-              stiffness: 30, // Softer spring
-              damping: 10, // Adds smoothness
-              duration: 0.5, // Slower animation duration
-            }}
-          >
+          <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto h-[350px] mx-3">
             <img
               src="/serviceImages/SaaS.png"
               alt="Cyber Security"
@@ -122,8 +113,26 @@ const ServiceSection = () => {
             <Link to="/services?tab=saas" className="text-blue-600">
               Learn More →
             </Link>
-          </motion.div>
-        </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-6 w-full sm:w-auto h-[350px] mx-3">
+            <img
+              src="/serviceImages/Digital Marketing.png"
+              alt="Cyber Security"
+              className="mx-auto mb-4 w-full max-w-[166px] h-[150px] object-cover"
+            />
+            <h3 className="text-[17px] font-semibold font-poppins mb-1 text-[#1C1C1C]">
+              Digital Marketing
+            </h3>
+            <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
+              Digital marketing is promoting products or services online to
+              reach and engage audiences.
+            </p>
+            <Link to="/services?tab=saas" className="text-blue-600">
+              Learn More →
+            </Link>
+          </div>
+          {/* Add more cards here following the same structure */}
+        </Slider>
       </div>
     </section>
   );
