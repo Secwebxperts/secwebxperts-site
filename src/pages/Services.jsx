@@ -17,13 +17,7 @@ const Services = () => {
   return (
     <section className="min-h-screen w-[100%]">
       {/* Header Section */}
-      <div
-        className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgb(0 0 0 / 70%) 20%, rgb(221 189 63 / 80%) 60%, rgb(206 0 0 / 20%) 100%), url('/serviceImages/serviceBG.jpg')",
-        }}
-      >
+      <div className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center bg-[url('/serviceImages/serviceBG.png')]">
         {/* Gradient and Background */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10">
@@ -91,6 +85,16 @@ const Services = () => {
           >
             SaaS
           </button>
+          <button
+            onClick={() => setActiveTab("digital-marketing")}
+            className={`relative font-poppins pb-2 ${
+              activeTab === "saas"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                : "text-[#ACACAC]"
+            }`}
+          >
+            Digital-Marketing
+          </button>
         </div>
       </div>
 
@@ -118,55 +122,55 @@ const Services = () => {
                 </h3>
                 <ul className="list-none space-y-2">
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Perfect UX/UI designing
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Responsive and Reliable
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Scalable and well-formatted
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Easily and effectively navigated
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Digital Marketing and Branding
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Relevant content that sticks visitors
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Affordable and Pocket-friendly prices
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Fast load times and great performance
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">Optimized and Secure</span>
                   </li>
                 </ul>
@@ -198,39 +202,39 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         E-commerce Website Development.
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">CMS Websites.</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Responsive Website Designing.
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Static Website Designing.
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Dynamic Website Designing
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Flat Web Designing</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         {" "}
                         Single Page Web Designing.
@@ -257,39 +261,39 @@ const Services = () => {
               <div className="flex items-center">
                 <ul className="list-none space-y-2">
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">Popularity</span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">Reach</span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">
                       Increase Sales and Conversion
                     </span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">
                       Convenience for customers
                     </span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">
                       Availability all the time
                     </span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">
                       Increased Customer-base
                     </span>
                   </li>
                   <li className="flex items-center">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2"></span>
                     <span className="text-[#546E7A]">Targeted Audience</span>
                   </li>
                 </ul>
@@ -328,23 +332,23 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Mobile Apps Development
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Mobile UX Design</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Mobile Support Maintenance
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Mobile Consulting</span>
                     </li>
                   </ul>
@@ -379,21 +383,21 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">IOS Development</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">IOS UX Design</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         IOS Support Maintenance
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">IOS Consulting</span>
                     </li>
                   </ul>
@@ -417,31 +421,31 @@ const Services = () => {
               <div className="flex items-center">
                 <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Get apps from experienced Mobile App developers with 100%
                       on-time delivery rates.
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">Consistent quality</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       100% clean source code easier to maintain in future
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       {" "}
                       Flexible price models
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                    <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                     <span className="text-[#546E7A]">
                       Dedicated testing team for each app developed
                     </span>
@@ -482,25 +486,25 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Static Application Security Testing (SAST)
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Dynamic Application Security Testing (DAST)
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Application Programming Interface(API)
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Android Penetration Testing (APT)
                       </span>
@@ -540,47 +544,47 @@ const Services = () => {
                   </h3>
                   <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Cloud-Based</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">No Installation</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Subscription Model</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Automatic Updates</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Scalable</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Accessible Anywhere
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Cost-Effective</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">
                         Multi-Tenant Architecture
                       </span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Easy Collaboration</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="inline-block w-3 h-3 bg-orange-500 rounded-full mr-2  mt-2"></span>
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
                       <span className="text-[#546E7A]">Secure</span>
                     </li>
                   </ul>
@@ -591,6 +595,82 @@ const Services = () => {
               <div className="flex justify-center lg:justify-end">
                 <img
                   src="/serviceImages/saas/img1.jpg"
+                  alt="Service Image"
+                  className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+        {activeTab === "digital-marketing" && (
+          <div id="saas" className="w-full max-w-[1200px] mx-auto">
+            <h2 className="uppercase text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+              DIGITAL MARKETING
+            </h2>
+            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-2xl mx-auto mb-5">
+              Digital marketing uses online channels to promote products or
+              services and reach target audiences through strategies like SEO,
+              social media, and ads.
+            </p>
+            {/* Mobile App Development Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              {/* Left Side: Text Content */}
+              <div className="items-center flex">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Key Components</h3>
+                  <ul className="list-disc list-inside text-[#ACACAC] space-y-2">
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Search Engine Optimization (SEO)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">Content Marketing</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Social Media Marketing (SMM)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Pay-Per-Click Advertising (PPC)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">Email Marketing</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Affiliate Marketing
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Influencer Marketing
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-3 h-3 bg-[#FF9D00] rounded-full mr-2  mt-2"></span>
+                      <span className="text-[#546E7A]">
+                        Analytics and Reporting
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Right Side: Images */}
+              <div className="flex justify-center lg:justify-end">
+                <img
+                  src="/serviceImages/digital/img1.png"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[530px] max-h-[330px] h-auto"
                 />

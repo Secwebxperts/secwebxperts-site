@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollTotop";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import CaseStudy from "./pages/caseStudy";
+import TawkTo from "./components/TawkTo";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <ScrollToTop />
       <div>
         <Navbar />
+        <TawkTo />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
