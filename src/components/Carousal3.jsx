@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay"; // Import autoplay styles
 
 // Import required modules
-import { EffectCoverflow, Autoplay } from "swiper/modules"; // Add Autoplay module
+import { EffectCoverflow, Autoplay, Pagination } from "swiper/modules"; // Include Pagination if needed
 
 export default function Carousal3() {
   return (
@@ -24,20 +24,22 @@ export default function Carousal3() {
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
-        slidesPerView={3}
+        slidesPerView={5} // Set to 5 to show two images on both sides and one in the center
+        spaceBetween={20} // Add space between slides
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 150,
+          depth: 120,
           modifier: 2.5,
           slideShadows: true,
         }}
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false, // Ensures autoplay continues after interaction
         }}
-        modules={[EffectCoverflow, Autoplay]} // Add Autoplay module here
+        pagination={{ clickable: true }} // Enable pagination if you want it
+        modules={[EffectCoverflow, Autoplay, Pagination]} // Include pagination module
         className="mySwiper"
       >
         <SwiperSlide>
@@ -55,6 +57,10 @@ export default function Carousal3() {
         <SwiperSlide>
           <img src="/landing-portfolio/Port5.png" alt="Project 5" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img src="/landing-portfolio/Port5.png" alt="Project 5" />
+        </SwiperSlide>
+       
       </Swiper>
     </>
   );

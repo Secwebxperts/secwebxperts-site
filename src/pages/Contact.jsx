@@ -95,7 +95,7 @@ const Contact = () => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center">
       {/* Header Section */}
-      <div className="w-full text-center py-20 bg-[url('/contact/bg.png')] bg-cover bg-center min-h-[330px] flex flex-col justify-center px-15">
+      <div className="w-full text-center py-15 bg-[url('/contact/bg.png')] bg-cover bg-center min-h-[330px] flex flex-col justify-center">
         <h1 className="text-4xl font-bold text-customYellow ">
           How Can We Help You?
         </h1>
