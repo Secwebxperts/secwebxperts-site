@@ -1,0 +1,9 @@
+/* Apply margin to the slick-slide */
+.service-slider .slick-slide {
+    padding: 0 10px; /* Add 10px space on left and right */
+  }
+  
+  /* Override display for inline block if necessary */
+  .service-slider .slick-slide > div {
+    display: inline-block;
+  }
