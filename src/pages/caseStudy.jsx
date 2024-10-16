@@ -1,7 +1,7 @@
 const CaseStudy = () => {
   return (
     <div className="pt-24 container mx-auto max-w-[1700px]">
-      <div className=" bg-[url('case_study/BG-1.png')] bg-cover bg-center">
+      <div className=" bg-[url('/case_study/BG-1.png')] bg-cover bg-center">
         <div className="p-4 h-[611px] max-w-[1300px] mx-auto pt-28">
           <h1 className="uppercase text-[#012169] md:text-[64px] text-4xl font-[600] font-poppins pb-6 ">
             hr Recruitment
@@ -14,7 +14,7 @@ const CaseStudy = () => {
           </p>
         </div>
       </div>
-      <div className="bg-[url('case_study/BG-2.png')] bg-cover bg-center">
+      <div className="bg-[url('/case_study/BG-2.png')] bg-cover bg-center">
         <div className="min-h-[322px] p-10 max-w-[1300px] mx-auto">
           <div>
             <h2 className="font-[600] text-[#FF9D00] text-[36px] font-poppins">
@@ -59,7 +59,7 @@ const CaseStudy = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('case_study/BG-3.png')] bg-cover bg-center">
+      <div className="bg-[url('/case_study/BG-3.png')] bg-cover bg-center">
         <div className="flex flex-col lg:flex-row justify-between items-center  p-8 max-w-[1300px] mx-auto">
           {/* Left Side - Text Content */}
           <div className="max-w-lg">
@@ -122,7 +122,7 @@ const CaseStudy = () => {
           {/* Right Side - Image */}
           <div className="md:w-1/2 py-10 md:py-0">
             <img
-              src="case_study/img1.png"
+              src="/case_study/img1.png"
               alt="Research Phase"
               className="w-full h-auto object-cover"
             />
@@ -147,7 +147,7 @@ const CaseStudy = () => {
               </p>
             </div>
             <img
-              src="case_study/img2.png" // Replace with your image path
+              src="/case_study/img2.png" // Replace with your image path
               alt="Wireframe Example"
               className="w-full h-auto object-cover"
             />
@@ -275,7 +275,7 @@ const CaseStudy = () => {
           {/* Image Section */}
           <div className="w-full flex justify-center mb-8">
             <img
-              src="case_study/img3.png" // Replace with your image path
+              src="/case_study/img3.png" // Replace with your image path
               alt="Visual Design Example"
               className="max-w-full h-auto object-cover"
             />
@@ -348,7 +348,7 @@ const CaseStudy = () => {
           {/* Left Side Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <img
-              src="case_study/img4.png"
+              src="/case_study/img4.png"
               alt="Interactive Prototype Diagram"
               className="w-full h-auto rounded-md shadow-lg"
             />

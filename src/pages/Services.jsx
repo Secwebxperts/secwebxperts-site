@@ -17,7 +17,9 @@ const Services = () => {
   return (
     <section className="min-h-screen w-[100%]">
       {/* Header Section */}
+
       <div className="relative w-full bg-cover bg-center h-[400px] flex flex-col justify-center items-center text-center bg-[url('/serviceImages/serviceBG.png')]">
+
         {/* Gradient and Background */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10">
@@ -456,7 +458,7 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="serviceImages/android/img3.jpg"
+                  src="/serviceImages/android/img3.jpg"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />

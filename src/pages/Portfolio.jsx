@@ -1,66 +1,35 @@
-// const portfolioItems = [
-//   {
-//     id: 1,
-//     image: "portfolio/img1.png", // You can replace with actual image URLs
-//     title: "BOOKPOINT",
-//     description:
-//       "Book point is an online haven for book lovers to explore genres, share reviews, and connect with fellow readers.",
-//   },
-//   {
-//     id: 2,
-//     image: "portfolio/img2.png",
-//     title: "INSTANT BEAUTY",
-//     description:
-//       "Instant Beauty is a platform for quick beauty solutions and products, helping users enhance their look effortlessly.",
-//   },
-//   {
-//     id: 3,
-//     image: "portfolio/img3.png",
-//     title: "HEALTHY TEA",
-//     description:
-//       "Healthy Tea is an online store offering a variety of wellness teas designed to promote health and overall well-being.",
-//   },
-//   {
-//     id: 4,
-//     image: "portfolio/img4.png",
-//     title: "FLEXEXES",
-//     description:
-//       "Flexexes is a platform for flexible exercise solutions, offering workout plans and fitness resources for all levels.",
-//   },
-//   {
-//     id: 5,
-//     image: "portfolio/img5.png",
-//     title: "BYTEBUCKS",
-//     description:
-//       "Bytebucks is a platform that rewards users for engaging with technology and tech-related content.",
-//   },
-// ];
+import { useNavigate } from 'react-router-dom';
 
 const portfolioItems = [
   {
     id: 1,
-    image: "portfolio/img6.png", // You can replace with actual image URLs
+    image: "portfolio/img6.png",
     title: "HR RECRUITMENT",
     description:
       "It focuses on sourcing, screening, and hiring the right candidates to fill job roles, align with the company's needs and culture.",
+    link: '/case-study',
   },
   {
     id: 2,
-    image: "portfolio/img7.png", // You can replace with actual image URLs
+    image: "portfolio/img7.png",
     title: "SKIN FIRTS",
     description:
       "It emphasizes over makeup, focusing on maintaining healthy, glowing skin through proper care routines, hydration.",
+    link: '', // You can leave it empty or add specific links
   },
   {
     id: 3,
-    image: "portfolio/img8.png", // You can replace with actual image URLs
+    image: "portfolio/img8.png",
     title: "LOREM IPSUM",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+    link: '',
   },
 ];
 
 const Portfolio = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="flex flex-col items-center justify-center py-36 bg-[url('/BG_color.png')] bg-cover bg-center">
@@ -68,9 +37,7 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <p className="mt-4 text-[16px] text-[#1C1C1C] font-[500] text-center max-w-3xl mx-auto">
-          portfolio is a well-organized collection of your best work,
-          demonstrating your skills, expertise, and accomplishments to potential
-          employers or clients.
+          A portfolio is a well-organized collection of your best work, demonstrating your skills, expertise, and accomplishments to potential employers or clients.
         </p>
       </div>
 
@@ -79,7 +46,12 @@ const Portfolio = () => {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white shadow-md rounded-lg p-6 h-[400px] w-[340px]"
+              className="bg-white shadow-md rounded-lg p-6 h-[400px] w-[340px] cursor-pointer"
+              onClick={() => {
+                if (item.link) {
+                  navigate(item.link);
+                }
+              }}
             >
               <div className="flex justify-center mb-4">
                 <img
@@ -88,7 +60,7 @@ const Portfolio = () => {
                   className="w-full h-auto max-w-xs"
                 />
               </div>
-              <h3 className="text-[24px] font-[700] text-center mb-2 text-[#1C1C1C] ">
+              <h3 className="text-[24px] font-[700] text-center mb-2 text-[#1C1C1C]">
                 {item.title}
               </h3>
               <p className="text-[#546E7A] text-center text-[14px]">
