@@ -4,28 +4,28 @@ import "slick-carousel/slick/slick-theme.css";
 const testimonials = [
   {
     name: "Mahendra Kumar",
-    image: "about/testi/img1.png", // replace with image path or URL
-    text: "SecWebXperts transformed our outdated website into a sleek, modern platform, surpassing expectations and significantly boosting client engagement.",
-    rating: 4,
+    image: "about/testi/testi1.png", // replace with image path or URL
+    text: "SecWebXperts modernized our website, surpassing expectations and significantly boosting client engagement.",
+        rating: 4,
   },
   {
     name: "John D",
-    image: "about/testi/img2.png",
-    text: "SecWebXperts built a fast, user-friendly e-commerce app, handled every detail, and provided seamless maintenance. Highly recommended!.",
+    image: "about/testi/testi2.png",
+    text:"SecWebXperts created a fast, user-friendly e-commerce app with seamless maintenance. Highly recommended!",
     rating: 5,
   },
   {
     name: "Rajesh P",
-    image: "about/testi/img3.png",
-    text: "SecWebXperts delivered a robust platform, optimized security and performance, with clear communication. We're now planning our next project!.",
+    image: "about/testi/testi3.png",
+    text:"SecWebXperts delivered a robust platform with optimized security. Excellent communication; planning our next project!",
     rating: 5,
   },
-  // {
-  //   name: "Emily R",
-  //   image: "about/testi/img3.png",
-  //   text: "SecWebXperts developed a game-changing SaaS solution, streamlining our operations and saving time and money. Highly recommended IT partner!.",
-  //   rating: 5,
-  // },
+  {
+    name: "Emily R",
+    image: "about/testi/testi4.png",
+    text: "SecWebXperts SaaS solution streamlined operations, saving time and money. Highly recommended IT partner!",
+        rating: 5,
+  },
   // Add more testimonials here
 ];
 
