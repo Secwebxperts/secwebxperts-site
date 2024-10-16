@@ -452,7 +452,7 @@ const Services = () => {
               {/* Right Side: Image */}
               <div className="flex justify-center lg:justify-end">
                 <img
-                  src="serviceImages/android/img3.jpg"
+                  src="/serviceImages/android/img3.jpg"
                   alt="Service Image"
                   className="rounded-lg shadow-md w-full max-w-[600px] h-auto"
                 />
