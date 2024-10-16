@@ -66,7 +66,7 @@ const Footer = () => {
               <img src="/call.png" className="mr-2 h-6 w-6 mt-1"/>
               <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Customer Help Number</h3>
             </div>
-            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">+91 7001008582</p>
+            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">+91 9474730771</p>
           </div>
           <div>
             <div className="flex">
