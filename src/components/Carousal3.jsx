@@ -12,8 +12,8 @@ import { EffectCoverflow, Autoplay, Pagination } from "swiper/modules"; // Inclu
 
 export default function Carousal3() {
   return (
-    <>
-      <div className="text-center my-11 mb-18">
+    <div className="bg-[url('/landing-portfolio/dot.png')] bg-contain bg-no-repeat ">
+      <div className="text-center py-11 mb-18">
         <h2 className="text-[36px] font-[600] mt-[-12] text-[#FF9D00] font-poppins">
           OUR AWESOME PORTFOLIO
         </h2>
@@ -62,6 +62,6 @@ export default function Carousal3() {
         </SwiperSlide>
        
       </Swiper>
-    </>
+    </div>
   );
 }
