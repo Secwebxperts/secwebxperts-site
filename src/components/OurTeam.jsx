@@ -1,4 +1,5 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -6,9 +7,7 @@ const teamMembers = [
   {
     name: "Hem Chandra Paira",
     title: "Director",
-    description:
-      "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results.",
-
+    description: "With 40 years in construction, expertise in leading teams, fostering excellence, innovation, and mentorship.",
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
 
     linkedin: "#",
@@ -22,62 +21,64 @@ const teamMembers = [
     linkedin: "#",
   },
   {
-    name: "Sabya Sachi Paira",
+    name: "Sabhya Sachi Paira",
     title: "COO",
-    description:
-      "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals.",
-
+    description: "Oversees operations, ensures efficiency, implements strategies, and drives growth to achieve company goals",
     image: "/teamMember/sabya.png", // Replace with actual image path
 
     linkedin: "#",
   },
 ];
 
+
 const OurTeam = () => {
   const settings = {
     infinite: true,
-    speed: 5000,
-    slidesToShow: 2, // Increase this to show more cards
+    speed: 8000,
+    slidesToShow: 2, // Shows two slides on larger screens
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // For continuous scroll
+    autoplaySpeed: 0, // Continuous scroll
     cssEase: "linear", // Smooth transition
     arrows: false, // Remove arrows
-    pauseOnHover: false, // Keep sliding on hover
-    // Add custom responsive settings if needed
+    pauseOnHover: true, // Stop scrolling on hover
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Change for medium screens
+          slidesToShow: 2, // Shows 2 cards on medium screens
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, // Change for small screens
+          slidesToShow: 1, // Shows 1 card on tablet-sized screens
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1, // Shows 1 card on phone screens
         },
       },
     ],
   };
+
   return (
-    <div className="bg-[url('/bgimg/teambg.png')]  bg-contain  bg-no-repeat">
-      <div className="flex flex-col md:flex-row justify-between py-12 px-20 m-auto  max-w-[1300px]">
+    <div className="bg-[url('/bgimg/teambg.png')] bg-contain bg-no-repeat">
+      <div className="flex flex-col md:flex-row justify-between py-12 px-5 sm:px-10 md:px-20 m-auto max-w-[1300px]">
         {/* Left Section (Text) */}
-        <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-3 md:mb-0 mt-[-60px]">
-          <h2 className="text-[#FF9D00] text-[36px] font-semibold mb-2 font-poppins">
+        <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0 mt-[-20px] md:mt-[-60px]">
+          <h2 className="text-[#FF9D00] text-[24px] sm:text-[28px] md:text-[36px] font-semibold mb-4 font-poppins">
             OUR TEAM
           </h2>
-          <p className="leading-2 py-2 text-[#546E7A] text-[18px] font-poppins max-w-96">
+          <p className="leading-relaxed py-2 text-[#546E7A] text-[14px] sm:text-[16px] md:text-[18px] font-poppins">
             Clarity delivers components for professional SaaS websites, landing
             pages, or admin panels with Cybersecurity expertise.
           </p>
-          {/* <Link to="/team">
-          <p className="text-blue-600 font-medium">
-            View all members
-            <span className="ml-2">→</span>
-          </p>
-        </Link> */}
+          <Link to="/full-team" className="text-[#2E6DE5] font-poppins">
+            View all Member →
+          </Link>
         </div>
 
         {/* Right Section (Team Cards) */}
@@ -85,34 +86,25 @@ const OurTeam = () => {
           <Slider {...settings}>
             {teamMembers.map((member, index) => (
               <div
-                className=" rounded-lg p-4 max-w-[270px]  mx-auto bg-white text-center shadow-lg min-h-[580px]"
+                className="rounded-lg p-4 mx-auto bg-white text-center shadow-lg max-w-[270px]"
                 key={index}
               >
                 <img
                   src={member.image}
                   alt={member.name}
-                  className=" rounded-full mb-1 max-h[50px] min-h[20px] object-cover bg-red p-5"
+                  className="rounded-full mb-4 max-w-[80px] sm:max-w-[100px] md:max-w-[150px] mx-auto object-cover"
                 />
-                <h3 className="text-lg font-bold text-gray-800">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800">
                   {member.name}
                 </h3>
-                <p className="text-yellow-500 mb-2 items-center">
-                  {member.title}
+                <p className="text-[#FF9D00] mb-2">{member.title}</p>
+                <p className="text-gray-600 font-sans text-sm sm:text-base">
+                  {member.description}
                 </p>
-                <p className="text-gray-600 font-sans">{member.description}</p>
-                <div className="flex justify-center items-center mt-2">
+                <div className="flex justify-center items-center mt-4">
                   <div className="flex justify-evenly w-[100px]">
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaLinkedin size={20} color="gray" />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      className="text-blue-500 hover:text-blue-700 mx-2"
-                    >
-                      <FaTwitter size={20} color="gray" />
+                    <a href={member.linkedin} className="text-[#959595] mx-2">
+                      <FaLinkedin size={20} />
                     </a>
                   </div>
                 </div>
@@ -126,3 +118,4 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
+

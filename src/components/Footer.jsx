@@ -2,12 +2,10 @@ import {
   FaFacebook,
   FaInstagramSquare,
   FaLinkedin,
-  FaWhatsapp,
   FaWhatsappSquare,
 } from "react-icons/fa";
-import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('/Vector.jpg')]">
