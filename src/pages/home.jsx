@@ -1,8 +1,8 @@
 import About from "../components/About";
 import Achievements from "../components/Achievement/Achievement";
+import Carousal3 from "../components/Carousal3";
 import Herosection from "../components/HeroSection";
 import OurTeam from "../components/OurTeam";
-import Carousel from "../components/portfolioComponent/Portfolio";
 import ServiceSection from "../components/Services";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <About />
       <OurTeam />
       <ServiceSection />
-      {/* <Carousel /> */}
+      <Carousal3 />
       <Achievements />
     </div>
   );
