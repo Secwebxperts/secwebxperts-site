@@ -16,9 +16,16 @@ body {
   padding: 0;
 } */
 
+
+.mySwiper img {
+  width: 100%; /* Ensure images fill the slide */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: add some styling */
+}
+
 .swiper {
   /* width: 100%; */
-  max-width: 1300px;
+  max-width: 1000px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
