@@ -1,12 +1,11 @@
 import {
+  FaFacebook,
+  FaInstagramSquare,
   FaLinkedin,
-  FaMailBulk,
-  FaPhone,
-  FaStopwatch,
-  FaTwitter,
+  FaWhatsappSquare,
 } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="bg-[#FFFFFF] text-black py-10 bg-[url('/Vector.jpg')]">
@@ -29,25 +28,37 @@ const Footer = () => {
 
         {/* Services Links */}
         <div className="mb-8 md:mb-0">
-          <h3 className="font-poppins text-[22px] mb-3 font-semibold">Our Services</h3>
+          <h3 className="font-poppins text-[22px] mb-3 font-semibold">
+            Our Services
+          </h3>
           <ul className="space-y-2 text-sm ">
-            <li className="font-poppins text-[13px]"><Link to="/services?tab=web-design">Web Development</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/services?tab=mobile-app">Mobile App Development</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/services?tab=cyber-security">Cyber Security</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/services?tab=saas">SaaS</Link></li>
-
+            <li className="font-poppins text-[13px]">
+              <Link to="/services?tab=web-design">Web Development</Link>
+            </li>
+            <li className="font-poppins text-[13px]">
+              <Link to="/services?tab=mobile-app">Mobile App Development</Link>
+            </li>
+            <li className="font-poppins text-[13px]">
+              <Link to="/services?tab=cyber-security">Cyber Security</Link>
+            </li>
+            <li className="font-poppins text-[13px]">
+              <Link to="/services?tab=saas">SaaS</Link>
+            </li>
           </ul>
         </div>
 
         {/* Company Links */}
         <div className="mb-8 md:mb-0">
-          <h3 className="font-semibold mb-3 text-[22px] font-poppins ">Company</h3>
+          <h3 className="font-semibold mb-3 text-[22px] font-poppins ">
+            Company
+          </h3>
           <ul className="space-y-2 text-sm">
-            <li className="font-poppins text-[13px]"><Link to="/about">About Us</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/full-team">Our Teams</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/services">Services</Link></li>
-            <li className="font-poppins text-[13px]"><Link to="/portfolio">Portfolio</Link></li>
-
+            <li className="font-poppins text-[13px]">
+              <Link to="/">About Us</Link>
+            </li>
+            <li className="font-poppins text-[13px]">
+              <Link to="/full-team">Our Teams</Link>
+            </li>
           </ul>
         </div>
 
@@ -56,22 +67,32 @@ const Footer = () => {
           <div>
             <div className="flex">
               <img src="/adthe.png" className="mr-2 h-6 w-6 mt-1" />
-              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Customer Help Email</h3>
+              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">
+                Customer Help Email
+              </h3>
             </div>
-            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">info@secwebxperts.com</p>
+            <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">
+              info@secwebxperts.com
+            </p>
           </div>
           <div>
             <div className="flex">
               {" "}
-              <img src="/call.png" className="mr-2 h-6 w-6 mt-1"/>
-              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Customer Help Number</h3>
+              <img src="/call.png" className="mr-2 h-6 w-6 mt-1" />
+              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">
+                Customer Help Number
+              </h3>
             </div>
+
             <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">+91 9474730771</p>
+
           </div>
           <div>
             <div className="flex">
-            <img src="/action.png" className="mr-2 h-6 w-6 mt-1" />
-            <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">Office Hours</h3>
+              <img src="/action.png" className="mr-2 h-6 w-6 mt-1" />
+              <h3 className="font-poppins mb-3 text-[#1C1C1C] text-[13px]">
+                Office Hours
+              </h3>
             </div>
             <p className="flex items-center mb-2 px-8 text-[#1C1C1C] text-[18px] font-poppins font-semibold">
               Mon - Fri (10am - 7pm) & Sat Half <br />
@@ -83,14 +104,30 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="border-t-2 border-gray-500 mt-6 pt-6">
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center">
+        <div className="max-w-[1200px] mx-auto flex justify-between items-center">
           <p className="text-sm text-[#1C1C1C] text-[16px]">
             Copyright © {new Date().getFullYear()} by Secwebxperts. All Rights
             Reserved
           </p>
           <div className="flex space-x-4">
-            <a href="https://www.linkedin.com/company/secwebxperts/" target="_blank"><FaLinkedin size={30} /></a>
-           {/* <a href="#"><img src="/Vector (1).png" className="h-[28px] w-[27px"></img></a> */}
+            <a
+              href="https://www.linkedin.com/company/secwebxperts/"
+              target="_blank"
+            >
+              <FaLinkedin size={30} />
+            </a>
+            <a target="_blank">
+              <FaSquareXTwitter size={30} />
+            </a>
+            <a target="_blank">
+              <FaWhatsappSquare size={30} />
+            </a>
+            <a target="_blank">
+              <FaFacebook size={30} />
+            </a>
+            <a target="_blank">
+              <FaInstagramSquare size={30} />
+            </a>
           </div>
         </div>
       </div>
