@@ -6,7 +6,7 @@ const Services = () => {
   // const [activeTab, setActiveTab] = useState("web-design"); // State to track the active tab
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
-  const initialTab = queryParams.get("tab") || "web-design"; // Default to web-design if no query param
+  const initialTab = queryParams.get("tab"); // Default to web-design if no query param
 
   const [activeTab, setActiveTab] = useState(initialTab);
 
@@ -51,7 +51,7 @@ const Services = () => {
             onClick={() => setActiveTab("web-design")}
             className={`relative font-poppins pb-2 ${
               activeTab === "web-design"
-                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-18px]"
                 : "text-[#ACACAC]"
             }`}
           >
@@ -61,7 +61,7 @@ const Services = () => {
             onClick={() => setActiveTab("mobile-app")}
             className={`relative font-poppins pb-2 ${
               activeTab === "mobile-app"
-                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-18px]"
                 : "text-[#ACACAC]"
             }`}
           >
@@ -71,7 +71,7 @@ const Services = () => {
             onClick={() => setActiveTab("cyber-security")}
             className={`relative font-poppins pb-2 ${
               activeTab === "cyber-security"
-                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-18px]"
                 : "text-[#ACACAC]"
             }`}
           >
@@ -81,7 +81,7 @@ const Services = () => {
             onClick={() => setActiveTab("saas")}
             className={`relative font-poppins pb-2 ${
               activeTab === "saas"
-                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-18px]"
                 : "text-[#ACACAC]"
             }`}
           >
@@ -91,7 +91,7 @@ const Services = () => {
             onClick={() => setActiveTab("digital-marketing")}
             className={`relative font-poppins pb-2 ${
               activeTab === "digital-marketing"
-                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-15px]"
+                ? "text-[#FF9D00] font-semibold after:border-b-2 after:border-[#FF9D00] after:absolute after:left-0 after:right-0 after:bottom-[-18px]"
                 : "text-[#ACACAC]"
             }`}
           >

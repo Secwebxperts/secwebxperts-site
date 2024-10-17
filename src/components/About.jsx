@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section>
@@ -102,13 +102,9 @@ const About = () => {
                 At Secwebxperts, our mission is to provide innovative, reliable,
                 and comprehensive IT solutions.
               </p>
-              {/* <a
-                href="#"
-                className="text-customYellow font-bold hover:underline flex items-center justify-center"
-              >
-                READ MORE
-                <span className="ml-2">→</span>
-              </a> */}
+              <Link to="/about?tab=our-mission" className="text-[#FF9D00]">
+                Read More →
+              </Link>
             </motion.div>
             {/* Our Vision Card */}
             {/* < className="bg-white shadow-lg rounded-lg p-8 w-full max-w-xs md:max-w-sm md:min-h-[500px]"> */}
@@ -130,13 +126,9 @@ const About = () => {
                 At Secwebxperts, our vision is to become the top provider of
                 comprehensive IT solutions.
               </p>
-              {/* <a
-                href="#"
-                className="text-customYellow font-bold hover:underline flex items-center justify-center"
-              >
-                READ MORE
-                <span className="ml-2">→</span>
-              </a> */}
+              <Link to="/about?tab=our-vission" className="text-[#FF9D00]">
+                Read More →
+              </Link>
             </motion.div>{" "}
           </div>
         </div>
