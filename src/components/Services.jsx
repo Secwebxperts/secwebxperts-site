@@ -161,7 +161,7 @@ const ServiceSection = () => {
             <div className="bg-white rounded-lg shadow-md p-6 min-w-[250px] h-[350px]">
               <div className="mx-3">
                 <img
-                  src="/serviceImages/Digital Marketing.png"
+                  src="/serviceImages/digital.png"
                   alt="Digital Marketing"
                   className="mx-auto mb-4 w-full max-w-[166px] h-[150px] object-cover"
                 />
