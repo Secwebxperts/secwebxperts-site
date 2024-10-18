@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 const TeamCard = ({ img, name, position, description, profileLink }) => {
   return (
-    <div className="max-w-xs bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6">
+    <div className="max-w-xs bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6 mx-5">
       {/* Profile Image */}
       <div className="flex justify-center mb-4">
         <img
@@ -49,8 +49,8 @@ const NextArrow = (props) => {
         display: "block",
         background: "#FF9D00",
         fontSize: "24px",
-        right: "-25px",
         zIndex: 1,
+        marginRight: "20px",
         borderRadius: "10px",
       }}
       onClick={onClick}
@@ -71,9 +71,9 @@ const PrevArrow = (props) => {
         display: "block",
         background: "#FF9D00",
         fontSize: "24px",
-        left: "-5px",
         zIndex: 1,
         borderRadius: "10px",
+        marginLeft: "20px",
       }}
       onClick={onClick}
     >
@@ -94,7 +94,6 @@ const OurFullTeam = () => {
     nextArrow: <NextArrow />, // Custom next arrow
     prevArrow: <PrevArrow />, // Custom prev arrow
 
-    // Responsive breakpoints
     responsive: [
       {
         breakpoint: 1024, // Below 1024px width (large tablets, small desktops)
@@ -141,7 +140,7 @@ const OurFullTeam = () => {
       </div>
 
       {/* Team Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 justify-items-center px-4 md:px-8 lg:px-16">
+      <div className="grid grid-cols-1  gap-8 justify-items-center px-4 md:px-8 lg:px-16">
         {/* director */}
         <div className="items-center justify-center flex flex-col lg:flex-row">
           <TeamCard
@@ -214,7 +213,7 @@ const OurFullTeam = () => {
           />
         </div>
         {/* uixu */}
-        <div style={{ width: "100%", margin: "0 auto" }}>
+        <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
             UI/UX DESIGNER
           </h2>
@@ -310,7 +309,7 @@ const OurFullTeam = () => {
           </Slider>
         </div>
         {/* web */}
-        <div style={{ width: "100%", margin: "20px auto" }}>
+        <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
             WEBSITE DEVELOPER
           </h2>
@@ -417,7 +416,7 @@ const OurFullTeam = () => {
           </Slider>
         </div>
         {/* app */}
-        <div style={{ width: "100%", margin: "20px auto" }}>
+        <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
             MOBILE APP DEVELOPER
           </h2>
