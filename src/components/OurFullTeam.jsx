@@ -146,9 +146,7 @@ const OurFullTeam = () => {
           <TeamCard
             img={"/teamMember/hem_ch.png"}
             name={"Hem Chandra Paira"}
-            description={
-              "With four decades of hands-on experience in the Construction Industry, which had developed a deep expertise in managing teams which has been defined by a commitment to excellence, innovation, and mentorship, enabling teams to achieve exceptional results."
-            }
+            description={"With 40 years in construction, expertise in leading teams, fostering excellence, innovation, and mentorship." }
             position={"Director"}
             profileLink={
               "https://www.linkedin.com/in/hem-chandra-paira-aa3526326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
@@ -200,7 +198,7 @@ const OurFullTeam = () => {
               "Creates intuitive, user-friendly designs focused on usability and experience."
             }
             position={"Business Development Representative"}
-            profileLink={"Junior Representative"}
+            profileLink={""}
           />
           <TeamCard
             img={"/teamMember/digital/img1.png"}
@@ -213,8 +211,10 @@ const OurFullTeam = () => {
           />
         </div>
         {/* uixu */}
+
         <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
+
             UI/UX DESIGNER
           </h2>
           <Slider {...settings}>
@@ -309,115 +309,120 @@ const OurFullTeam = () => {
           </Slider>
         </div>
         {/* web */}
+
         <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
+
             WEBSITE DEVELOPER
           </h2>
           <Slider {...settings}>
             <TeamCard
               img={"/teamMember/web/img1.png"}
-              name={"Jahan Ara"}
+              name={"Pinaki Sasmal"}
               description={
                 "Builds & maintains web applications, working with both front-end and back-end technologies."
               }
-              position={"UI/UX Designer"}
+              position={"FullStack Developer"}
               profileLink={
                 "https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"
               }
             />
             <TeamCard
               img={"/teamMember/web/img2.png"}
-              name={"Satvik Singh"}
+              name={"Sudipta Ghorami"}
               description={
                 "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"FullStack Developer(Intern)"}
               profileLink={
                 "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
               }
             />
             <TeamCard
               img={"/teamMember/web/img3.png"}
-              name={"Minha Mishra"}
+              name={"Sony Kumari"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining websites, handling front-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Frontend Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img4.png"}
-              name={"Riya Agarwal"}
+              name={"Sumit Kumar"}
               description={
                 "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"FullStack Develop"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img5.png"}
-              name={"Vinay Kumar"}
+              name={"Shomit Chatterjee"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Maintaining backend websites, handling back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Backend Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img6.png"}
-              name={"Ananya Panday"}
+              name={"Vicky Kumar"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining websites, handling front-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Frontend Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img7.png"}
-              name={"Sweety Sharma"}
+              name={"Sushmita Sen"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & handling  back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Backend Developer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img8.png"}
-              name={"Sonu Singh"}
+              name={"Sneha Adhikari"}
               description={
                 "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"FullStack Developer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/web/img9.png"}
-              name={"Sonu Singh"}
+              name={"Menka Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"FullStack Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
           </Slider>
         </div>
+
         {/* app */}
+
         <div className="w-[100%] mx-auto max-w-[1500px]">
           <h2 className="text-center text-[#FF9D00] font-[600] text-[36px]">
+
             MOBILE APP DEVELOPER
           </h2>
           <Slider {...settings}>
@@ -425,88 +430,88 @@ const OurFullTeam = () => {
               img={"/teamMember/mobile/img1.png"}
               name={"Amit Prajapati"}
               description={
-                "Builds & maintains web applications, working with both front-end and back-end technologies."
+                "Builds & maintains mobile app, working with front-end technologies."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img2.png"}
               name={"Vishal Kumar"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img3.png"}
               name={"Shashi Rana"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img4.png"}
               name={"Rohit Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building mobile app, handling back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img5.png"}
               name={"Arjun Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img6.png"}
               name={"Dhruv Varma"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img7.png"}
-              name={"Kabir Singh"}
+              name={"Kartik Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/mobile/img8.png"}
               name={"Viraj Yadav"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Building & maintaining mobile app,handling both front-end and back-end tasks, & supporting the development team."
               }
-              position={"UI/UX Designer"}
+              position={"Mobile App Developer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
           </Slider>

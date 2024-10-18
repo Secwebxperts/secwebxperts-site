@@ -66,7 +66,9 @@ const About = () => {
             ABOUT US
           </h2>
           <p className="text-[14px] sm:text-[16px] font-[500] text-[#1C1C1C] font-poppins">
-            We make life better for billions of people, billions of times a day
+At SECWEBXPERTS, we provide reliable and efficient IT solutions to help businesses grow. From IT support to software development, 
+our goal is to make technology work for you.we focus on 
+delivering personalized services that meet your unique needs,ensuring smooth operations and strong results.
           </p>
         </div>
       </div>
@@ -95,8 +97,8 @@ const About = () => {
                 OUR MISSION
               </h2>
               <p className="text-[#546E7A] text-[16px] max-w-[400px] mb-8 font-poppins">
-                At Secwebxperts, our mission is to provide innovative, reliable,
-                and comprehensive IT solutions.
+                Our mission is to deliver reliable and efficient IT solutions that help businesses thrive.We aim to simplify technology, 
+                improve performance,and support growth through innovation and excellent service.
               </p>
             </div>
 
@@ -227,8 +229,10 @@ const About = () => {
                 OUR VISION
               </h2>
               <p className="text-[#546E7A] text-[16px] mb-8 font-poppins">
-                At Secwebxperts, our vision is to become the top provider of
-                comprehensive IT solutions.
+                
+                "Welcome to SECWEBXPERTS, where innovation meets technology. Our mission is to empower businesses with 
+                cutting-edge IT solutions that drive efficiency, enhance security, and foster growth.
+                "
               </p>
             </div>
           </div>
