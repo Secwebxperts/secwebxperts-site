@@ -194,7 +194,7 @@ const OurFullTeam = () => {
 
           <TeamCard
             img={"/teamMember/sales/img2.png"}
-            name={"Junior Representative"}
+            name={"Samara roy"}
             description={
               "Creates intuitive, user-friendly designs focused on usability and experience."
             }
@@ -203,11 +203,11 @@ const OurFullTeam = () => {
           />
           <TeamCard
             img={"/teamMember/digital/img1.png"}
-            name={"Senior Digital Marketer"}
+            name={"Jyoti kumari"}
             description={
-              "Creates intuitive, user-friendly designs focused on usability and experience."
+              "Target outlines online business presence, audience, strategies, and competitive analysis."
             }
-            position={"Business Development Representative"}
+            position={"Senior Digital Marketer"}
             profileLink={""}
           />
         </div>
@@ -221,88 +221,88 @@ const OurFullTeam = () => {
               img={"/teamMember/uiux/img1.png"}
               name={"Jahan Ara"}
               description={
-                "Builds & maintains web applications, working with both front-end and back-end technologies."
+                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
               }
               position={"UI/UX Designer"}
               profileLink={
-                "https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img2.png"}
               name={"Satvik Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
               }
               position={"UI/UX Designer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img3.png"}
               name={"Minha Mishra"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Working design tools and UX processes, strong portfolio with successful projects."
               }
-              position={"UI/UX Designer"}
+              position={"UI/UX Designer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img4.png"}
               name={"Riya Agarwal"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
               }
               position={"UI/UX Designer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img5.png"}
               name={"Vinay Kumar"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Working design tools and UX processes, strong portfolio with successful projects."
               }
-              position={"UI/UX Designer"}
+              position={"UI/UX Designer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img6.png"}
               name={"Ananya Panday"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
               }
               position={"UI/UX Designer"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img7.png"}
               name={"Sweety Sharma"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Working design tools and UX processes, strong portfolio with successful projects."
               }
-              position={"UI/UX Designer"}
+              position={"UI/UX Designer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
             <TeamCard
               img={"/teamMember/uiux/img8.png"}
               name={"Sonu Singh"}
               description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
+                "Working design tools and UX processes, strong portfolio with successful projects."
               }
-              position={"UI/UX Designer"}
+              position={"UI/UX Designer(Intern)"}
               profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
+                ""
               }
             />
           </Slider>
