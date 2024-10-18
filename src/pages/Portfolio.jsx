@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const portfolioItems = [
   {
@@ -7,7 +7,7 @@ const portfolioItems = [
     title: "HR RECRUITMENT",
     description:
       "It focuses on sourcing, screening, and hiring the right candidates to fill job roles, align with the company's needs and culture.",
-    link: '/case-study',
+    link: "/case-study",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const portfolioItems = [
     title: "SKIN FIRTS",
     description:
       "It emphasizes over makeup, focusing on maintaining healthy, glowing skin through proper care routines, hydration.",
-    link: '', // You can leave it empty or add specific links
+    link: "/case-study2", // You can leave it empty or add specific links
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const portfolioItems = [
     title: "LOREM IPSUM",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
-    link: '',
+    link: "",
   },
 ];
 
@@ -37,7 +37,9 @@ const Portfolio = () => {
           Portfolio
         </h1>
         <p className="mt-4 text-[16px] text-[#1C1C1C] font-[500] text-center max-w-3xl mx-auto">
-          A portfolio is a well-organized collection of your best work, demonstrating your skills, expertise, and accomplishments to potential employers or clients.
+          A portfolio is a well-organized collection of your best work,
+          demonstrating your skills, expertise, and accomplishments to potential
+          employers or clients.
         </p>
       </div>
 

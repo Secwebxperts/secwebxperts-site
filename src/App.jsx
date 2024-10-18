@@ -8,8 +8,9 @@ import Services from "./pages/Services";
 import ScrollToTop from "./components/ScrollTotop";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
-import CaseStudy from "./pages/caseStudy";
 import TawkTo from "./components/TawkTo";
+import CaseStudy2 from "./pages/case-study/caseStudy2";
+import CaseStudy from "./pages/case-study/caseStudy";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/case-study" element={<CaseStudy />} />
+          <Route path="/case-study2" element={<CaseStudy2 />} />
         </Routes>
         <Footer />
       </div>
