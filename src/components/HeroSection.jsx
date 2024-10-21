@@ -106,7 +106,7 @@ const Herosection = () => {
       <div className="flex justify-between flex-col md:flex-row items-center mx-auto max-w-[1100px] mt-[130px] px-4 ">
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left mt-1">
-          <h5 className="font-poppins font-bold text-[45px] text-[#FF9D00] leading-snug md:leading-[70px]">
+          <h5 className=" sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] font-poppins font-bold text-[30px] text-[#FF9D00] leading-snug md:leading-[70px]">
             Making Service <br /> Simple and Excellent
           </h5>
           <p className="text-[#1C1C1C] mt-4 font-[500] text-[16px] leading-[30px] tracking-wider max-w-[36rem]">

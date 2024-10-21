@@ -44,6 +44,9 @@ const Footer = () => {
             <li className="font-poppins text-[13px]">
               <Link to="/services?tab=saas">SaaS</Link>
             </li>
+            <li className="font-poppins text-[13px]">
+              <Link to="/services?tab=digital-marketing">Digital Marketing</Link>
+            </li>
           </ul>
         </div>
 
@@ -54,7 +57,7 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm">
             <li className="font-poppins text-[13px]">
-              <Link to="/">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li className="font-poppins text-[13px]">
               <Link to="/full-team">Our Teams</Link>
