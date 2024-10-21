@@ -55,7 +55,7 @@ const Services = () => {
                 : "text-[#ACACAC]"
             }`}
           >
-            Web Design And Development
+            Web App
           </button>
           <button
             onClick={() => setActiveTab("mobile-app")}
@@ -65,7 +65,7 @@ const Services = () => {
                 : "text-[#ACACAC]"
             }`}
           >
-            Mobile App Development
+            Mobile App
           </button>
           <button
             onClick={() => setActiveTab("cyber-security")}
@@ -75,7 +75,7 @@ const Services = () => {
                 : "text-[#ACACAC]"
             }`}
           >
-            Cyber Security & Analytics
+            Cyber Security
           </button>
           <button
             onClick={() => setActiveTab("saas")}

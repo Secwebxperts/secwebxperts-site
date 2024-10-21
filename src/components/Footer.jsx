@@ -120,7 +120,7 @@ const Footer = () => {
             >
               <FaLinkedin size={30} />
             </a>
-            <a target="_blank">
+            {/* <a target="_blank">
               <FaSquareXTwitter size={30} />
             </a>
             <a target="_blank">
@@ -131,7 +131,7 @@ const Footer = () => {
             </a>
             <a target="_blank">
               <FaInstagramSquare size={30} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

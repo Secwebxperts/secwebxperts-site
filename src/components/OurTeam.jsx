@@ -1,43 +1,50 @@
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+
 const teamMembers = [
   {
     name: "Hem Chandra Paira",
     title: "Director",
-    description: "With 40 years in construction, expertise in leading teams, fostering excellence, innovation, and mentorship.",
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
-
-    linkedin: "#",
-  },
-  {
-    name: "Sathya Sachi Paira",
-    title: "CEO",
-    description:
-      "Leading the team, making strategic decisions, driving growth, and ensuring operational success.",
-    image: "/teamMember/ceo.png", // Replace with actual image path
-    linkedin: "#",
-  },
-  {
-    name: "Sabhya Sachi Paira",
-    title: "COO",
-    description: "Oversees operations, ensures efficiency, implements strategies, and drives growth to achieve company goals",
-    image: "/teamMember/sabya.png", // Replace with actual image path
-
-    linkedin: "#",
   },
 ];
 
-
 const OurTeam = () => {
+  const [isReadMore, setIsReadMore] = useState(false);
+
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+
+  const description = `Our story began in the hands-on world of construction, where I have
+    learned the value of hard work, precision, and problem-solving. Day
+    after day, on busy construction sites, I saw firsthand how
+    technology could transform efficiency, safety, and innovation in
+    industries traditionally resistant to change. Driven by this vision,
+    I made a bold move, shifting from physical structures to building
+    digital ones. After years in construction, I have embraced the
+    future by founding our IT company, determined to harness the power
+    of technology to solve complex problems in any sector. Today, our IT
+    solutions help businesses scale, improve operations, and stay ahead
+    in an increasingly digital world. Though we’ve moved from blueprints
+    to code, the commitment to quality and innovation remains the same.`;
+
+  // Function to show only first 20 words
+  const renderShortText = (text, wordLimit) => {
+    const words = text.split(" ");
+    return words.slice(0, wordLimit).join(" ") + (words.length > wordLimit ? "..." : "");
+  };
+
   const settings = {
-    infinite: true,
+    infinite: false,
     speed: 8000,
     slidesToShow: 2, // Shows two slides on larger screens
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 0, // Continuous scroll
     cssEase: "linear", // Smooth transition
     arrows: false, // Remove arrows
@@ -69,16 +76,20 @@ const OurTeam = () => {
       <div className="flex flex-col md:flex-row justify-between py-12 px-5 sm:px-10 md:px-20 m-auto max-w-[1300px]">
         {/* Left Section (Text) */}
         <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0 mt-[-20px] md:mt-[-60px]">
-          <h2 className="text-[#FF9D00] text-[24px] sm:text-[28px] md:text-[36px] font-semibold mb-4 font-poppins">
-            OUR TEAM
+          <h2 className="text-[#FF9D00] text-[20px] sm:text-[20px] md:text-[25px] font-semibold mb-4 font-poppins py-5">
+            A Journey From Construction to Cutting-Edge IT Solutions.
           </h2>
+
           <p className="leading-relaxed py-2 text-[#546E7A] text-[14px] sm:text-[16px] md:text-[18px] font-poppins">
-            Clarity delivers components for professional SaaS websites, landing
-            pages, or admin panels with Cybersecurity expertise.
+            {isReadMore ? description : renderShortText(description, 20)}
           </p>
-          <Link to="/full-team" className="text-[#2E6DE5] font-poppins">
-            View all Member →
-          </Link>
+
+          <button
+            className="text-[#2E6DE5] font-poppins"
+            onClick={toggleReadMore}
+          >
+            {isReadMore ? "Read Less" : "Read More"}
+          </button>
         </div>
 
         {/* Right Section (Team Cards) */}
@@ -101,13 +112,6 @@ const OurTeam = () => {
                 <p className="text-gray-600 font-sans text-sm sm:text-base">
                   {member.description}
                 </p>
-                <div className="flex justify-center items-center mt-4">
-                  <div className="flex justify-evenly w-[100px]">
-                    <a href={member.linkedin} className="text-[#959595] mx-2">
-                      <FaLinkedin size={20} />
-                    </a>
-                  </div>
-                </div>
               </div>
             ))}
           </Slider>
@@ -118,4 +122,3 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
-

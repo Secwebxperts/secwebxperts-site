@@ -155,6 +155,26 @@ const ServiceSection = () => {
               </div>
             </div>
           </div>
+{/* Saas Card */}
+<div className="service-item">
+            <div className="bg-white rounded-lg shadow-md p-6 min-w-[250px] h-[350px]">
+              <div className="mx-3">
+                <img
+                  src="/serviceImages/SaaS.png"
+                  alt="Saas"
+                  className="mx-auto mb-4 w-full max-w-[166px] h-[150px] object-cover"
+                />
+                <h3 className="text-[17px] font-semibold mb-1 text-[#1C1C1C] font-poppins">
+                  Saas
+                </h3>
+                <p className="text-[#546E7A] mb-4 font-[400] text-[14px]">
+                SaaS is software delivered online, accessed via a browser, & managed by the provider.</p>
+                <Link to="/services?tab=saas" className="text-blue-600">
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </div>
 
           {/* Digital Marketing Card */}
           <div className="service-item">
