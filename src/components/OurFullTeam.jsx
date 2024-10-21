@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-const TeamCard = ({ img, name, position, description, profileLink }) => {
+const TeamCards = ({ img, name, position, description, profileLink }) => {
   return (
     <div className="max-w-xs bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6 mx-5">
       {/* Profile Image */}
@@ -34,6 +34,41 @@ const TeamCard = ({ img, name, position, description, profileLink }) => {
         >
           <FaLinkedin size={30} />
         </a>
+      </div>
+    </div>
+  );
+};
+const TeamCard = ({ img, name, position, description, profileLink }) => {
+  return (
+    <div className="max-w-xs bg-white shadow-lg rounded-lg p-6 text-center items-center mt-6 mx-5">
+      {/* Profile Image */}
+      <div className="flex justify-center mb-4">
+        <img
+          src={img}
+          alt={name}
+          className="w-26 h-26 rounded-full border-1 border-gray-300"
+        />
+      </div>
+
+      {/* Name and Title */}
+      <h2 className="text-xl font-[600] font-poppins text-[#000000]">{name}</h2>
+      <p className="text-[#FF9D00] font-[400] font-poppins">{position}</p>
+
+      {/* Description */}
+      <p className="mt-4 text-[#546E7A] font-poppins font-[400]">
+        {description}
+      </p>
+
+      {/* LinkedIn Icon */}
+      <div className="mt-4 items-center justify-center flex">
+        {/* <a
+          href={profileLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-gray-800"
+        >
+          <FaLinkedin size={30} />
+        </a> */}
       </div>
     </div>
   );
@@ -143,11 +178,11 @@ const OurFullTeam = () => {
       <div className="grid grid-cols-1  gap-8 justify-items-center px-4 md:px-8 lg:px-16">
         {/* director */}
         <div className="items-center justify-center flex flex-col lg:flex-row">
-          <TeamCard
+          <TeamCards
             img={"/teamMember/hem_ch.png"}
             name={"Hem Chandra Paira"}
             description={"With 40 years in construction, expertise in leading teams, fostering excellence, innovation, and mentorship." }
-            position={"Director"}
+            position={"Founder and Director"}
             profileLink={
               "https://www.linkedin.com/in/hem-chandra-paira-aa3526326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -155,7 +190,7 @@ const OurFullTeam = () => {
         </div>
         {/* ceo coo */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          <TeamCard
+          <TeamCards
             img={"/teamMember/ceo.png"}
             name={"Sathya Sachi Paira"}
             description={
@@ -167,13 +202,13 @@ const OurFullTeam = () => {
             }
           />
 
-          <TeamCard
+          <TeamCards
             img={"/teamMember/sabya.png"}
             name={"Sabhya Sachi Paira"}
             description={
               "Oversees daily operations, ensures efficiency, implements strategies, and drives operational to support growth and company goals."
             }
-            position={"COO"}
+            position={"Co-Founder and COO"}
             profileLink={
               "https://www.linkedin.com/in/sabhya-sachi-paira-8229a8325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             }
@@ -195,7 +230,7 @@ const OurFullTeam = () => {
             img={"/teamMember/sales/img2.png"}
             name={"Samara roy"}
             description={
-              "Creates intuitive, user-friendly designs focused on usability and experience."
+              "Focuses on generating new business opportunities by identifying and qualifying leads for the sales team."
             }
             position={"Business Development Representative"}
             profileLink={""}
@@ -221,90 +256,58 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/uiux/img1.png"}
               name={"Jahan Ara"}
-              description={
-                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
-              }
-              position={"UI/UX Designer"}
-              profileLink={
-                ""
-              }
+              
+              position={"Senior UI/UX Designer"}
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img2.png"}
               name={"Satvik Singh"}
-              description={
-                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
-              }
+             
               position={"UI/UX Designer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img3.png"}
               name={"Minha Mishra"}
-              description={
-                "Working design tools and UX processes, strong portfolio with successful projects."
-              }
+             
               position={"UI/UX Designer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img4.png"}
               name={"Riya Agarwal"}
-              description={
-                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
-              }
+              
               position={"UI/UX Designer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img5.png"}
               name={"Vinay Kumar"}
-              description={
-                "Working design tools and UX processes, strong portfolio with successful projects."
-              }
+              
               position={"UI/UX Designer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img6.png"}
               name={"Ananya Panday"}
-              description={
-                "Expert in design tools and UX processes, leadership and mentoring abilities, strong portfolio with successful projects."
-              }
+              
               position={"UI/UX Designer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img7.png"}
               name={"Sweety Sharma"}
-              description={
-                "Working design tools and UX processes, strong portfolio with successful projects."
-              }
+              
               position={"UI/UX Designer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/uiux/img8.png"}
               name={"Sonu Singh"}
-              description={
-                "Working design tools and UX processes, strong portfolio with successful projects."
-              }
+              
               position={"UI/UX Designer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
           </Slider>
         </div>
@@ -319,101 +322,65 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/web/img1.png"}
               name={"Pinaki Sasmal"}
-              description={
-                "Builds & maintains web applications, working with both front-end and back-end technologies."
-              }
-              position={"FullStack Developer"}
-              profileLink={
-                "https://www.linkedin.com/in/pinaki-sasmal/?trk=public-profile-join-page"
-              }
+              
+              position={"Senior FullStack Developer"}
+             
             />
             <TeamCard
               img={"/teamMember/web/img2.png"}
               name={"Sudipta Ghorami"}
-              description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"FullStack Developer(Intern)"}
-              profileLink={
-                "https://www.linkedin.com/in/sudipta-ghorami-261a81292/"
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img3.png"}
               name={"Sony Kumari"}
-              description={
-                "Building & maintaining websites, handling front-end tasks, & supporting the development team."
-              }
+              
               position={"Frontend Developer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img4.png"}
               name={"Sumit Kumar"}
-              description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"FullStack Develop"}
-              profileLink={
-                ""
-              }
+             
             />
             <TeamCard
               img={"/teamMember/web/img5.png"}
               name={"Shomit Chatterjee"}
-              description={
-                "Maintaining backend websites, handling back-end tasks, & supporting the development team."
-              }
+             
               position={"Backend Developer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img6.png"}
               name={"Vicky Kumar"}
-              description={
-                "Building & maintaining websites, handling front-end tasks, & supporting the development team."
-              }
+              
               position={"Frontend Developer"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img7.png"}
-              name={"Sushmita Sen"}
-              description={
-                "Building & handling  back-end tasks, & supporting the development team."
-              }
+              name={"Sushmita Sengupta"}
+              
               position={"Backend Developer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img8.png"}
               name={"Sneha Adhikari"}
-              description={
-                "Building & maintaining websites, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"FullStack Developer(Intern)"}
-              profileLink={
-                ""
-              }
+              
             />
             <TeamCard
               img={"/teamMember/web/img9.png"}
               name={"Menka Singh"}
-              description={
-                "Building & handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"FullStack Developer"}
-              profileLink={
-                ""
-              }
+              
             />
           </Slider>
         </div>
@@ -426,23 +393,19 @@ const OurFullTeam = () => {
             MOBILE APP DEVELOPER
           </h2>
           <Slider {...settings}>
-            <TeamCard
+            {/* <TeamCard
               img={"/teamMember/mobile/img1.png"}
               name={"Amit Prajapati"}
-              description={
-                "Builds & maintains mobile app, working with front-end technologies."
-              }
+              
               position={"Mobile App Developer"}
               profileLink={
                 ""
               }
-            />
+            /> */}
             <TeamCard
               img={"/teamMember/mobile/img2.png"}
               name={"Vishal Kumar"}
-              description={
-                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"Mobile App Developer"}
               profileLink={
                 ""
@@ -451,9 +414,7 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/mobile/img3.png"}
               name={"Shashi Rana"}
-              description={
-                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"Mobile App Developer"}
               profileLink={
                 ""
@@ -462,9 +423,7 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/mobile/img4.png"}
               name={"Rohit Singh"}
-              description={
-                "Building mobile app, handling back-end tasks, & supporting the development team."
-              }
+              
               position={"Mobile App Developer"}
               profileLink={
                 ""
@@ -473,10 +432,8 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/mobile/img5.png"}
               name={"Arjun Singh"}
-              description={
-                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
-              }
-              position={"Mobile App Developer"}
+             
+              position={"Senior Mobile App Developer"}
               profileLink={
                 ""
               }
@@ -484,9 +441,7 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/mobile/img6.png"}
               name={"Dhruv Varma"}
-              description={
-                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
-              }
+              
               position={"Mobile App Developer"}
               profileLink={
                 ""
@@ -494,11 +449,9 @@ const OurFullTeam = () => {
             />
             <TeamCard
               img={"/teamMember/mobile/img7.png"}
-              name={"Kartik Singh"}
-              description={
-                "Building & maintaining mobile app, handling both front-end and back-end tasks, & supporting the development team."
-              }
-              position={"Mobile App Developer(Intern)"}
+              name={"Kabir Singh"}
+              
+              position={"Mobile App Developer"}
               profileLink={
                 ""
               }
@@ -506,10 +459,8 @@ const OurFullTeam = () => {
             <TeamCard
               img={"/teamMember/mobile/img8.png"}
               name={"Viraj Yadav"}
-              description={
-                "Building & maintaining mobile app,handling both front-end and back-end tasks, & supporting the development team."
-              }
-              position={"Mobile App Developer"}
+              
+              position={"Mobile App Developer(Intern)"}
               profileLink={
                 ""
               }

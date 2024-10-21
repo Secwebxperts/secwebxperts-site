@@ -64,7 +64,7 @@ export default function Navbar() {
             OUR TEAM
           </Link>
           <Link
-            to="/services"
+            to="/services?tab=web-design"
             className={`text-[14px] font-poppins font-semibold leading-6 ${
               isActive("/services") ? "text-customYellow" : "text-[#1C1C1C]"
             }`}
@@ -135,7 +135,7 @@ export default function Navbar() {
                   OurTeam
                 </Link>
                 <Link
-                  to="/services"
+                  to="/services?tab=web-design"
                   className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)} // Close menu on click
                 >

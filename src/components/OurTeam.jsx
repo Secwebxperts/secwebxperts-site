@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 const teamMembers = [
   {
     name: "Hem Chandra Paira",
-    title: "Director",
+    title: "Founder and Director",
     image: "/teamMember/hem_ch.png ", // Replace with actual image path
   },
 ];
@@ -94,28 +94,36 @@ const OurTeam = () => {
 
         {/* Right Section (Team Cards) */}
         <div className="w-full md:w-[50%]">
-          <Slider {...settings}>
-            {teamMembers.map((member, index) => (
-              <div
-                className="rounded-lg p-4 mx-auto bg-white text-center shadow-lg max-w-[270px]"
-                key={index}
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="rounded-full mb-4 max-w-[80px] sm:max-w-[100px] md:max-w-[150px] mx-auto object-cover"
-                />
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="text-[#FF9D00] mb-2">{member.title}</p>
-                <p className="text-gray-600 font-sans text-sm sm:text-base">
-                  {member.description}
-                </p>
-              </div>
-            ))}
-          </Slider>
-        </div>
+  <Slider {...settings}>
+    {teamMembers.map((member, index) => (
+      <div
+        className="rounded-lg p-4 mx-auto bg-white text-center shadow-lg max-w-[270px] mb-5 ml-8 mt-8 bordered-gray-500"
+        style={{
+          boxShadow: '0 20px 20px rgba(150, 128, 128, 1.5), 0 -20px 20px rgba(150, 128, 128, 1.5)', // Shadow on all sides with a top shadow
+        }}
+        key={index}
+      >
+        <img
+          src={member.image}
+          alt={member.name}
+          className="rounded-full mb-4 max-w-[80px] sm:max-w-[100px] md:max-w-[150px] mx-auto object-cover"
+        />
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800">
+          {member.name}
+        </h3>
+        <p className="text-[#FF9D00] mb-2">{member.title}</p>
+        <p className="text-gray-600 font-sans text-sm sm:text-base">
+          {member.description}
+        </p>
+      </div>
+    ))}
+  </Slider>
+</div>
+
+
+
+
+
       </div>
     </div>
   );
