@@ -49,12 +49,12 @@ const Portfolio = () => {
         </p>
       </div>
 
-      <div className="container py-12 max-w-[1100px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container py-12 max-w-[950px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className=" p-6 h-[400px] w-[340px] cursor-pointer"
+              className=" p-6 h-[400px] w-[360px] cursor-pointer"
               onClick={() => {
                 if (item.link) {
                   navigate(item.link);
@@ -68,7 +68,7 @@ const Portfolio = () => {
                   className="w-full h-auto max-w-xs"
                 />
               </div>
-              <h3 className="text-[24px] font-[700] text-center mb-2 text-[#1C1C1C]">
+              <h3 className="text-[24px] font-poppins font-[700] text-center mb-2 text-[#1C1C1C]">
                 {item.title}
               </h3>
             </div>

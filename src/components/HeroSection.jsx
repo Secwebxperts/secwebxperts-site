@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Herosection = () => {
   const outerOrbitLogos = [
@@ -58,17 +59,13 @@ const Herosection = () => {
 
         // Set specific orbit sizes based on device width
         if (windowWidth <= 375) {
-          orbitRadius = 120;
+          orbitRadius = 100; // Smaller for mobile
         } else if (windowWidth <= 412) {
-          orbitRadius = 140;
+          orbitRadius = 120;
         } else if (windowWidth <= 667) {
-          orbitRadius = 140;
-        } else if (windowWidth <= 734 || windowWidth <= 736) {
-          orbitRadius = 90;
-        } else if (windowWidth <= 768) {
-          orbitRadius = 90;
+          orbitRadius = 130;
         } else {
-          orbitRadius = 140;
+          orbitRadius = 140; // Default for larger screens
         }
 
         updateOrbit(logo, index, orbitRadius, 50);
@@ -77,20 +74,16 @@ const Herosection = () => {
       // Inner logo
       const angleInner = (Date.now() / 70) % 360;
       const windowWidth = window.innerWidth;
-      let innerRadius = 300;
+      let innerRadius = 90;
 
       if (windowWidth <= 375) {
-        innerRadius = 90;
+        innerRadius = 100; // Smaller for mobile
       } else if (windowWidth <= 412) {
-        innerRadius = 100;
+        innerRadius = 110;
       } else if (windowWidth <= 667) {
-        innerRadius = 104;
-      } else if (windowWidth <= 734 || windowWidth <= 736) {
         innerRadius = 100;
-      } else if (windowWidth <= 768) {
-        innerRadius = 130;
       } else {
-        innerRadius = 100;
+        innerRadius = 90; // Default for larger screens
       }
 
       const xInner = innerRadius * Math.cos((angleInner * Math.PI) / 180);
@@ -102,11 +95,11 @@ const Herosection = () => {
   }, []);
 
   return (
-    <section className=" bg-[url('/BG_color.png')] bg-cover bg-center h-[400px] w-full">
-      <div className="flex justify-between flex-col md:flex-row items-center mx-auto max-w-[1100px] mt-[130px] px-4 ">
+    <section className="bg-[url('/BG_color.png')] bg-cover bg-center h-[400px] w-full">
+      <div className="flex justify-between flex-col md:flex-row items-center mx-auto max-w-[1100px] mt-[130px] px-4">
         {/* Text Section */}
         <div className="mb-8 md:mb-0 text-center md:text-left mt-1">
-          <h5 className=" sm:text-3xl md:text-4xl lg:text-5xl xl:text-[50px] font-poppins font-bold text-[30px] text-[#FF9D00] leading-snug md:leading-[70px]">
+          <h5 className="sm:text-3xl md:text-4xl lg:text-5xl xl:text-[40px] font-poppins font-bold text-[24px] text-[#FF9D00] leading-snug md:leading-[70px]">
             Making Service <br /> Simple and Excellent
           </h5>
           <p className="text-[#1C1C1C] mt-4 font-[500] text-[16px] leading-[30px] tracking-wider max-w-[36rem]">
@@ -114,16 +107,21 @@ const Herosection = () => {
             offering a hassle-free experience that consistently meets your
             expectations and needs.
           </p>
+          <div className="bg-[#1C1C1C] mt-8 rounded-md inline-block">
+            <Link to='/contact'>
+              <p className="text-[#fefefe] py-2 px-4 font-poppins">BOOK AN APPOINTMENT</p>
+            </Link>
+          </div>
         </div>
 
         {/* Solar Animation Section */}
         <div className="relative flex items-center justify-center mt-[20px] md:mr-[100px]">
           {/* Outer and Inner Orbits */}
-          <div className="absolute w-65 h-65 md:w-72 md:h-72 border-2 border-gray-300 rounded-full p-[35px]">
+          <div className="absolute w-[calc(100%+140px)] h-[calc(100%+140px)] md:w-[calc(100%+160px)] md:h-[calc(100%+160px)] border-2 border-gray-300 rounded-full p-[30px] flex items-center justify-center">
             {/* Outer orbit with 10px gap */}
-            <div className="absolute w-[calc(100%-70px)] h-[calc(100%-70px)] border-2 border-gray-300 rounded-full flex items-center justify-center">
+            <div className="absolute w-[calc(100%-85px)] h-[calc(100%-85px)] border-2 border-gray-300 rounded-full flex items-center justify-center">
               {/* Inner orbit */}
-              <div className="inner-orbit-logo w-14 h-14 md:w-[70px] md:h-[70px] bg-white rounded-full flex items-center justify-center">
+              <div className="inner-orbit-logo w-90 h-90 md:w-[110px] md:h-[110px]  rounded-full flex items-center justify-center object-cover">
                 <img
                   src={innerOrbitLogo.src}
                   alt={innerOrbitLogo.alt}
@@ -149,9 +147,10 @@ const Herosection = () => {
             {outerOrbitLogos.map((logo, index) => (
               <div
                 key={index}
-
-                className="outer-orbit-logo absolute w-[50px] h-[50px] transform"
-
+                className="outer-orbit-logo absolute w-[75px] h-[75px] transform"
+                style={{
+                  transform: `translate(-50%, -50%) rotate(${(index * 360) / outerOrbitLogos.length}deg) translateX(100px)`, // Adjust the rotation and translation to position the logos correctly
+                }}
               >
                 <img
                   src={logo.src}

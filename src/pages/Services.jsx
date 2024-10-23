@@ -105,13 +105,17 @@ const Services = () => {
         {activeTab === "web-design" && (
           <div id="web-design" className="w-full max-w-[1200px] mx-auto">
             <div className="pb-20">
-              <h2 className="text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+              <h2 className="text-center text-[30px] font-[600] mb-6 text-[#FF9D00] font-poppins">
                 WEB DESIGN AND DEVELOPMENT
               </h2>
-              <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-3xl mx-auto mb-5">
-                Secwebxperts provides VAPT, penetration, and API testing, along
-                with web and mobile development, UI/UX design, and software
-                solutions, ensuring security and innovation for your business.
+              <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-4xl mx-auto mb-5">
+              In today's digital world, a strong online presence is essential. 
+              Our web development services focus on creating user-friendly, responsive,
+               and visually appealing websites tailored to meet your business goals. 
+               Whether you're starting from scratch or looking to upgrade your existing site,
+                we use the latest technologies to ensure fast, secure, and scalable solutions.
+                 Let us help you build a website that not only looks great but also delivers an exceptional 
+                 user experience.
               </p>
             </div>
 
@@ -315,13 +319,15 @@ const Services = () => {
 
         {activeTab === "mobile-app" && (
           <div id="mobile-app" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+            <h2 className="text-center text-[30px] font-[600] mb-6 text-[#FF9D00] font-poppins">
               MOBILE APP DEVELOPMENT
             </h2>
-            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-2xl mx-auto mb-5">
-              Secwebxperts offers tailored Mobile and iOS apps to meet your
-              business needs. Our expert developers deliver sleek, responsive
-              apps using Kotlin, Java, and more.
+            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-4xl mx-auto mb-5">
+            Unlock the power of mobile with our custom app development services. We design and develop intuitive,
+             high-performance mobile applications that deliver seamless user experiences across all devices.
+              From concept to launch, our team works with you to create apps that are not only visually appealing but also secure,
+             scalable, and tailored to meet your business objectives.
+             Whether you need a native app or a cross-platform solution, we are here to turn your ideas into reality.
             </p>
 
             {/* Mobile App Development Content */}
@@ -409,7 +415,7 @@ const Services = () => {
             <div>
               <h2 className="text-[20px] font-[500] text-[#1C1C1C] pb-4">
                 Why our service is one of the Best Mobile App Development
-                Services in West Bengal ?
+                Services ?
               </h2>
               <p className="text-[#546E7A] text-[16px] font-[500]">
                 Our mobile app development service in West Bengal stands out due
@@ -469,14 +475,15 @@ const Services = () => {
 
         {activeTab === "cyber-security" && (
           <div id="cyber-security" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="uppercase text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+            <h2 className="uppercase text-center text-[30px] font-[600] mb-6 text-[#FF9D00] font-poppins">
               Cyber Security & Analyst
             </h2>
-            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-3xl mx-auto mb-5">
-              SecWebXperts offers cybersecurity services like VAPT, penetration
-              testing, and data leak testing. Our expert team uses advanced
-              tools to protect your digital assets and ensure robust security
-              for your business.
+            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-4xl mx-auto mb-5">
+            In an increasingly connected world, protecting your digital assets is more important than ever.
+             Our cybersecurity services provide comprehensive solutions to safeguard your business from cyber threats.
+              From vulnerability assessments and threat detection to data encryption and incident response,
+               we ensure your systems and data remain secure.
+             With our expert team, you can stay ahead of potential risks and ensure your business operates safely and smoothly in the digital space.
             </p>
             {/* Mobile App Development Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -529,12 +536,16 @@ const Services = () => {
 
         {activeTab === "saas" && (
           <div id="saas" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="uppercase text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+            <h2 className="uppercase text-center text-[30px] font-[600] mb-6 text-[#FF9D00] font-poppins">
               Software as a Service (SaaS){" "}
             </h2>
-            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-2xl mx-auto mb-5">
-              SaaS is a cloud-based software delivery model where applications
-              are hosted by a provider and accessed by users over the internet
+            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-4xl mx-auto mb-5">
+            Streamline your business operations with our Software as a Service (SaaS) solutions. 
+            Our cloud-based applications provide you with the flexibility and scalability needed to adapt to changing market demands. 
+            Designed for ease of use, our SaaS offerings empower teams to collaborate efficiently, 
+            reduce costs, and improve productivity without the burden of complex installations or maintenance.
+             Whether you're looking for customer relationship management, project management, or specialized industry solutions,
+              our services are tailored to help your business thrive in the digital landscape.
             </p>
             {/* Mobile App Development Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -606,13 +617,14 @@ const Services = () => {
         )}
         {activeTab === "digital-marketing" && (
           <div id="digital-marketing" className="w-full max-w-[1200px] mx-auto">
-            <h2 className="uppercase text-center text-[36px] font-[600] mb-6 text-[#FF9D00] font-poppins">
+            <h2 className="uppercase text-center text-[30px] font-[600] mb-6 text-[#FF9D00] font-poppins">
               DIGITAL MARKETING
             </h2>
-            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-2xl mx-auto mb-5">
-              Digital marketing uses online channels to promote products or
-              services and reach target audiences through strategies like SEO,
-              social media, and ads.
+            <p className="text-center text-[#546E7A] font-[500] text-[16px] max-w-4xl mx-auto mb-5">
+            In the fast-paced digital landscape, standing out is crucial. Our digital marketing services are designed to elevate your brand,
+             drive traffic, and generate leads. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media management and content marketing,
+              we create customized strategies that align with your business goals. Our team of experts utilizes data-driven insights to optimize your online presence,
+               engage your target audience, and maximize your ROI. Partner with us to unlock the full potential of your digital marketing efforts and achieve sustainable growth.
             </p>
             {/* Mobile App Development Content */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
