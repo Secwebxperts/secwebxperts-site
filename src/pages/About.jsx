@@ -65,7 +65,7 @@ const About = () => {
           <h2 className="text-[#FF9D00] text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[700] font-poppins">
             ABOUT US
           </h2>
-          <p className="text-[14px] sm:text-[16px] font-[500] text-[#1C1C1C] font-poppins">
+          <p className="text-[16px] sm:text-[16px] font-[500] text-[#fffefe] font-poppins">
 At SECWEBXPERTS, we provide reliable and efficient IT solutions to help businesses grow. From IT support to software development, 
 our goal is to make technology work for you.we focus on 
 delivering personalized services that meet your unique needs,ensuring smooth operations and strong results.
@@ -73,11 +73,11 @@ delivering personalized services that meet your unique needs,ensuring smooth ope
         </div>
       </div>
 
-      <div className="text-center w-[100%] mx-auto leading-[30px] py-20 bg-[#F9F9F9] mt-2 mb-2">
+      <div className="text-center w-[100%] mx-auto leading-[30px] py-20 bg-[#F9F9F9] mt-4 mb-2">
         <h2 className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] font-[600] text-[#FF9D00] font-poppins">
           OUR STORY
         </h2>
-        <p className="text-[#546E7A] text-[16px] font-[500] p-[40px] text-center font-poppins ml-12 mr-12">
+        <p className="text-[#546E7A] text-[16px] font-[500] p-[30px] text-center font-poppins ml-6 mr-6">
           With the goal of revolutionizing the digital world, SecWebXperts was
           founded eighteen months ago. Sathya founded the business, which first
           offered support for developing mobile and online applications. With an

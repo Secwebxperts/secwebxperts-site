@@ -76,21 +76,22 @@ const OurTeam = () => {
       <div className="flex flex-col md:flex-row justify-between py-12 px-5 sm:px-10 md:px-20 m-auto max-w-[1300px]">
         {/* Left Section (Text) */}
         <div className="max-w-full md:max-w-xl w-full md:w-[60%] flex flex-col justify-center items-start mb-8 md:mb-0 mt-[-20px] md:mt-[-60px]">
-          <h2 className="text-[#FF9D00] text-[20px] sm:text-[20px] md:text-[25px] font-semibold mb-4 font-poppins py-5">
-            A Journey From Construction to Cutting-Edge IT Solutions.
-          </h2>
+  <h2 className="text-[#FF9D00] text-[20px] sm:text-[20px] md:text-[25px] font-semibold mb-4 font-poppins py-5 text-justify">
+    A Journey From Construction to Cutting-Edge IT Solutions.
+  </h2>
 
-          <p className="leading-relaxed py-2 text-[#546E7A] text-[14px] sm:text-[16px] md:text-[18px] font-poppins">
-            {isReadMore ? description : renderShortText(description, 20)}
-          </p>
+  <p className="leading-relaxed py-2 text-[#546E7A] text-[14px] sm:text-[16px] md:text-[18px] font-poppins text-justify">
+    {isReadMore ? description : renderShortText(description, 20)}
+  </p>
 
-          <button
-            className="text-[#2E6DE5] font-poppins"
-            onClick={toggleReadMore}
-          >
-            {isReadMore ? "Read Less" : "Read More"}
-          </button>
-        </div>
+  <button
+    className="text-[#2E6DE5] font-poppins"
+    onClick={toggleReadMore}
+  >
+    {isReadMore ? "Read Less" : "Read More"}
+  </button>
+</div>
+
 
         {/* Right Section (Team Cards) */}
         <div className="w-full md:w-[50%]">

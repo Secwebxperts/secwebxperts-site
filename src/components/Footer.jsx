@@ -110,13 +110,13 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t-2 border-gray-500 mt-6 pt-6">
+      <div className="border-t-2 border-gray-500 mt-2 pt-4">
         <div className="max-w-[1200px] mx-auto flex justify-between items-center">
           <p className="text-sm text-[#1C1C1C] text-[16px]">
             Copyright © {new Date().getFullYear()} by Secwebxperts. All Rights
             Reserved
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-8 mr-8">
             <a
               href="https://www.linkedin.com/company/secwebxperts/"
               target="_blank"
